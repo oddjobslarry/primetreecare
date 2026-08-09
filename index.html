@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Tree Care | Chicago Tree Service - Removal, Trimming & Health Care</title>
+<meta name="description" content="Prime Tree Care provides professional tree removal, trimming, health treatment, and storm support across Chicago, IL. Certified arborists. Free estimates. Call (773) 302-8351.">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="canonical" href="https://primetreecare.pages.dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F;
+    --forest:#263A24;
+    --olive-light:#7A8750;
+    --cream:#F5F2E8;
+    --beige:#D8CDB5;
+    --charcoal:#252823;
+    --gold:#C58A32;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Open Sans', sans-serif;
+    color:var(--charcoal);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Montserrat', sans-serif;
+    color:var(--forest);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  a{ text-decoration:none; color:inherit; }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--olive);
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:15px 30px;
+    border-radius:8px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+    white-space:nowrap;
+  }
+  .btn:focus-visible{ outline:3px solid var(--gold); outline-offset:2px; }
+  .btn-primary{ background:var(--olive); color:var(--white); }
+  .btn-primary:hover{ background:var(--forest); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); }
+  .btn-gold:hover{ background:#b57b28; transform:translateY(-2px); box-shadow:0 12px 30px -14px rgba(197,138,50,.55); }
+  .btn-outline{ border-color:var(--cream); color:var(--cream); background:transparent; }
+  .btn-outline:hover{ background:rgba(245,242,232,0.12); }
+  .btn-outline-dark{ border-color:var(--forest); color:var(--forest); background:transparent;}
+  .btn-outline-dark:hover{ background:var(--forest); color:var(--white); }
+
+  /* ===== Top utility bar ===== */
+  .topbar{
+    background:var(--forest);
+    color:var(--beige);
+    font-size:13px;
+    font-family:'Open Sans', sans-serif;
+  }
+  .topbar .container{
+    display:flex; justify-content:space-between; align-items:center;
+    padding-top:8px; padding-bottom:8px;
+  }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); }
+  .topbar a:hover{ color:var(--gold); }
+
+  /* ===== Header ===== */
+  header{
+    background:var(--white);
+    border-bottom:1px solid var(--beige);
+    position:sticky; top:0; z-index:100;
+  }
+  .nav-wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 0;
+  }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; letter-spacing:-0.01em; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:14.5px;
+    color:var(--charcoal);
+    position:relative;
+    padding:6px 0;
+  }
+  nav.primary-nav a:hover{ color:var(--olive); }
+
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; }
+  .header-phone .ph-icon{
+    width:38px; height:38px; border-radius:50%;
+    background:var(--cream); display:flex; align-items:center; justify-content:center;
+    color:var(--olive); flex-shrink:0;
+  }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    min-height:640px;
+    display:flex; align-items:center;
+    background-image: linear-gradient(120deg, rgba(19,29,17,0.88) 0%, rgba(38,58,36,0.78) 45%, rgba(38,58,36,0.55) 100%), url('https://primetreecare.pages.dev/images/chicago-tree-care-prime-tree-care-back-ground-pic.webp');
+    background-size:cover;
+    background-position:center;
+    color:var(--white);
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:-1px; height:70px;
+    background:var(--white);
+    clip-path: polygon(0 100%, 100% 100%, 100% 40%, 0 100%);
+  }
+  .hero-inner{ padding:120px 0 140px; position:relative; z-index:2; max-width:680px; }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(245,242,232,0.12);
+    border:1px solid rgba(245,242,232,0.35);
+    color:var(--beige);
+    font-family:'Montserrat',sans-serif;
+    font-weight:600; font-size:12.5px; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 16px; border-radius:100px;
+    margin-bottom:26px;
+  }
+  .hero h1{
+    color:var(--white);
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:22px;
+  }
+  .hero p.lead{
+    font-size:18px;
+    color:var(--beige);
+    max-width:520px;
+    margin-bottom:36px;
+  }
+  .hero-ctas{ display:flex; gap:16px; flex-wrap:wrap; margin-bottom:44px; }
+  .hero-stats{ display:flex; gap:38px; flex-wrap:wrap; }
+  .hero-stat .num{ font-family:'Montserrat',sans-serif; font-weight:800; font-size:26px; color:var(--white); }
+  .hero-stat .lbl{ font-size:12.5px; color:var(--beige); letter-spacing:.03em; }
+
+  /* ===== Trust strip ===== */
+  .trust-strip{
+    background:var(--cream);
+    border-bottom:1px solid var(--beige);
+  }
+  .trust-strip .container{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:22px 24px; flex-wrap:wrap; gap:18px;
+  }
+  .trust-item{ display:flex; align-items:center; gap:10px; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13.5px; color:var(--forest); }
+  .trust-item svg{ color:var(--olive); flex-shrink:0; }
+
+  /* ===== Section shared ===== */
+  section{ padding:96px 0; }
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-head h2{ font-size:38px; font-weight:800; margin-top:12px; }
+  .section-head p{ margin-top:16px; color:#5b5f52; font-size:16.5px; }
+  .bg-cream{ background:var(--cream); }
+  .bg-forest{ background:var(--forest); color:var(--cream); }
+
+  /* ===== Services ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:24px;
+  }
+  .service-card{
+    background:var(--white);
+    border:1px solid var(--beige);
+    border-radius:var(--radius);
+    padding:32px 26px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .service-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--olive-light); }
+  .service-card .icon{
+    width:52px; height:52px; border-radius:12px;
+    background:var(--cream);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--olive);
+    margin-bottom:20px;
+  }
+  .service-card.emergency .icon{ background:#fbeedd; color:var(--gold); }
+  .service-card h3{ font-size:18px; margin-bottom:10px; }
+  .service-card p{ font-size:14.5px; color:#5b5f52; margin-bottom:16px; }
+  .service-card .learn{
+    font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px;
+    color:var(--olive); display:inline-flex; align-items:center; gap:6px;
+  }
+  .service-card:hover .learn{ color:var(--gold); }
+  .emergency-tag{
+    display:inline-block; font-family:'Montserrat',sans-serif; font-weight:700; font-size:11px;
+    letter-spacing:.06em; text-transform:uppercase; color:var(--gold);
+    background:#fbeedd; padding:4px 10px; border-radius:100px; margin-bottom:14px;
+  }
+
+  /* ===== Why choose / feature ===== */
+  .feature-split{
+    display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;
+  }
+  .feature-split img{ border-radius:var(--radius); box-shadow:var(--shadow); }
+  .feature-list{ display:flex; flex-direction:column; gap:24px; margin-top:32px; }
+  .feature-list-item{ display:flex; gap:16px; }
+  .feature-list-item .num{
+    font-family:'Montserrat',sans-serif; font-weight:800; color:var(--gold); font-size:15px;
+    width:34px; height:34px; border-radius:50%; border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .feature-list-item h4{ font-size:16.5px; margin-bottom:4px; }
+  .feature-list-item p{ font-size:14.5px; color:#5b5f52; }
+
+  /* ===== Process ===== */
+  .process-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative; }
+  .process-step{ text-align:left; padding:0 20px 0 0; position:relative; }
+  .process-step .step-num{
+    font-family:'Montserrat',sans-serif; font-weight:800; font-size:44px; color:var(--olive-light);
+    opacity:.5; margin-bottom:12px;
+  }
+  .process-step h4{ font-size:16.5px; margin-bottom:8px; }
+  .process-step p{ font-size:14px; color:var(--beige); }
+  .process-line{
+    position:absolute; top:26px; left:0; right:0; height:2px; background:rgba(245,242,232,0.18);
+    z-index:0;
+  }
+
+  /* ===== Service area ===== */
+  .area-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  .zip-groups{ display:flex; flex-direction:column; gap:22px; margin-top:24px; }
+  .zip-group h4{ font-family:'Montserrat',sans-serif; font-size:14px; color:var(--olive); margin-bottom:10px; text-transform:uppercase; letter-spacing:.04em; }
+  .zip-pills{ display:flex; flex-wrap:wrap; gap:8px; }
+  .zip-pills span{
+    background:var(--cream); border:1px solid var(--beige); color:var(--charcoal);
+    font-size:12.5px; font-family:'Montserrat',sans-serif; font-weight:600;
+    padding:6px 12px; border-radius:100px;
+  }
+  .neighborhoods{ font-size:14.5px; color:#5b5f52; margin-top:16px; line-height:1.9; }
+  .map-embed{ border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--beige); }
+  .map-embed iframe{ width:100%; height:420px; border:0; display:block; }
+
+  /* ===== Testimonials ===== */
+  .testimonial-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .testimonial-card{
+    background:var(--white); border:1px solid var(--beige); border-radius:var(--radius);
+    padding:30px; display:flex; flex-direction:column; gap:18px;
+  }
+  .stars{ color:var(--gold); font-size:15px; letter-spacing:2px; }
+  .testimonial-card p{ font-size:14.5px; color:var(--charcoal); font-style:italic; }
+  .testimonial-author{ display:flex; align-items:center; gap:12px; margin-top:auto; }
+  .avatar{
+    width:42px; height:42px; border-radius:50%; background:var(--olive);
+    color:var(--white); font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .testimonial-author .who{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:var(--forest); }
+  .testimonial-author .where{ font-size:12.5px; color:#7a7d70; }
+
+  /* ===== CTA band ===== */
+  .cta-band{
+    background: linear-gradient(120deg, var(--forest), #1b2a19);
+    color:var(--white);
+    border-radius:20px;
+    padding:64px 56px;
+    display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;
+  }
+  .cta-band h3{ color:var(--white); font-size:30px; max-width:480px; }
+  .cta-band p{ color:var(--beige); margin-top:10px; max-width:480px; }
+  .cta-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  /* ===== Footer ===== */
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  footer ul a{ font-size:14px; color:var(--beige); }
+  footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; }
+  .footer-bottom a:hover{ color:var(--gold); }
+
+  /* ===== Sticky mobile call bar ===== */
+  .mobile-call-bar{ display:none; }
+
+  @media (max-width: 1024px){
+    .services-grid{ grid-template-columns:repeat(2,1fr); }
+    .feature-split{ grid-template-columns:1fr; }
+    .process-grid{ grid-template-columns:repeat(2,1fr); row-gap:40px; }
+    .process-line{ display:none; }
+    .area-wrap{ grid-template-columns:1fr; }
+    .testimonial-grid{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+    .hero h1{ font-size:42px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .services-grid{ grid-template-columns:1fr; }
+    .hero-inner{ padding:80px 0 110px; }
+    .hero h1{ font-size:34px; }
+    .hero-stats{ gap:24px; }
+    .cta-band{ flex-direction:column; text-align:center; padding:44px 28px; }
+    .cta-band h3{ margin:0 auto; }
+    .footer-grid{ grid-template-columns:1fr; }
+    section{ padding:64px 0; }
+    .topbar-left{ gap:14px; }
+    .mobile-call-bar{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200;
+      background:var(--forest); padding:12px 16px; gap:12px;
+      box-shadow:0 -8px 24px rgba(0,0,0,0.2);
+    }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left">
+      <a href="tel:+17733028351">(773) 302-8351</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="#" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text">
+        <span class="name">Prime Tree Care</span>
+        <span class="tag">Chicago Arborists</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Prime</a>
+      <a href="#process">Our Process</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone">
+        <span class="ph-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="ph-text">
+          <span class="ph-label">Call Us Now</span>
+          <span class="ph-num">(773) 302-8351</span>
+        </span>
+      </a>
+      <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <div class="container hero-inner">
+    <span class="hero-badge">★ ISA-Certified Arborists · Serving Chicagoland</span>
+    <h1>Professional Tree Care You Can Trust</h1>
+    <p class="lead">From routine pruning to emergency storm response, Prime Tree Care brings certified expertise and honest, upfront pricing to every property across Chicago and the surrounding suburbs.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-gold">Get a Free Estimate</a>
+      <a href="tel:+17733028351" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now — (773) 302-8351
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">15+ yrs</div><div class="lbl">Serving Chicagoland</div></div>
+      <div class="hero-stat"><div class="num">4.9★</div><div class="lbl">Average Rating</div></div>
+      <div class="hero-stat"><div class="num">Licensed</div><div class="lbl">& Fully Insured</div></div>
+      <div class="hero-stat"><div class="num">24/7</div><div class="lbl">Storm Response</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg> ISA Certified Arborists</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg> Licensed & Insured</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Free On-Site Estimates</div>
+    <div class="trust-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.3-8.4C.9 9.3 2.2 5.8 5.4 5c2-.5 3.8.3 4.6 1.8C10.8 5.3 12.6 4.5 14.6 5c3.2.8 4.5 4.3 2.7 7.6C15 16.4 12 21 12 21z"/></svg> Locally Owned & Operated</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete Tree Care Services</h2>
+      <p>Every service is performed by ISA-certified arborists using industry-standard safety practices — from a single backyard tree to full commercial properties.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10M12 12l6-4M12 12L6 8M12 12v10"/><circle cx="12" cy="4" r="2"/></svg></div>
+        <h3>Tree Removal</h3>
+        <p>Safe, efficient removal of hazardous, dead, or unwanted trees — including tight-access and near-structure jobs.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l12 18M18 3L6 21M3 12h18"/></svg></div>
+        <h3>Tree Trimming & Pruning</h3>
+        <p>Structural pruning and crown thinning that improves tree health, safety, and long-term appearance.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>Stump Grinding</h3>
+        <p>Complete stump removal below grade, ready for new sod, planting, or hardscaping right away.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card emergency">
+        <span class="emergency-tag">24/7 Response</span>
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+        <h3>Emergency Tree Service</h3>
+        <p>Storm damage, fallen limbs, or trees threatening a structure — our crews respond around the clock.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6l4-4 4 4M7 14a5 5 0 0010 0"/></svg></div>
+        <h3>Tree Cabling & Bracing</h3>
+        <p>Support systems installed on mature or storm-prone trees to reduce failure risk during high winds.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div>
+        <h3>Tree Health & Disease Treatment</h3>
+        <p>Diagnosis and treatment for EAB, Dutch elm disease, fungal issues, and other regional threats.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Land & Lot Clearing</h3>
+        <p>Clearing for new construction, additions, or overgrown lots — debris hauled and site left clean.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+        <h3>Commercial Tree Care</h3>
+        <p>Ongoing maintenance plans for HOAs, property managers, and commercial sites across Chicagoland.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why-us" class="bg-cream">
+  <div class="container">
+    <div class="feature-split">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-service-chicago-il.webp" alt="Prime Tree Care arborist performing tree service in Chicago">
+      <div>
+        <span class="eyebrow">Why Chicago Trusts Prime</span>
+        <h2 style="margin-top:12px;">Certified Expertise. Honest Pricing. No Surprises.</h2>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Chicago's tree canopy comes with real, local challenges — clay soil, emerald ash borer, and severe seasonal storms. We built Prime Tree Care around solving those problems the right way, not the cheapest way.</p>
+
+        <div class="feature-list">
+          <div class="feature-list-item">
+            <div class="num">1</div>
+            <div><h4>ISA-Certified Arborists on Every Job</h4><p>Every assessment and cut is led by a credentialed arborist, not a subcontracted crew.</p></div>
+          </div>
+          <div class="feature-list-item">
+            <div class="num">2</div>
+            <div><h4>Fully Licensed & Insured</h4><p>Verified coverage protects your property and our crews on every job, every time.</p></div>
+          </div>
+          <div class="feature-list-item">
+            <div class="num">3</div>
+            <div><h4>Transparent, Written Estimates</h4><p>Clear pricing before we start — no vague quotes, no add-ons after the work begins.</p></div>
+          </div>
+          <div class="feature-list-item">
+            <div class="num">4</div>
+            <div><h4>Proper Equipment for Every Job</h4><p>Crane and bucket-truck access when the job calls for it — never cutting corners on safety.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="bg-forest">
+  <div class="container">
+    <div class="section-head center" style="color:var(--cream);">
+      <span class="eyebrow" style="color:var(--light-olive, #A9B583);">How It Works</span>
+      <h2 style="color:var(--white);">A Straightforward Process, Start to Finish</h2>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-line"></div>
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h4 style="color:var(--white);">Call or Request Online</h4>
+        <p>Reach us by phone or the estimate form — we typically respond same-day.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h4 style="color:var(--white);">Free On-Site Assessment</h4>
+        <p>A certified arborist inspects the tree and property in person, no obligation.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h4 style="color:var(--white);">Written, Upfront Estimate</h4>
+        <p>You get a clear price and timeline before any work is scheduled.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h4 style="color:var(--white);">Work Completed & Site Cleaned</h4>
+        <p>Our crew completes the job safely and leaves your property clean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="areas">
+  <div class="container">
+    <div class="area-wrap">
+      <div>
+        <span class="eyebrow">Where We Work</span>
+        <h2 style="margin-top:12px; font-size:34px;">Proudly Serving Chicago & the Surrounding Suburbs</h2>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Based in Hickory Hills, Prime Tree Care serves homeowners and businesses throughout the City of Chicago and Cook County — including the Northwest Side communities of Jefferson Park, Norwood Park, Edison Park, Forest Glen, Portage Park, Dunning, Belmont Cragin, Montclare, and the O'Hare area.</p>
+
+        <div class="zip-groups">
+          <div class="zip-group">
+            <h4>Northwest Side Zip Codes</h4>
+            <div class="zip-pills">
+              <span>60630</span><span>60631</span><span>60634</span><span>60639</span><span>60641</span><span>60646</span><span>60666</span>
+            </div>
+          </div>
+          <div class="zip-group">
+            <h4>Full Chicagoland Coverage</h4>
+            <div class="zip-pills">
+              <span>60601–60661</span><span>60664</span><span>60666–60697</span><span>60701</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:+17733028351" class="btn btn-primary" style="margin-top:32px;">Check If We Service Your Address</a>
+      </div>
+
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6641919270198!2d-87.84010494663066!3d41.73163458945334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e381997350f15%3A0x840f9867c3261480!2s8811%20W%2087th%20St%2C%20Hickory%20Hills%2C%20IL%2060457!5e0!3m2!1sen!2sus!4v1786290114801!5m2!1sen!2sus" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Prime Tree Care location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews" class="bg-cream">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Client Reviews</span>
+      <h2>Trusted Across Chicagoland</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Prime Tree Care removed a massive silver maple that was leaning toward our garage. They brought a crane instead of risking it freehand — exactly the kind of attention to safety I wanted."</p>
+        <div class="testimonial-author">
+          <div class="avatar">M</div>
+          <div><div class="who">Maria D.</div><div class="where">Jefferson Park</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"They explained exactly why our ash trees needed EAB treatment instead of removal, and the pricing was upfront from the first visit. No surprise add-ons."</p>
+        <div class="testimonial-author">
+          <div class="avatar">R</div>
+          <div><div class="who">Robert K.</div><div class="where">Norwood Park</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Called after a storm knocked a limb onto our fence and they were out within hours. Professional crew, cleaned up everything before they left."</p>
+        <div class="testimonial-author">
+          <div class="avatar">S</div>
+          <div><div class="who">Sandra P.</div><div class="where">Portage Park</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="contact">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h3>Ready for a Free, No-Obligation Estimate?</h3>
+        <p>Speak with a certified arborist today — same-day response for most Chicagoland requests.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+17733028351" class="btn btn-gold">Call (773) 302-8351</a>
+        <a href="#" class="btn btn-outline">Request Estimate Online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Tree Removal</a></li>
+          <li><a href="#">Tree Trimming & Pruning</a></li>
+          <li><a href="#">Stump Grinding</a></li>
+          <li><a href="#">Emergency Tree Service</a></li>
+          <li><a href="#">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#why-us">Why Prime</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="#contact" class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Free Estimate</a>
+</div>
+
+</body>
+</html>
