@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prime Tree Care | Chicago Tree Service - Removal, Trimming & Health Care</title>
+<title>Prime Tree Care | Chicago Tree Service — Removal, Trimming & Health Care</title>
 <meta name="description" content="Prime Tree Care provides professional tree removal, trimming, health treatment, and storm support across Chicago, IL. Certified arborists. Free estimates. Call (773) 302-8351.">
 <link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
-<link rel="canonical" href="https://primetreecare.pages.dev/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -202,16 +201,30 @@
     background:var(--white);
     border:1px solid var(--beige);
     border-radius:var(--radius);
-    padding:32px 26px;
+    overflow:hidden;
     transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   }
   .service-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--olive-light); }
+  .service-card .card-media{
+    position:relative;
+    height:190px;
+    overflow:hidden;
+  }
+  .service-card .card-media img{
+    width:100%; height:100%; object-fit:cover;
+    transition:transform .5s ease;
+  }
+  .service-card:hover .card-media img{ transform:scale(1.06); }
+  .service-card .card-media .emergency-tag{
+    position:absolute; top:14px; left:14px; margin:0;
+  }
+  .service-card .card-body{ padding:24px 26px 26px; }
   .service-card .icon{
-    width:52px; height:52px; border-radius:12px;
+    width:40px; height:40px; border-radius:10px;
     background:var(--cream);
     display:flex; align-items:center; justify-content:center;
     color:var(--olive);
-    margin-bottom:20px;
+    margin-bottom:14px;
   }
   .service-card.emergency .icon{ background:#fbeedd; color:var(--gold); }
   .service-card h3{ font-size:18px; margin-bottom:10px; }
@@ -444,60 +457,100 @@
 
     <div class="services-grid">
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10M12 12l6-4M12 12L6 8M12 12v10"/><circle cx="12" cy="4" r="2"/></svg></div>
-        <h3>Tree Removal</h3>
-        <p>Safe, efficient removal of hazardous, dead, or unwanted trees — including tight-access and near-structure jobs.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/tree-removal-by-prime-tree-care-chicago-iz.webp" alt="Certified arborist performing tree removal in Chicago, IL" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10M12 12l6-4M12 12L6 8M12 12v10"/><circle cx="12" cy="4" r="2"/></svg></div>
+          <h3>Tree Removal</h3>
+          <p>Safe, code-compliant removal of hazardous, dead, or storm-damaged trees — including tight-access backyards, near-structure jobs, and parkway trees requiring city permitting.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l12 18M18 3L6 21M3 12h18"/></svg></div>
-        <h3>Tree Trimming & Pruning</h3>
-        <p>Structural pruning and crown thinning that improves tree health, safety, and long-term appearance.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/tree-trimming-and-pruning-by-prime-tree-care-chicago-iz.webp" alt="Tree trimming and pruning service by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l12 18M18 3L6 21M3 12h18"/></svg></div>
+          <h3>Tree Trimming & Pruning</h3>
+          <p>Structural pruning and crown thinning timed to Chicago's dormant season, reducing disease transmission risk while improving safety, sightlines, and long-term tree health.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
-        <h3>Stump Grinding</h3>
-        <p>Complete stump removal below grade, ready for new sod, planting, or hardscaping right away.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/stump-grinding-removal-by-prime-tree-care-chicago-iz.webp" alt="Stump grinding and removal service by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+          <h3>Stump Grinding</h3>
+          <p>Complete stump removal below grade, roots ground out, and the area leveled — ready for new sod, planting, or hardscaping right away.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card emergency">
-        <span class="emergency-tag">24/7 Response</span>
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
-        <h3>Emergency Tree Service</h3>
-        <p>Storm damage, fallen limbs, or trees threatening a structure — our crews respond around the clock.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <span class="emergency-tag">24/7 Response</span>
+          <img src="https://primetreecare.pages.dev/images/emergency-tree-service-by-prime-tree-care-chicago-iz.webp" alt="Emergency storm damage tree service by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+          <h3>Emergency Tree Service</h3>
+          <p>Storm damage, fallen limbs, or a tree threatening a structure — our crews respond around the clock, every day of the year, across Chicago and the suburbs.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6l4-4 4 4M7 14a5 5 0 0010 0"/></svg></div>
-        <h3>Tree Cabling & Bracing</h3>
-        <p>Support systems installed on mature or storm-prone trees to reduce failure risk during high winds.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/tree-cabling-and-bracing-by-prime-tree-care-chicago-iz.webp" alt="Tree cabling and bracing support system installed by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M8 6l4-4 4 4M7 14a5 5 0 0010 0"/></svg></div>
+          <h3>Tree Cabling & Bracing</h3>
+          <p>Support systems installed on mature or storm-prone trees before severe weather hits, reducing limb failure risk during Chicago's high-wind season.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div>
-        <h3>Tree Health & Disease Treatment</h3>
-        <p>Diagnosis and treatment for EAB, Dutch elm disease, fungal issues, and other regional threats.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/tree-health-disease-treatment-by-prime-tree-care-chicago-iz.webp" alt="Tree health inspection and disease treatment by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></div>
+          <h3>Tree Health & Disease Treatment</h3>
+          <p>On-site diagnosis and treatment for emerald ash borer, Dutch elm disease, fungal issues, and other pests common to Chicago's clay-soil neighborhoods.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-        <h3>Land & Lot Clearing</h3>
-        <p>Clearing for new construction, additions, or overgrown lots — debris hauled and site left clean.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/land-lot-clearing-by-prime-tree-care-chicago-iz.webp" alt="Land and lot clearing service by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Land & Lot Clearing</h3>
+          <p>Clearing for new construction, additions, or overgrown lots — trees, brush, and debris removed and the site left clean and grade-ready.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
 
       <div class="service-card">
-        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
-        <h3>Commercial Tree Care</h3>
-        <p>Ongoing maintenance plans for HOAs, property managers, and commercial sites across Chicagoland.</p>
-        <a href="#" class="learn">Learn More →</a>
+        <div class="card-media">
+          <img src="https://primetreecare.pages.dev/images/commercial-tree-care-service-by-prime-tree-care-chicago-iz.webp" alt="Commercial tree care service by Prime Tree Care in Chicago" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
+          <h3>Commercial Tree Care</h3>
+          <p>Ongoing maintenance plans for HOAs, property managers, and commercial sites — scheduled inspections, trimming, and risk mitigation across Chicagoland.</p>
+          <a href="#" class="learn">Learn More →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -510,26 +563,87 @@
       <img src="https://primetreecare.pages.dev/images/prime-tree-care-service-chicago-il.webp" alt="Prime Tree Care arborist performing tree service in Chicago">
       <div>
         <span class="eyebrow">Why Chicago Trusts Prime</span>
-        <h2 style="margin-top:12px;">Certified Expertise. Honest Pricing. No Surprises.</h2>
-        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Chicago's tree canopy comes with real, local challenges — clay soil, emerald ash borer, and severe seasonal storms. We built Prime Tree Care around solving those problems the right way, not the cheapest way.</p>
+        <h2 style="margin-top:12px;">We Know Chicago's Trees Because We Work on Them Every Day</h2>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Most tree companies serving Chicago run the same playbook everywhere they go. Prime Tree Care doesn't. We're built specifically around the problems that actually show up on Chicago properties — the ones a generic landscaping crew misses until it's too late.</p>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Chicago's tree canopy is under real, documented pressure. <strong style="color:var(--forest);">Ash trees</strong> make up a huge share of the city's street and residential trees, and emerald ash borer continues to move through neighborhoods block by block — we know how to identify it early, when treatment can still save the tree, instead of waiting until removal is the only option. Our crews also see the effects of Chicago's dense clay soil firsthand: it compacts easily, drains poorly, and puts real stress on root systems, which is exactly why our fertilization and planting recommendations are built around this soil, not generic national advice.</p>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">Severe storms have hit Chicagoland harder and more often in recent years — high-wind derechos, straight-line wind events, and sudden downbursts that put mature trees, garages, and power lines at risk with almost no warning. We stock the cabling, bracing, and emergency-response capacity this climate actually demands, and our crews carry the training to work safely near power lines and structures, not just around them.</p>
+        <p style="margin-top:14px; color:#5b5f52; font-size:16px;">We also understand the parts of tree ownership that create the most confusion locally — the difference between a parkway tree the City of Chicago's Bureau of Forestry is responsible for and a private tree that's entirely yours, what permits are actually required before removal, and how to document a hazardous tree properly if you're stuck waiting on a slow-moving city request. Most homeowners find this out the hard way. We walk you through it up front.</p>
 
         <div class="feature-list">
           <div class="feature-list-item">
             <div class="num">1</div>
-            <div><h4>ISA-Certified Arborists on Every Job</h4><p>Every assessment and cut is led by a credentialed arborist, not a subcontracted crew.</p></div>
+            <div><h4>ISA-Certified Arborists, Not Subcontractors</h4><p>Every inspection, diagnosis, and cut is led by a credentialed arborist who knows Chicago's soil, species, and storm patterns — not a rotating crew of day laborers.</p></div>
           </div>
           <div class="feature-list-item">
             <div class="num">2</div>
-            <div><h4>Fully Licensed & Insured</h4><p>Verified coverage protects your property and our crews on every job, every time.</p></div>
+            <div><h4>Fully Licensed, Bonded & Insured</h4><p>Verified coverage protects your property, your neighbors', and our crews on every job — ask to see it before you sign anything, with us or anyone else.</p></div>
           </div>
           <div class="feature-list-item">
             <div class="num">3</div>
-            <div><h4>Transparent, Written Estimates</h4><p>Clear pricing before we start — no vague quotes, no add-ons after the work begins.</p></div>
+            <div><h4>Transparent, Written Estimates</h4><p>Clear, itemized pricing before we start work — no vague verbal quotes, no surprise fees for disposal, permits, or "extra" complexity once the crew arrives.</p></div>
           </div>
           <div class="feature-list-item">
             <div class="num">4</div>
-            <div><h4>Proper Equipment for Every Job</h4><p>Crane and bucket-truck access when the job calls for it — never cutting corners on safety.</p></div>
+            <div><h4>Right Equipment, Every Time</h4><p>Crane and bucket-truck access when a job genuinely calls for it — we don't send an undersized crew to save money on a tall or tight-access removal.</p></div>
           </div>
+          <div class="feature-list-item">
+            <div class="num">5</div>
+            <div><h4>Local Permit & Ordinance Knowledge</h4><p>We know Chicago's parkway-tree rules, suburb-specific diameter thresholds, and permitting requirements — so your project doesn't stall on paperwork we should have caught.</p></div>
+          </div>
+          <div class="feature-list-item">
+            <div class="num">6</div>
+            <div><h4>Real Chicagoland Experience</h4><p>Years of hands-on work across the city's neighborhoods and suburbs means we've already seen your tree's problem before — and know what actually fixes it.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL EXPERTISE / PROBLEM-SOLUTION -->
+<section class="bg-forest">
+  <div class="container">
+    <div class="section-head center" style="color:var(--cream);">
+      <span class="eyebrow" style="color:#A9B583;">Local Problems We Solve Every Week</span>
+      <h2 style="color:var(--white);">The Tree Issues That Are Unique to Chicago</h2>
+      <p style="color:var(--beige);">Generic tree-care advice doesn't account for what actually happens to trees in this climate and soil. Here's what we deal with on Chicago properties, all season long.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Emerald Ash Borer</h3>
+          <p style="color:var(--beige);">A large share of Chicago's tree canopy is ash, and EAB has spread through nearly every neighborhood. We check for D-shaped exit holes, canopy dieback, and bark splitting to catch it while treatment is still an option.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Heavy Clay Soil</h3>
+          <p style="color:var(--beige);">Compacted clay across much of Cook County restricts root growth and drainage. Our fertilization and planting plans are built around correcting this, not generic national soil guidance.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Severe Wind & Storm Events</h3>
+          <p style="color:var(--beige);">Chicagoland has seen a real rise in high-wind derecho and straight-line wind events. We install cabling and bracing before storm season, not just cleanup after.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Weak-Wood Species Like Silver Maple</h3>
+          <p style="color:var(--beige);">Common older silver maples throughout the city are prone to limb failure. We identify structural risk early with proactive pruning instead of waiting for a storm to make the decision for you.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Parkway vs. Private Tree Confusion</h3>
+          <p style="color:var(--beige);">The city owns parkway trees; you own everything on private property. We help you understand which is which, and what to do when a hazardous city tree is stuck on a long wait list.</p>
+        </div>
+      </div>
+      <div class="service-card" style="background:rgba(245,242,232,0.05); border-color:rgba(245,242,232,0.15);">
+        <div class="card-body" style="padding-top:26px;">
+          <h3 style="color:var(--white);">Root Damage to Driveways & Foundations</h3>
+          <p style="color:var(--beige);">Mature trees planted close to older Chicago homes often push roots into driveways and foundations. We assess whether root management, not removal, can solve it.</p>
         </div>
       </div>
     </div>
