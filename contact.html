@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Prime Tree Care | Get Tree Service Estimate | (773) 302-8351</title>
+<meta name="description" content="Request a free tree care estimate from Prime Tree Care. Call (773) 302-8351 or send us your project details — serving Chicago, IL and Cook County. Same-day response.">
+<link rel="canonical" href="https://primetreecare.pages.dev/contact">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F;
+    --forest:#263A24;
+    --olive-light:#7A8750;
+    --cream:#F5F2E8;
+    --beige:#D8CDB5;
+    --charcoal:#252823;
+    --gold:#C58A32;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Open Sans', sans-serif;
+    color:var(--charcoal);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Montserrat', sans-serif;
+    color:var(--forest);
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  a{ text-decoration:none; color:inherit; }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--olive);
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:15px 30px;
+    border-radius:8px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+    white-space:nowrap;
+  }
+  .btn:focus-visible{ outline:3px solid var(--gold); outline-offset:2px; }
+  .btn-primary{ background:var(--olive); color:var(--white); }
+  .btn-primary:hover{ background:var(--forest); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); }
+  .btn-gold:hover{ background:#b57b28; transform:translateY(-2px); box-shadow:0 12px 30px -14px rgba(197,138,50,.55); }
+  .btn-outline{ border-color:var(--cream); color:var(--cream); background:transparent; }
+  .btn-outline:hover{ background:rgba(245,242,232,0.12); }
+  .btn[disabled]{ opacity:.65; cursor:not-allowed; transform:none !important; }
+
+  /* ===== Top utility bar ===== */
+  .topbar{ background:var(--forest); color:var(--beige); font-size:13px; }
+  .topbar .container{ display:flex; justify-content:space-between; align-items:center; padding-top:8px; padding-bottom:8px; }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); }
+  .topbar a:hover{ color:var(--gold); }
+
+  /* ===== Header ===== */
+  header{ background:var(--white); border-bottom:1px solid var(--beige); position:sticky; top:0; z-index:100; }
+  .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; letter-spacing:-0.01em; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:14.5px; color:var(--charcoal); padding:6px 0; }
+  nav.primary-nav a:hover{ color:var(--olive); }
+  nav.primary-nav a.active{ color:var(--olive); }
+
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; }
+  .header-phone .ph-icon{ width:38px; height:38px; border-radius:50%; background:var(--cream); display:flex; align-items:center; justify-content:center; color:var(--olive); flex-shrink:0; }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* ===== Page hero (smaller than homepage) ===== */
+  .page-hero{
+    position:relative;
+    background-image: linear-gradient(120deg, rgba(19,29,17,0.90) 0%, rgba(38,58,36,0.82) 50%, rgba(38,58,36,0.6) 100%), url('https://primetreecare.pages.dev/images/chicago-tree-care-prime-tree-care-back-ground-pic.webp');
+    background-size:cover;
+    background-position:center;
+    color:var(--white);
+    padding:72px 0 96px;
+  }
+  .page-hero .eyebrow{ color:var(--beige); opacity:.9; }
+  .page-hero h1{ color:var(--white); font-size:42px; font-weight:800; margin-top:12px; max-width:640px; }
+  .page-hero p{ color:var(--beige); font-size:16.5px; margin-top:14px; max-width:560px; }
+  .breadcrumb{ font-size:13px; color:var(--beige); opacity:.85; margin-bottom:18px; }
+  .breadcrumb a{ color:var(--beige); }
+  .breadcrumb a:hover{ color:var(--gold); }
+
+  section{ padding:88px 0; }
+  .bg-cream{ background:var(--cream); }
+
+  /* ===== Contact layout ===== */
+  .contact-wrap{
+    display:grid;
+    grid-template-columns:1.15fr 1fr;
+    gap:48px;
+    margin-top:-140px;
+    position:relative;
+    z-index:5;
+  }
+  .contact-card{
+    background:var(--white);
+    border:1px solid var(--beige);
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:44px;
+  }
+  .contact-card h2{ font-size:26px; margin-bottom:6px; }
+  .contact-card .sub{ font-size:14.5px; color:#5b5f52; margin-bottom:30px; }
+
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .field{ margin-bottom:20px; }
+  .field label{
+    display:block; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px;
+    color:var(--forest); margin-bottom:7px;
+  }
+  .field input, .field select, .field textarea{
+    width:100%;
+    font-family:'Open Sans', sans-serif;
+    font-size:14.5px;
+    color:var(--charcoal);
+    background:var(--cream);
+    border:1.5px solid var(--beige);
+    border-radius:9px;
+    padding:13px 15px;
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:none; border-color:var(--olive); box-shadow:0 0 0 3px rgba(79,93,47,0.15);
+    background:var(--white);
+  }
+  .field textarea{ resize:vertical; min-height:120px; }
+  .field-error{ display:block; font-size:12.5px; color:#b3261e; margin-top:6px; min-height:16px; }
+
+  .honeypot{ position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+  .form-footer{ display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:8px; }
+  .form-note{ font-size:12.5px; color:#7a7d70; max-width:280px; }
+
+  #fs-success, #fs-error{
+    display:none;
+    align-items:flex-start; gap:12px;
+    border-radius:12px;
+    padding:16px 18px;
+    font-size:14.5px;
+    margin-bottom:24px;
+  }
+  #fs-success{ background:#eef3e6; border:1px solid var(--olive-light); color:var(--forest); }
+  #fs-error{ background:#fbeaea; border:1px solid #e0a3a3; color:#7a2323; }
+  #fs-success.show, #fs-error.show{ display:flex; }
+
+  /* ===== Sidebar ===== */
+  .side-card{
+    background:var(--forest);
+    color:var(--cream);
+    border-radius:20px;
+    padding:38px;
+    margin-bottom:24px;
+  }
+  .side-card h3{ color:var(--white); font-size:19px; margin-bottom:18px; }
+  .info-row{ display:flex; gap:14px; align-items:flex-start; margin-bottom:20px; }
+  .info-row:last-child{ margin-bottom:0; }
+  .info-icon{
+    width:38px; height:38px; border-radius:10px; background:rgba(245,242,232,0.1);
+    display:flex; align-items:center; justify-content:center; color:var(--gold); flex-shrink:0;
+  }
+  .info-row .label{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:13.5px; color:var(--white); margin-bottom:3px; }
+  .info-row .value{ font-size:14px; color:var(--beige); }
+  .info-row a.value:hover{ color:var(--gold); }
+
+  .emergency-card{
+    background:var(--gold);
+    border-radius:20px;
+    padding:30px 34px;
+    display:flex; align-items:center; gap:18px;
+  }
+  .emergency-card .icon{
+    width:48px; height:48px; border-radius:12px; background:rgba(38,58,36,0.15);
+    display:flex; align-items:center; justify-content:center; color:var(--forest); flex-shrink:0;
+  }
+  .emergency-card h4{ font-size:16px; color:var(--forest); margin-bottom:3px; }
+  .emergency-card p{ font-size:13.5px; color:var(--forest); opacity:.85; }
+  .emergency-card a{ margin-left:auto; }
+
+  .map-embed{ border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--beige); margin-top:24px; }
+  .map-embed iframe{ width:100%; height:280px; border:0; display:block; }
+
+  /* ===== Trust strip mini ===== */
+  .mini-trust{ display:flex; gap:34px; flex-wrap:wrap; margin-top:64px; padding-top:40px; border-top:1px solid var(--beige); justify-content:center; }
+  .mini-trust .item{ display:flex; align-items:center; gap:10px; font-family:'Montserrat',sans-serif; font-weight:600; font-size:13.5px; color:var(--forest); }
+  .mini-trust .item svg{ color:var(--olive); }
+
+  /* ===== Footer ===== */
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; }
+  footer ul a{ font-size:14px; color:var(--beige); }
+  footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; }
+  .footer-bottom a:hover{ color:var(--gold); }
+
+  .mobile-call-bar{ display:none; }
+
+  @media (max-width: 1024px){
+    .contact-wrap{ grid-template-columns:1fr; margin-top:-100px; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .page-hero{ padding:56px 0 120px; }
+    .page-hero h1{ font-size:30px; }
+    .contact-wrap{ margin-top:-90px; }
+    .contact-card{ padding:28px 22px; }
+    .form-row{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr; }
+    section{ padding:56px 0; }
+    .emergency-card{ flex-wrap:wrap; }
+    .emergency-card a{ margin-left:0; width:100%; }
+    .mobile-call-bar{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200;
+      background:var(--forest); padding:12px 16px; gap:12px;
+      box-shadow:0 -8px 24px rgba(0,0,0,0.2);
+    }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left">
+      <a href="tel:+17733028351">(773) 302-8351</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="/" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text">
+        <span class="name">Prime Tree Care</span>
+        <span class="tag">Chicago Arborists</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav">
+      <a href="/#services">Services</a>
+      <a href="/#why-us">Why Prime</a>
+      <a href="/#process">Our Process</a>
+      <a href="/#areas">Service Areas</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="contact" class="active">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone" aria-label="Call Prime Tree Care at (773) 302-8351">
+        <span class="ph-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="ph-text">
+          <span class="ph-label">Call Us Now</span>
+          <span class="ph-num">(773) 302-8351</span>
+        </span>
+      </a>
+      <a href="#contact-form" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / Contact</div>
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Request Your Free Tree Care Estimate</h1>
+    <p>Tell us about your property and what you're seeing — a certified arborist will follow up with honest, upfront pricing. For active emergencies, call us directly for the fastest response.</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="contact-wrap">
+
+      <div class="contact-card">
+        <h2>Send Us Your Project Details</h2>
+        <p class="sub">Fields marked * are required. We typically respond same business day.</p>
+
+        <div id="fs-success" role="status">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          <div><strong>Thanks — your request was sent.</strong><br>A member of our team will reach out shortly. For urgent issues, please call (773) 302-8351.</div>
+        </div>
+        <div id="fs-error" role="alert">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-top:2px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div><strong>Something went wrong.</strong><br>Please try again, or call us directly at (773) 302-8351.</div>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/mzepgypy" method="POST">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" data-fs-field required autocomplete="name">
+              <span class="field-error" data-fs-error="name"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" data-fs-field required autocomplete="tel">
+              <span class="field-error" data-fs-error="phone"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" data-fs-field required autocomplete="email">
+              <span class="field-error" data-fs-error="email"></span>
+            </div>
+            <div class="field">
+              <label for="zip">Property Zip Code *</label>
+              <input type="text" id="zip" name="zip_code" data-fs-field required inputmode="numeric" pattern="[0-9]{5}" placeholder="e.g. 60630">
+              <span class="field-error" data-fs-error="zip_code"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="service">Service Needed *</label>
+            <select id="service" name="service" data-fs-field required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Tree Removal</option>
+              <option>Tree Trimming & Pruning</option>
+              <option>Stump Grinding</option>
+              <option>Emergency Tree Service</option>
+              <option>Tree Cabling & Bracing</option>
+              <option>Tree Health & Disease Treatment</option>
+              <option>Land & Lot Clearing</option>
+              <option>Commercial Tree Care</option>
+              <option>Not Sure / Need an Assessment</option>
+            </select>
+            <span class="field-error" data-fs-error="service"></span>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell Us About Your Tree or Property *</label>
+            <textarea id="message" name="message" data-fs-field required placeholder="Tree type or location on the property, size if known, and anything you're noticing (dead limbs, leaning, storm damage, etc.)"></textarea>
+            <span class="field-error" data-fs-error="message"></span>
+          </div>
+
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Estimate Request — Prime Tree Care Website">
+
+          <div class="form-footer">
+            <p class="form-note">By submitting, you agree to be contacted by Prime Tree Care about your request. We don't share your information with third parties.</p>
+            <button type="submit" class="btn btn-primary" data-fs-submit-btn style="min-width:200px;">Request Free Estimate</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="side-card">
+          <h3>Contact Information</h3>
+          <div class="info-row">
+            <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="label">Phone</div><a class="value" href="tel:+17733028351">(773) 302-8351</a></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="label">Address</div><span class="value">8811 W 87th St<br>Hickory Hills, IL 60457</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div><div class="label">Business Hours</div><span class="value">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 8l9 6 9-6M4 4h16v16H4z"/></svg></div>
+            <div><div class="label">Response Time</div><span class="value">Same business day for most inquiries</span></div>
+          </div>
+        </div>
+
+        <div class="emergency-card">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+          <div>
+            <h4>Active Emergency?</h4>
+            <p>Skip the form — call us directly.</p>
+          </div>
+          <a href="tel:+17733028351" class="btn" style="background:var(--forest); color:var(--white);">Call Now</a>
+        </div>
+
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6641919270198!2d-87.84010494663066!3d41.73163458945334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e381997350f15%3A0x840f9867c3261480!2s8811%20W%2087th%20St%2C%20Hickory%20Hills%2C%20IL%2060457!5e0!3m2!1sen!2sus!4v1786290114801!5m2!1sen!2sus" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Prime Tree Care location map"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mini-trust">
+      <div class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg> ISA Certified Arborists</div>
+      <div class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg> Licensed & Insured</div>
+      <div class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Free On-Site Estimates</div>
+      <div class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.3-8.4C.9 9.3 2.2 5.8 5.4 5c2-.5 3.8.3 4.6 1.8C10.8 5.3 12.6 4.5 14.6 5c3.2.8 4.5 4.3 2.7 7.6C15 16.4 12 21 12 21z"/></svg> Locally Owned & Operated</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/tree-removal">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming-and-pruning">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/stump-grinding">Stump Grinding</a></li>
+          <li><a href="/services/emergency-tree-service">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-health-treatment">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/#why-us">Why Prime</a></li>
+          <li><a href="/#process">Our Process</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="#contact-form" class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Free Estimate</a>
+</div>
+
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'mzepgypy' });
+
+  document.getElementById('contact-form').addEventListener('submit', function () {
+    document.getElementById('fs-error').classList.remove('show');
+  });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contact-form');
+    var successBox = document.getElementById('fs-success');
+    var errorBox = document.getElementById('fs-error');
+
+    form.addEventListener('formspree:submit', function () {
+      successBox.classList.remove('show');
+      errorBox.classList.remove('show');
+    });
+    form.addEventListener('formspree:success', function () {
+      successBox.classList.add('show');
+      form.reset();
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    form.addEventListener('formspree:error', function () {
+      errorBox.classList.add('show');
+    });
+  });
+</script>
+
+</body>
+</html>
