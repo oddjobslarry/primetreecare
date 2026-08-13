@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicago Tree Service Areas | Neighborhoods & Suburbs We Serve</title>
+<meta name="description" content="Prime Tree Care provides ISA-certified tree services throughout Chicago and surrounding suburbs. Tree removal, pruning, tree health inspections, storm damage response, planting, stump grinding, and emergency tree services.">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" type="image/webp">
+<link rel="canonical" href="https://primetreecare.pages.dev/service-areas/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --forest-950:#0f2419;
+  --forest-900:#153a26;
+  --forest-800:#1d4f32;
+  --forest-700:#25643f;
+  --forest-600:#2f7c4f;
+  --bark-100:#f4f1ea;
+  --bark-50:#faf8f3;
+  --amber-500:#e07a2c;
+  --amber-600:#c9631a;
+  --amber-100:#fdeee0;
+  --ink-900:#1a2019;
+  --ink-600:#4d574d;
+  --ink-400:#7c8a7c;
+  --line:#dfe3da;
+  --white:#ffffff;
+  --radius:14px;
+  --shadow-sm:0 1px 2px rgba(15,36,25,.06);
+  --shadow-md:0 8px 24px rgba(15,36,25,.10);
+  --shadow-lg:0 20px 50px rgba(15,36,25,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink-900);background:var(--bark-50);line-height:1.6;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;color:var(--forest-950);line-height:1.15;letter-spacing:-.01em;}
+h1{font-size:clamp(2.1rem,4.6vw,3.5rem);font-weight:700;}
+h2{font-size:clamp(1.6rem,3vw,2.35rem);}
+h3{font-size:1.15rem;}
+h4{font-size:1rem;}
+p{color:var(--ink-600);}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest-700);font-weight:700;}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--amber-500);display:inline-block;}
+.section{padding:76px 0;}
+.section-alt{background:var(--bark-100);}
+.section-head{max-width:780px;margin-bottom:40px;}
+.section-head p{margin-top:14px;font-size:1.05rem;}
+
+/* Header (shared) */
+.topbar{background:var(--forest-950);color:#cfe0d3;font-size:.83rem;}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 24px;flex-wrap:wrap;gap:6px;}
+.topbar a{color:#cfe0d3;}
+header.site-header{position:sticky;top:0;z-index:50;background:rgba(250,248,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:24px;}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--forest-950);}
+.brand img{height:44px;width:auto;border-radius:8px;}
+nav.main-nav{display:flex;gap:28px;align-items:center;}
+nav.main-nav a{font-size:.93rem;font-weight:600;color:var(--ink-900);position:relative;padding:6px 0;}
+nav.main-nav a:hover{color:var(--forest-700);}
+.header-cta{display:flex;gap:12px;align-items:center;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.92rem;cursor:pointer;border:1px solid transparent;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease;}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--amber-500);color:var(--white);box-shadow:var(--shadow-sm);}
+.btn-primary:hover{background:var(--amber-600);box-shadow:var(--shadow-md);}
+.btn-outline{background:transparent;color:var(--forest-900);border-color:var(--forest-900);}
+.btn-outline:hover{background:var(--forest-900);color:#fff;}
+.btn-white{background:#fff;color:var(--forest-900);}
+.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}
+.btn-ghost-light:hover{background:rgba(255,255,255,.12);}
+.btn-sm{padding:9px 16px;font-size:.82rem;}
+.menu-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--forest-950);cursor:pointer;}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--forest-950) 0%,var(--forest-800) 62%,var(--forest-700) 100%);color:#fff;padding:72px 0 90px;}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 78% 20%, rgba(224,122,44,.22), transparent 55%),radial-gradient(ellipse at 10% 90%, rgba(47,124,79,.35), transparent 50%);pointer-events:none;}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;}
+.hero-badge{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:999px;color:#e7f0e6;}
+.hero h1{color:#fff;}
+.hero .sub{color:#d9e6d7;font-size:1.08rem;max-width:560px;margin:20px 0 30px;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
+.hero-trust{display:flex;gap:26px;flex-wrap:wrap;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);}
+.hero-trust div{font-size:.82rem;color:#c9dac6;}
+.hero-trust strong{display:block;color:#fff;font-size:1.35rem;font-family:'Fraunces',serif;}
+.hero-media{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;}
+.hero-media img{width:100%;height:100%;object-fit:cover;}
+.hero-media .tag{position:absolute;left:18px;bottom:18px;background:rgba(15,36,25,.72);backdrop-filter:blur(6px);color:#fff;padding:10px 14px;border-radius:10px;font-size:.8rem;font-weight:600;}
+
+/* Intro grid */
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start;}
+.stat-card{background:var(--forest-950);color:#fff;border-radius:var(--radius);padding:28px;}
+.stat-card h4{color:#fff;font-size:1.05rem;margin-bottom:16px;}
+.stat-item{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid rgba(255,255,255,.14);font-size:.9rem;color:#d9e6d7;}
+.stat-item:first-of-type{border-top:none;}
+.stat-item b{color:#fff;text-align:right;}
+
+/* Service cards */
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.service-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .2s ease,transform .2s ease;}
+.service-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.service-card .num{font-size:.7rem;font-weight:700;color:var(--amber-600);letter-spacing:.08em;}
+.service-card p{font-size:.86rem;flex:1;}
+.service-card a.link{font-weight:700;font-size:.85rem;color:var(--forest-800);margin-top:4px;}
+.service-card a.link:hover{color:var(--amber-600);}
+
+/* Area cards */
+.area-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.area-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.area-card h3{font-size:1.05rem;margin-bottom:6px;}
+.area-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px;}
+.area-card .tags span{font-size:.72rem;font-weight:700;background:var(--amber-100);color:var(--amber-600);padding:5px 10px;border-radius:999px;}
+.area-card p{font-size:.88rem;}
+.area-card a.link{display:inline-block;margin-top:12px;font-weight:700;font-size:.85rem;color:var(--forest-800);}
+.area-card a.link:hover{color:var(--amber-600);}
+
+.suburb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.suburb-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.suburb-card h3{font-size:1.02rem;margin-bottom:8px;}
+.suburb-card p{font-size:.86rem;}
+.suburb-card a.link{display:inline-block;margin-top:10px;font-weight:700;font-size:.83rem;color:var(--forest-800);}
+.suburb-card a.link:hover{color:var(--amber-600);}
+
+/* Problem grid */
+.problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.problem-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.problem-card .icon{width:44px;height:44px;border-radius:10px;background:var(--amber-100);color:var(--amber-600);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:14px;}
+.problem-card h3{font-size:1.02rem;margin-bottom:8px;}
+.problem-card p{font-size:.87rem;}
+.problem-card .link{display:inline-block;margin-top:10px;font-size:.82rem;font-weight:700;color:var(--forest-800);}
+
+/* Process steps */
+.process-row{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+.process-step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 18px;position:relative;}
+.process-step .step-num{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:700;color:var(--forest-700);opacity:.35;margin-bottom:8px;}
+.process-step h3{font-size:.98rem;margin-bottom:6px;}
+.process-step p{font-size:.82rem;}
+
+/* Why us */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.why-card{background:var(--forest-950);color:#fff;border-radius:var(--radius);padding:26px;}
+.why-card h3{color:#fff;font-size:1.05rem;margin-bottom:8px;}
+.why-card p{color:#c9dac6;font-size:.88rem;}
+.why-card .icon{font-size:1.4rem;margin-bottom:10px;display:block;}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:12px;max-width:880px;}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.faq-item summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:700;font-family:'Fraunces',serif;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--forest-950);}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-size:1.4rem;color:var(--amber-600);font-family:'Inter',sans-serif;flex:none;}
+.faq-item[open] summary::after{content:"−";}
+.faq-item .a{padding:0 22px 20px;font-size:.93rem;color:var(--ink-600);}
+
+/* Final CTA */
+.cta-final{background:linear-gradient(135deg,var(--forest-900),var(--forest-950));color:#fff;border-radius:24px;padding:52px;display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center;}
+.cta-final h2{color:#fff;}
+.cta-final p{color:#c9dac6;}
+.cta-final .stack{display:flex;flex-direction:column;gap:12px;}
+.cta-final .btn{width:100%;}
+
+/* Footer */
+footer{background:var(--forest-950);color:#a9bfa8;padding:56px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;margin-bottom:36px;}
+footer h4{color:#fff;font-family:'Fraunces',serif;font-size:1rem;margin-bottom:14px;}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:.87rem;}
+footer a:hover{color:#fff;}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.footer-brand img{height:38px;border-radius:8px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.map-embed{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.14);}
+.map-embed iframe{width:100%;height:220px;border:0;display:block;}
+
+@media (max-width:980px){
+  nav.main-nav,.header-cta .btn-outline{display:none;}
+  .menu-toggle{display:block;}
+  .hero-grid,.intro-grid,.cta-final{grid-template-columns:1fr;}
+  .service-grid{grid-template-columns:repeat(2,1fr);}
+  .area-grid{grid-template-columns:1fr;}
+  .suburb-grid{grid-template-columns:repeat(2,1fr);}
+  .problem-grid{grid-template-columns:repeat(2,1fr);}
+  .process-row{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:620px){
+  .service-grid,.suburb-grid,.problem-grid,.process-row,.why-grid,.footer-grid{grid-template-columns:1fr;}
+  .section{padding:52px 0;}
+  .hero{padding:44px 0 60px;}
+  .topbar .wrap{justify-content:center;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ SCHEMA ============ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "@id":"https://primetreecare.pages.dev/#business",
+  "name":"Prime Tree Care",
+  "image":"https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp",
+  "logo":"https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp",
+  "url":"https://primetreecare.pages.dev/",
+  "telephone":"+17733028351",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"8811 W 87th St","addressLocality":"Hickory Hills","addressRegion":"IL","postalCode":"60457","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":41.7322473,"longitude":-87.8392621},
+  "hasMap":"https://maps.app.goo.gl/XtF7wAiftwWsLE6r6",
+  "areaServed":["Hyde Park, Chicago","Lincoln Square, Chicago","Brighton Park, Chicago","Dunning, Chicago","Mount Greenwood, Chicago","North Side, Chicago","South Side, Chicago","Jackson Park, Chicago","Evanston, IL","Oak Park, IL","Elmhurst, IL","Schaumburg, IL","Villa Park, IL","Aurora, IL","Chicago Heights, IL","McHenry, IL","Westmont, IL","West Chicago, IL","Alsip, IL"],
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"19:00"}]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://primetreecare.pages.dev/"},
+    {"@type":"ListItem","position":2,"name":"Service Areas","item":"https://primetreecare.pages.dev/service-areas/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "@id":"https://primetreecare.pages.dev/service-areas/",
+  "url":"https://primetreecare.pages.dev/service-areas/",
+  "name":"Chicago Tree Service Areas | Neighborhoods & Suburbs We Serve",
+  "description":"Prime Tree Care provides ISA-certified tree services throughout Chicago and surrounding suburbs including tree removal, pruning, health inspections, storm response, planting, and stump grinding.",
+  "inLanguage":"en-US",
+  "isPartOf":{"@type":"WebSite","url":"https://primetreecare.pages.dev/","name":"Prime Tree Care"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do you provide tree services throughout Chicago?","acceptedAnswer":{"@type":"Answer","text":"Yes. Prime Tree Care serves Chicago neighborhoods citywide, from Hyde Park and Lincoln Square to Brighton Park, Dunning, Mount Greenwood, and the North and South Sides, including areas near Jackson Park."}},
+    {"@type":"Question","name":"Do you serve Chicago suburbs?","acceptedAnswer":{"@type":"Answer","text":"Yes. We regularly serve Evanston, Oak Park, Elmhurst, Schaumburg, Villa Park, Aurora, Chicago Heights, McHenry, Westmont, West Chicago, and Alsip, along with neighboring communities."}},
+    {"@type":"Question","name":"How far do you travel for tree removal?","acceptedAnswer":{"@type":"Answer","text":"We travel throughout the greater Chicago metro area, generally within about an hour of the city, covering both dense city neighborhoods and outlying suburbs. Contact us to confirm coverage for your specific address."}},
+    {"@type":"Question","name":"Can you help with parkway trees?","acceptedAnswer":{"@type":"Answer","text":"Yes. We have experience working with parkway trees under Chicago's Bureau of Forestry oversight, including coordination and permit guidance where required. Residents can also report parkway tree issues through CHI311."}},
+    {"@type":"Question","name":"Do you offer emergency tree service after storms?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide 24/7 emergency tree service for downed limbs, leaning trees, and storm damage across our full Chicago and suburban service area, with safe procedures around energized power lines."}},
+    {"@type":"Question","name":"Do you provide ISA-certified arborist inspections?","acceptedAnswer":{"@type":"Answer","text":"Yes. All tree health and risk assessments are performed by ISA-certified arborists using current best practices and diagnostic tools."}},
+    {"@type":"Question","name":"Can you remove trees near power lines?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our crews follow utility-aware procedures for trees growing near energized power lines, and we coordinate with utility vegetation management processes when needed for safety."}},
+    {"@type":"Question","name":"What areas around Chicago do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Chicago neighborhoods including Hyde Park, Lincoln Square, Brighton Park, Dunning, and Mount Greenwood, plus suburbs including Evanston, Oak Park, Elmhurst, Schaumburg, Villa Park, Aurora, Chicago Heights, McHenry, Westmont, West Chicago, and Alsip."}}
+  ]
+}
+</script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span>Serving Chicago &amp; Suburbs</span> &nbsp;·&nbsp; <a href="https://maps.app.goo.gl/XtF7wAiftwWsLE6r6" target="_blank" rel="noopener">8811 W 87th St, Hickory Hills, IL 60457</a></div>
+    <div><span>ISA-Certified · Fully Insured · 24/7 Emergency Response</span> &nbsp;·&nbsp; <a href="tel:+17733028351">📞 (773) 302-8351</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="/" class="brand">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care Chicago IL logo">
+      Prime Tree Care
+    </a>
+    <nav class="main-nav">
+      <a href="/services/">Services</a>
+      <a href="#areas-chicago">Neighborhoods</a>
+      <a href="#areas-suburbs">Suburbs</a>
+      <a href="#problems">Tree Problems</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#estimate" class="btn btn-outline btn-sm">Request an Estimate</a>
+      <a href="tel:+17733028351" class="btn btn-primary btn-sm">Call Now</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-badges">
+        <span class="hero-badge">12+ Chicagoland Areas</span>
+        <span class="hero-badge">ISA-Certified Arborists</span>
+        <span class="hero-badge">24/7 Storm Response</span>
+      </div>
+      <h1>Chicago Tree Service Areas</h1>
+      <p class="sub">
+        Prime Tree Care provides professional tree services throughout Chicago and surrounding suburbs including
+        Hyde Park, Lincoln Square, Evanston, Oak Park, Schaumburg, Elmhurst, Aurora, Chicago Heights, and nearby
+        communities. Our ISA-certified arborists help homeowners and property managers with tree removal, pruning,
+        health inspections, storm damage response, planting, fertilization, and stump grinding tailored to Chicago's
+        unique climate and urban forest challenges.
+      </p>
+      <div class="hero-ctas">
+        <a href="#estimate" class="btn btn-primary">Request an Estimate</a>
+        <a href="tel:+17733028351" class="btn btn-ghost-light">📞 Call Now: (773) 302-8351</a>
+      </div>
+      <div class="hero-trust">
+        <div><strong>19+</strong>Neighborhoods &amp; Suburbs</div>
+        <div><strong>ISA</strong>Certified Arborists</div>
+        <div><strong>24/7</strong>Emergency Dispatch</div>
+        <div><strong>100%</strong>Insured Operations</div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="/images/service-areas-prime-tree-care-chicago-il.webp" alt="Prime Tree Care service areas map covering Chicago neighborhoods and suburbs">
+      <div class="tag">Chicago &amp; Chicagoland Suburbs</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 1: LOCAL KNOWLEDGE ============ -->
+<section class="section" id="local-knowledge">
+  <div class="wrap intro-grid">
+    <div>
+      <span class="eyebrow">Local Expertise</span>
+      <h2 style="margin-top:14px;">Why Local Tree Care Knowledge Matters in Chicago</h2>
+      <p style="margin-top:18px;">
+        Tree care in Chicago is not a one-size-fits-all job. The region's dense clay soils compact easily under
+        foot traffic and construction, restricting root growth and leaving trees more vulnerable to drought stress
+        and storm-related failure. Layer on a long-running Emerald Ash Borer infestation, recurring Dutch Elm
+        Disease outbreaks, and oak wilt risk in warmer months, and it becomes clear why generic "trim and remove"
+        service isn't enough — a company needs to understand which threats are active in which part of the city,
+        and when.
+      </p>
+      <p style="margin-top:14px;">
+        Chicago's exposure to derecho-strength straight-line winds and heavy lake-effect snow and ice loading also
+        changes how trees should be pruned and supported. A structurally weak silver maple that survives a mild
+        summer can fail catastrophically in a high-wind event, and heavy wet snow regularly snaps limbs that weren't
+        properly thinned the season before.
+      </p>
+      <p style="margin-top:14px;">
+        Tree care needs also shift by geography. Dense city neighborhoods often have mature parkway trees planted
+        decades ago, tight lot lines, and closer proximity to overhead utility lines — all of which require
+        utility-aware pruning and coordination with the <strong>Bureau of Forestry</strong> (residents can report
+        parkway tree issues through <strong>CHI311</strong>). Older inner-ring suburbs like Oak Park and Evanston
+        tend to carry a similarly mature canopy with established root systems that need protecting during
+        construction or hardscaping. Newer western suburbs such as Aurora, West Chicago, and Schaumburg, by contrast,
+        often have younger trees that benefit most from structural training pruning and species diversification to
+        avoid repeating the ash-monoculture mistakes of the past.
+      </p>
+      <p style="margin-top:14px;">
+        A proper <strong>tree risk assessment</strong> accounts for all of this — species, soil, sun exposure, wind
+        corridor, proximity to structures and utility lines, and the specific regulations that apply to that
+        property. That's the standard every Prime Tree Care evaluation is built on.
+      </p>
+    </div>
+    <div class="stat-card">
+      <h4>Regional Factors We Account For</h4>
+      <div class="stat-item"><span>Soil type</span><b>Dense clay, compaction-prone</b></div>
+      <div class="stat-item"><span>Top pest threat</span><b>Emerald Ash Borer</b></div>
+      <div class="stat-item"><span>Top disease threats</span><b>Dutch Elm Disease, Oak Wilt</b></div>
+      <div class="stat-item"><span>Wind risk</span><b>Derecho / straight-line wind</b></div>
+      <div class="stat-item"><span>Winter risk</span><b>Heavy snow &amp; ice loading</b></div>
+      <div class="stat-item"><span>Parkway oversight</span><b>Bureau of Forestry / CHI311</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 2: SERVICES ============ -->
+<section class="section section-alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Available Everywhere We Work</span>
+      <h2>Tree Services Available Across All Service Areas</h2>
+      <p>Every service below is available throughout our full Chicago and suburban coverage area, performed by
+      ISA-certified arborists.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <span class="num">01</span>
+        <h3>Tree Health Inspection &amp; Treatment</h3>
+        <p>Emerald Ash Borer detection, canopy decline diagnosis, and disease diagnosis from certified arborists.</p>
+        <a class="link" href="/services/tree-health-inspection-treatment/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">02</span>
+        <h3>Tree &amp; Shrub Fertilization</h3>
+        <p>Clay soil correction, root-zone improvement, and nutrient management built for Chicagoland conditions.</p>
+        <a class="link" href="/services/tree-shrub-fertilization/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">03</span>
+        <h3>Tree Trimming &amp; Pruning</h3>
+        <p>Structural pruning and dormant-season scheduling, with oak wilt prevention built into our timing.</p>
+        <a class="link" href="/services/tree-trimming-pruning/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">04</span>
+        <h3>Tree Planting &amp; Transplanting</h3>
+        <p>Species diversification, ash replacement strategies, and proper site selection for long-term health.</p>
+        <a class="link" href="/services/tree-planting-transplanting/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">05</span>
+        <h3>Tree Removal</h3>
+        <p>Hazardous tree takedowns, crane removals, and permit guidance for parkway and private trees.</p>
+        <a class="link" href="/services/tree-removal/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">06</span>
+        <h3>Emergency Tree Service</h3>
+        <p>Storm damage, downed trees, and leaning trees handled with power-line safety as the top priority.</p>
+        <a class="link" href="/services/emergency-tree-removal/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">07</span>
+        <h3>Storm Prep &amp; Support Systems</h3>
+        <p>Cabling, bracing, and wind-load reduction to prepare vulnerable trees before the next storm season.</p>
+        <a class="link" href="/services/storm-prep-tree-support-systems/">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <span class="num">08</span>
+        <h3>Stump Grinding</h3>
+        <p>Full stump removal that prepares the site for replanting and restores the landscape after removal.</p>
+        <a class="link" href="/services/stump-grinding/">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 3: CHICAGO NEIGHBORHOODS ============ -->
+<section class="section" id="areas-chicago">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">City Coverage</span>
+      <h2>Chicago Neighborhoods We Serve</h2>
+      <p>Every Chicago neighborhood has its own canopy age, soil conditions, and storm exposure. Here's how we
+      approach tree care in the areas we serve most.</p>
+    </div>
+    <div class="area-grid">
+      <div class="area-card">
+        <h3>Hyde Park</h3>
+        <div class="tags"><span>Mature Canopy</span><span>Historic Blocks</span><span>Lakefront Exposure</span></div>
+        <p>Hyde Park's historic streets carry a mature, established canopy that adds significant curb appeal — and
+        requires careful structural pruning. Lakefront weather exposure means wind and moisture stress are common
+        considerations in our health assessments here.</p>
+        <a class="link" href="/service-areas/hyde-park/">View Hyde Park Tree Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>Lincoln Square</h3>
+        <div class="tags"><span>Boulevard Trees</span><span>Residential Streets</span></div>
+        <p>Lincoln Square's tree-lined boulevards feature mature parkway plantings that benefit from routine
+        structural pruning. On tighter residential streets, we work carefully around close property lines and
+        overhead utility lines.</p>
+        <a class="link" href="/service-areas/lincoln-square/">View Lincoln Square Tree Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>Brighton Park</h3>
+        <div class="tags"><span>Residential Management</span><span>Property Improvement</span></div>
+        <p>In Brighton Park, tree work is often tied directly to property improvement — clearing hazardous limbs,
+        shaping canopy for curb appeal, and preparing yards for renovation or resale.</p>
+        <a class="link" href="/service-areas/brighton-park/">View Brighton Park Tree Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>Dunning</h3>
+        <div class="tags"><span>Mature Shade Trees</span><span>Storm Preparedness</span></div>
+        <p>Dunning's mature shade trees are a neighborhood asset, but many are reaching an age where structural
+        support or targeted pruning is needed to keep them storm-ready for Chicago's high-wind seasons.</p>
+        <a class="link" href="/service-areas/dunning/">View Dunning Tree Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>Mount Greenwood</h3>
+        <div class="tags"><span>Storm Concerns</span><span>Large Lots</span></div>
+        <p>Mount Greenwood's larger residential lots often carry multiple mature trees, and recent storm activity in
+        the area has increased demand for risk assessments and proactive cabling and bracing.</p>
+        <a class="link" href="/service-areas/mount-greenwood/">View Mount Greenwood Tree Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>North Side</h3>
+        <div class="tags"><span>Dense Urban Canopy</span><span>Parkway Challenges</span></div>
+        <p>The North Side's dense urban canopy sits close to power lines and pedestrian traffic, making utility-aware
+        pruning and Bureau of Forestry coordination a routine part of parkway tree work here.</p>
+        <a class="link" href="#estimate">Request North Side Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>South Side</h3>
+        <div class="tags"><span>Historic Neighborhoods</span><span>Tree Preservation</span></div>
+        <p>Many South Side neighborhoods have historic tree stock worth preserving. We prioritize health-first
+        treatment plans here, reserving removal for trees that are genuinely beyond saving.</p>
+        <a class="link" href="#estimate">Request South Side Service →</a>
+      </div>
+      <div class="area-card">
+        <h3>Cottage Grove / Jackson Park Area</h3>
+        <div class="tags"><span>Large Canopy Trees</span><span>Park-Adjacent Properties</span></div>
+        <p>Properties near Jackson Park and Cottage Grove often border larger canopy trees and green space, which
+        calls for careful risk assessment where private trees meet public parkland.</p>
+        <a class="link" href="#estimate">Request Jackson Park Area Service →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4: SUBURBS ============ -->
+<section class="section section-alt" id="areas-suburbs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Suburban Coverage</span>
+      <h2>Chicago Suburbs We Serve</h2>
+      <p>From older inner-ring suburbs to newer western communities, tree conditions vary block by block. Here's
+      what we typically see in each area.</p>
+    </div>
+    <div class="suburb-grid">
+      <div class="suburb-card">
+        <h3>Evanston</h3>
+        <p>Evanston's lakefront location and mature parkway trees mean wind exposure and established root systems
+        are top considerations. We frequently handle structural pruning on older oaks and honey locusts here.</p>
+        <a class="link" href="/service-areas/evanston/">View Evanston Tree Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Oak Park</h3>
+        <p>Oak Park's historic housing stock is matched by an equally mature canopy. Root protection during
+        renovation projects and careful pruning around older, larger trees are common requests.</p>
+        <a class="link" href="/service-areas/oak-park/">View Oak Park Tree Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Elmhurst</h3>
+        <p>Elmhurst — literally named for its elms — carries elevated Dutch Elm Disease risk, along with a strong
+        tradition of tree-lined residential streets that benefit from consistent maintenance pruning.</p>
+        <a class="link" href="#estimate">Request Elmhurst Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Schaumburg</h3>
+        <p>Schaumburg's mix of commercial corridors and residential subdivisions means we handle both commercial
+        property tree management and typical residential removal and pruning work.</p>
+        <a class="link" href="#estimate">Request Schaumburg Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Westmont</h3>
+        <p>Westmont's established neighborhoods have a moderate-age canopy where proactive health inspections catch
+        early-stage EAB and disease issues before they require full removal.</p>
+        <a class="link" href="#estimate">Request Westmont Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>West Chicago</h3>
+        <p>Newer developments in West Chicago benefit most from young-tree structural training and species
+        diversification, helping avoid the ash-heavy plantings that caused widespread losses elsewhere.</p>
+        <a class="link" href="#estimate">Request West Chicago Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Alsip</h3>
+        <p>Alsip's residential lots often include older silver maples prone to limb failure — a frequent focus of our
+        cabling, bracing, and storm-prep recommendations in this area.</p>
+        <a class="link" href="#estimate">Request Alsip Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Villa Park</h3>
+        <p>Villa Park's dense residential blocks and close property lines call for precise, utility-aware pruning
+        and careful removal planning around neighboring structures.</p>
+        <a class="link" href="#estimate">Request Villa Park Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Aurora</h3>
+        <p>As one of the larger service areas we cover, Aurora spans both mature inner neighborhoods and newer
+        subdivisions, giving us a full range of work from legacy oak preservation to new-tree planting plans.</p>
+        <a class="link" href="#estimate">Request Aurora Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>McHenry</h3>
+        <p>McHenry's more wooded, semi-rural lots often involve larger-scale land and lot clearing alongside
+        standard residential tree maintenance.</p>
+        <a class="link" href="#estimate">Request McHenry Service →</a>
+      </div>
+      <div class="suburb-card">
+        <h3>Chicago Heights</h3>
+        <p>Chicago Heights combines older residential canopy with industrial-adjacent properties, where hazardous
+        tree removal and clearance around structures are common priorities.</p>
+        <a class="link" href="#estimate">Request Chicago Heights Service →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 5: COMMON PROBLEMS ============ -->
+<section class="section" id="problems">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Regional Risks</span>
+      <h2>Common Tree Problems Across the Chicago Region</h2>
+      <p>These are the issues our arborists diagnose most often across every neighborhood and suburb we serve.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">🐛</div>
+        <h3>Emerald Ash Borer</h3>
+        <p>This invasive beetle continues to devastate ash trees across Chicagoland. Early detection allows for
+        treatment; advanced infestations typically require removal.</p>
+        <a class="link" href="/services/tree-health-inspection-treatment/">Related: Health Inspection →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🍂</div>
+        <h3>Dutch Elm Disease</h3>
+        <p>A fungal disease spread by bark beetles that causes rapid canopy dieback in elms, especially common in
+        suburbs like Elmhurst with dense elm plantings.</p>
+        <a class="link" href="/services/tree-trimming-pruning/">Related: Pruning →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">⚠️</div>
+        <h3>Silver Maple Failure</h3>
+        <p>Fast-growing but structurally weak, mature silver maples are a leading cause of storm-related limb
+        failure throughout our service area.</p>
+        <a class="link" href="/services/storm-prep-tree-support-systems/">Related: Support Systems →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🌪️</div>
+        <h3>Storm-Damaged Trees</h3>
+        <p>Derecho-strength winds and heavy snow loading regularly cause broken limbs, split trunks, and leaning
+        trees across Chicago and the suburbs.</p>
+        <a class="link" href="/services/emergency-tree-removal/">Related: Emergency Service →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🪵</div>
+        <h3>Root Damage Near Sidewalks</h3>
+        <p>Mature trees in older neighborhoods frequently lift sidewalks and driveways as roots search for space in
+        compacted soil.</p>
+        <a class="link" href="/services/tree-shrub-fertilization/">Related: Root-Zone Care →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🧱</div>
+        <h3>Clay Soil Stress</h3>
+        <p>Chicagoland's heavy clay soils compact easily and drain poorly, stressing root systems and limiting a
+        tree's ability to recover from injury or drought.</p>
+        <a class="link" href="/services/tree-shrub-fertilization/">Related: Fertilization →</a>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🌳</div>
+        <h3>Oak Wilt Risk</h3>
+        <p>Highly contagious among oaks, oak wilt spreads through root grafts and fresh pruning wounds, making
+        pruning timing critical in warmer months.</p>
+        <a class="link" href="/services/tree-trimming-pruning/">Related: Pruning →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 6: PROCESS ============ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Process</span>
+      <h2>How Prime Tree Care Serves the Entire Chicago Area</h2>
+      <p>The same ISA-certified process, wherever you're located.</p>
+    </div>
+    <div class="process-row">
+      <div class="process-step"><div class="step-num">01</div><h3>Schedule Inspection</h3><p>Contact us and tell us what's going on — we'll schedule an on-site visit for your neighborhood or suburb.</p></div>
+      <div class="process-step"><div class="step-num">02</div><h3>Certified Assessment</h3><p>An ISA-certified arborist performs a full tree risk assessment, checking species, structure, and disease signs.</p></div>
+      <div class="process-step"><div class="step-num">03</div><h3>Written Recommendations</h3><p>You receive clear, honest recommendations and a transparent estimate — no pressure, no upsells.</p></div>
+      <div class="process-step"><div class="step-num">04</div><h3>Professional Tree Work</h3><p>Our crew performs the work using modern equipment and utility-aware safety procedures.</p></div>
+      <div class="process-step"><div class="step-num">05</div><h3>Cleanup &amp; Follow-Up</h3><p>We clear all debris and follow up to confirm you're satisfied with the result.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 7: WHY US ============ -->
+<section class="section" id="why-us" style="background:var(--forest-950);">
+  <div class="wrap">
+    <div class="section-head" style="max-width:700px;">
+      <span class="eyebrow" style="color:#8fd6a4;">The Prime Difference</span>
+      <h2 style="color:#fff;">Why Homeowners Across Chicago Choose Prime Tree Care</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><span class="icon">🎓</span><h3>ISA-Certified Arborists</h3><p>Every assessment and treatment plan is backed by ISA-Certified Arborist training and current best practices.</p></div>
+      <div class="why-card"><span class="icon">🗺️</span><h3>Local Chicago Knowledge</h3><p>We understand how tree needs shift between city neighborhoods, older suburbs, and newer developments.</p></div>
+      <div class="why-card"><span class="icon">💬</span><h3>Transparent Pricing</h3><p>Clear, itemized estimates with no hidden fees or last-minute upsells.</p></div>
+      <div class="why-card"><span class="icon">🛡️</span><h3>Fully Insured Operations</h3><p>Every job is covered, protecting your property and giving you peace of mind.</p></div>
+      <div class="why-card"><span class="icon">🚨</span><h3>Emergency Response Availability</h3><p>Storm damage doesn't wait for business hours — we offer priority dispatch when a tree becomes hazardous.</p></div>
+      <div class="why-card"><span class="icon">🚛</span><h3>Modern Equipment</h3><p>Bucket trucks, aerial lifts, crane-assisted removals, and stump grinding equipment for any job size.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do you provide tree services throughout Chicago?</summary>
+        <div class="a">Yes. We serve Chicago neighborhoods citywide, from Hyde Park and Lincoln Square to Brighton Park, Dunning, Mount Greenwood, and the North and South Sides, including areas near Jackson Park.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you serve Chicago suburbs?</summary>
+        <div class="a">Yes. We regularly serve Evanston, Oak Park, Elmhurst, Schaumburg, Villa Park, Aurora, Chicago Heights, McHenry, Westmont, West Chicago, and Alsip, along with neighboring communities.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How far do you travel for tree removal?</summary>
+        <div class="a">We travel throughout the greater Chicago metro area, generally within about an hour of the city, covering both dense city neighborhoods and outlying suburbs. Contact us to confirm coverage for your specific address.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you help with parkway trees?</summary>
+        <div class="a">Yes. We have experience working with parkway trees under Bureau of Forestry oversight, including coordination and permit guidance where required. You can also report parkway tree issues directly through CHI311.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer emergency tree service after storms?</summary>
+        <div class="a">Yes. We provide 24/7 emergency tree service for downed limbs, leaning trees, and storm damage across our full service area, with safe procedures around energized power lines.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide ISA-certified arborist inspections?</summary>
+        <div class="a">Yes. All tree health and risk assessments are performed by ISA-certified arborists using current diagnostic tools and best practices.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you remove trees near power lines?</summary>
+        <div class="a">Yes. Our crews follow utility-aware procedures for trees near energized power lines and coordinate with utility vegetation management processes when necessary for safety.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What areas around Chicago do you serve?</summary>
+        <div class="a">We serve Chicago neighborhoods including Hyde Park, Lincoln Square, Brighton Park, Dunning, and Mount Greenwood, plus suburbs including Evanston, Oak Park, Elmhurst, Schaumburg, Villa Park, Aurora, Chicago Heights, McHenry, Westmont, West Chicago, and Alsip.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section" id="estimate">
+  <div class="wrap">
+    <div class="cta-final">
+      <div>
+        <span class="eyebrow" style="color:#8fd6a4;">Ready When You Are</span>
+        <h2 style="margin-top:12px;">Don't See Your Exact Neighborhood Listed?</h2>
+        <p style="margin-top:14px;font-size:1.02rem;">
+          We cover the greater Chicago metro area well beyond this list. Reach out and we'll confirm coverage for
+          your address, then schedule a free, no-obligation on-site estimate with an ISA-certified arborist.
+        </p>
+      </div>
+      <div class="stack">
+        <a href="tel:+17733028351" class="btn btn-primary">📞 Call Now: (773) 302-8351</a>
+        <a href="#" class="btn btn-white">Request a Free Estimate</a>
+        <a href="tel:+17733028351" class="btn btn-ghost-light">🚨 24/7 Emergency Service</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <strong style="color:#fff;">Prime Tree Care</strong>
+        </div>
+        <p style="font-size:.87rem;color:#a9bfa8;max-width:280px;">ISA-certified arborists providing tree health,
+        pruning, removal, and storm response across Chicago and surrounding suburbs.</p>
+        <div class="map-embed" style="margin-top:16px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6641919270198!2d-87.84010494663066!3d41.73163458945334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e381997350f15%3A0x840f9867c3261480!2s8811%20W%2087th%20St%2C%20Hickory%20Hills%2C%20IL%2060457!5e0!3m2!1sen!2sus!4v1786290114801!5m2!1sen!2sus" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Inspection</a></li>
+          <li><a href="/services/tree-shrub-fertilization/">Fertilization</a></li>
+          <li><a href="/services/tree-trimming-pruning/">Trimming &amp; Pruning</a></li>
+          <li><a href="/services/tree-planting-transplanting/">Planting &amp; Transplanting</a></li>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+          <li><a href="/services/storm-prep-tree-support-systems/">Storm Prep &amp; Support</a></li>
+          <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/service-areas/chicago-il/">Chicago, IL</a></li>
+          <li><a href="/service-areas/hyde-park/">Hyde Park</a></li>
+          <li><a href="/service-areas/lincoln-square/">Lincoln Square</a></li>
+          <li><a href="/service-areas/evanston/">Evanston</a></li>
+          <li><a href="/service-areas/oak-park/">Oak Park</a></li>
+          <li><a href="/service-areas/mount-greenwood/">Mount Greenwood</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17733028351">📞 (773) 302-8351</a></li>
+          <li><a href="https://maps.app.goo.gl/XtF7wAiftwWsLE6r6" target="_blank" rel="noopener">8811 W 87th St, Hickory Hills, IL 60457</a></li>
+          <li>Mon–Sun · 7:00 AM–7:00 PM</li>
+          <li>24/7 Emergency Storm Response</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care. All rights reserved.</span>
+      <span>Chicago, IL &amp; Surrounding Suburbs</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
