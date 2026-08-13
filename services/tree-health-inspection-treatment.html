@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Health Inspection & Treatment in Chicago, IL | Prime Tree Care</title>
+<meta name="description" content="ISA-certified tree health inspections in Chicago. Diagnose Emerald Ash Borer, disease, and canopy decline before it's too late. Free on-site estimates. Call (773) 302-8351.">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="canonical" href="https://primetreecare.pages.dev/services/tree-health-inspection-treatment">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest-900:#0f2e22;
+  --forest-800:#153c2c;
+  --forest-700:#1e5238;
+  --forest-600:#276b47;
+  --forest-500:#3a8a5e;
+  --leaf-400:#5fa876;
+  --sap-100:#eaf3ec;
+  --sap-50:#f6f9f5;
+  --bark-900:#1c1a16;
+  --amber-500:#c98a2c;
+  --amber-600:#a86f1e;
+  --paper:#fffdf9;
+  --ink:#1c2420;
+  --ink-soft:#4b564f;
+  --line:#dde5de;
+  --danger:#b34632;
+  --ok:#2f7a4e;
+  --radius:14px;
+  --shadow-sm:0 1px 2px rgba(15,46,34,.06),0 1px 1px rgba(15,46,34,.04);
+  --shadow-md:0 10px 30px -12px rgba(15,46,34,.25);
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.15;margin:0;color:var(--forest-900);}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;
+  border:1.5px solid transparent;cursor:pointer;transition:all .18s ease;
+  font-family:var(--font-body);
+}
+.btn-primary{background:var(--amber-500);color:#241a06;}
+.btn-primary:hover{background:var(--amber-600);}
+.btn-outline{border-color:rgba(255,255,255,.55);color:#fff;}
+.btn-outline:hover{background:rgba(255,255,255,.12);}
+.btn-ghost{border-color:var(--forest-700);color:var(--forest-800);}
+.btn-ghost:hover{background:var(--sap-100);}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.09em;
+  text-transform:uppercase;font-weight:700;color:var(--forest-600);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--amber-500);display:inline-block;}
+
+/* Top strip */
+.topbar{background:var(--forest-900);color:#cfe0d3;font-size:13.5px;}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;padding:9px 24px;flex-wrap:wrap;gap:6px;}
+.topbar a{color:#f3e2bd;font-weight:600;}
+
+/* Header */
+header.site{
+  position:sticky;top:0;z-index:50;background:rgba(255,253,249,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:20px;}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-weight:600;font-size:19px;color:var(--forest-900);}
+.brand img{height:42px;width:42px;border-radius:8px;object-fit:cover;}
+nav.links{display:flex;gap:28px;font-size:14.5px;font-weight:600;color:var(--ink-soft);}
+nav.links a:hover{color:var(--forest-700);}
+.nav-cta{display:flex;gap:10px;align-items:center;}
+.nav-cta .phone{font-weight:700;color:var(--forest-800);font-size:15px;}
+@media (max-width:960px){nav.links,.nav-cta .btn-ghost{display:none;}}
+
+/* Breadcrumb */
+.crumbs{font-size:13px;color:var(--ink-soft);padding:16px 24px 0;}
+.crumbs a{color:var(--forest-600);font-weight:600;}
+.crumbs span{margin:0 6px;color:#a9b6ac;}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;background:linear-gradient(160deg,var(--forest-900),var(--forest-700) 78%);
+  color:#eef5ef;padding:64px 0 0;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-bottom:56px;}
+.hero .eyebrow{color:#c8dfc9;}
+.hero .eyebrow::before{background:var(--amber-500);}
+.hero h1{color:#fff;font-size:44px;max-width:640px;}
+.hero p.lede{color:#dbe8dc;font-size:17.5px;max-width:560px;margin:20px 0 28px;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(255,255,255,.16);}
+.hero-stats div{min-width:110px;}
+.hero-stats b{display:block;font-family:var(--font-display);font-size:22px;color:#fff;}
+.hero-stats span{font-size:12.5px;color:#b9cdbb;}
+.hero-media{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,.18);}
+.hero-media img{width:100%;height:420px;object-fit:cover;}
+.hero-badge{
+  position:absolute;left:20px;bottom:20px;background:rgba(15,46,34,.85);color:#fff;
+  padding:10px 16px;border-radius:10px;font-size:13px;font-weight:600;display:flex;gap:8px;align-items:center;
+}
+.hero-badge b{color:var(--amber-500);}
+.trust-strip{background:var(--sap-100);border-bottom:1px solid var(--line);}
+.trust-strip .container{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:center;padding:16px 24px;font-size:13.5px;font-weight:600;color:var(--forest-800);}
+.trust-strip .item{display:flex;align-items:center;gap:8px;}
+.trust-strip .item::before{content:"✓";color:var(--ok);font-weight:800;}
+
+/* Sections generic */
+section{padding:68px 0;}
+section.alt{background:var(--sap-50);}
+.section-head{max-width:720px;margin-bottom:36px;}
+.section-head h2{font-size:32px;}
+.section-head p{color:var(--ink-soft);font-size:16px;margin-top:12px;}
+.answer-box{
+  background:var(--sap-100);border-left:4px solid var(--forest-600);padding:18px 22px;border-radius:0 12px 12px 0;
+  color:var(--forest-900);font-size:15.5px;margin:0 0 30px;
+}
+.answer-box strong{color:var(--forest-800);}
+
+/* Checklist */
+.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.check-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow-sm);}
+.check-card .tag{display:inline-flex;width:30px;height:30px;border-radius:8px;background:var(--sap-100);color:var(--forest-700);align-items:center;justify-content:center;font-weight:800;margin-bottom:12px;}
+.check-card h4{font-size:16.5px;margin-bottom:6px;}
+.check-card p{font-size:14px;color:var(--ink-soft);margin:0;}
+@media (max-width:900px){.check-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:600px){.check-grid{grid-template-columns:1fr;}}
+
+/* Process steps */
+.process-list{display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;}
+.p-step{display:grid;grid-template-columns:74px 1fr;gap:22px;padding:26px 26px;border-bottom:1px solid var(--line);}
+.p-step:last-child{border-bottom:none;}
+.p-step .num{font-family:var(--font-display);font-size:26px;color:var(--forest-600);font-weight:600;}
+.p-step h4{font-size:18px;margin-bottom:8px;}
+.p-step ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:10px;}
+.p-step li{font-size:13.5px;color:var(--forest-800);background:var(--sap-100);padding:5px 12px;border-radius:999px;}
+
+/* EAB section */
+.eab-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+.eab-signs{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:8px;}
+.eab-signs li{display:flex;gap:12px;font-size:15px;color:var(--ink);}
+.eab-signs li::before{content:"●";color:var(--amber-500);font-size:9px;line-height:1.9;}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin-top:14px;}
+table.compare th{background:var(--forest-800);color:#fff;text-align:left;padding:12px 16px;font-size:13.5px;letter-spacing:.02em;}
+table.compare td{padding:13px 16px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft);vertical-align:top;}
+table.compare tr:nth-child(even) td{background:var(--sap-50);}
+.badge-treat{color:var(--ok);font-weight:700;}
+.badge-remove{color:var(--danger);font-weight:700;}
+
+/* Disease cards */
+.disease-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.disease-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);}
+.disease-card h4{font-size:18px;margin-bottom:10px;color:var(--forest-800);}
+.disease-card .risk{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-bottom:10px;}
+.risk.high{background:#fdeceb;color:var(--danger);}
+.risk.med{background:#fbf1de;color:var(--amber-600);}
+.risk.mgmt{background:var(--sap-100);color:var(--forest-700);}
+.disease-card p{font-size:14px;color:var(--ink-soft);margin-bottom:8px;}
+.disease-card b{color:var(--ink);}
+@media (max-width:960px){.disease-grid{grid-template-columns:repeat(2,1fr);} .eab-wrap{grid-template-columns:1fr;}}
+@media (max-width:600px){.disease-grid{grid-template-columns:1fr;}}
+
+/* Canopy scenarios */
+.scenario-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:10px;}
+.scenario{background:var(--forest-900);color:#e7f1e8;border-radius:var(--radius);padding:22px;}
+.scenario h4{color:#fff;font-size:15.5px;margin-bottom:8px;}
+.scenario p{color:#c3d6c4;font-size:13.5px;margin:0;}
+@media (max-width:900px){.scenario-grid{grid-template-columns:1fr;}}
+
+/* Risk section */
+.risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.risk-item{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
+.risk-item .ico{width:38px;height:38px;border-radius:9px;background:#fdeceb;color:var(--danger);display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;}
+.risk-item h4{font-size:15.5px;margin-bottom:5px;}
+.risk-item p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+@media (max-width:800px){.risk-grid{grid-template-columns:1fr;}}
+
+/* Species table */
+table.species{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+table.species th{background:var(--forest-800);color:#fff;padding:12px 16px;text-align:left;font-size:13.5px;}
+table.species td{padding:13px 16px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-soft);}
+table.species tr:nth-child(even) td{background:var(--sap-50);}
+.scroll-x{overflow-x:auto;}
+
+/* Treatment options */
+.treat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.treat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-sm);}
+.treat-card h4{font-size:15px;margin-bottom:8px;color:var(--forest-800);}
+.treat-card p{font-size:13px;color:var(--ink-soft);margin:0;}
+@media (max-width:960px){.treat-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.treat-grid{grid-template-columns:1fr;}}
+
+/* Why choose */
+.why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;}
+.why-list{list-style:none;display:flex;flex-direction:column;gap:18px;}
+.why-list li{display:flex;gap:14px;}
+.why-list .chk{width:26px;height:26px;border-radius:7px;background:var(--forest-700);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;margin-top:2px;}
+.why-list h4{font-size:16px;margin-bottom:4px;}
+.why-list p{font-size:14px;color:var(--ink-soft);margin:0;}
+.team-card{background:var(--forest-900);color:#fff;border-radius:18px;padding:32px;}
+.team-card .initials{width:56px;height:56px;border-radius:50%;background:var(--amber-500);color:#241a06;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;margin-bottom:16px;}
+.team-card h4{color:#fff;font-size:20px;margin-bottom:2px;font-family:var(--font-display);}
+.team-card .role{color:var(--amber-500);font-size:13px;font-weight:700;margin-bottom:14px;}
+.team-card p{color:#cfe0d1;font-size:14.5px;margin:0;}
+@media (max-width:900px){.why-grid{grid-template-columns:1fr;}}
+
+/* FAQ */
+.faq-list{border-top:1px solid var(--line);}
+.faq-item{border-bottom:1px solid var(--line);padding:20px 0;}
+.faq-item summary{cursor:pointer;list-style:none;font-family:var(--font-display);font-weight:600;font-size:17px;color:var(--forest-900);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-size:22px;color:var(--forest-600);font-weight:400;flex-shrink:0;}
+.faq-item[open] summary::after{content:"–";}
+.faq-item .a{padding-top:12px;color:var(--ink-soft);font-size:15px;max-width:760px;}
+
+/* Local seo */
+.suburbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+.suburbs span{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--forest-800);}
+.map-embed{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin-top:24px;}
+.map-embed iframe{width:100%;height:340px;border:0;display:block;}
+
+/* CTA band */
+.cta-band{background:linear-gradient(160deg,var(--forest-900),var(--forest-700));color:#fff;text-align:center;padding:64px 0;}
+.cta-band h2{color:#fff;font-size:30px;margin-bottom:14px;}
+.cta-band p{color:#d7e6d8;max-width:560px;margin:0 auto 30px;}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+/* Internal links row */
+.link-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+.link-row a{background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--forest-700);}
+.link-row a:hover{background:var(--sap-100);}
+
+/* Footer */
+footer{background:var(--bark-900);color:#c8cfc8;padding:56px 0 22px;}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:var(--font-display);font-size:18px;font-weight:600;margin-bottom:14px;}
+.foot-brand img{height:36px;width:36px;border-radius:7px;}
+footer h5{color:#fff;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px;}
+footer a:hover{color:#fff;}
+.foot-bottom{border-top:1px solid #2c2f2b;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#8b938a;}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;} .hero-grid{grid-template-columns:1fr;} .hero-media img{height:280px;}}
+
+.mobile-cta{
+  position:fixed;bottom:0;left:0;right:0;display:none;background:var(--forest-900);padding:12px 16px;
+  gap:10px;z-index:60;box-shadow:0 -6px 20px rgba(0,0,0,.2);
+}
+@media (max-width:720px){.mobile-cta{display:flex;} body{padding-bottom:70px;} .hero h1{font-size:32px;} .section-head h2{font-size:26px;}}
+.mobile-cta .btn{flex:1;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>8811 W 87th St, Hickory Hills, IL 60457 &nbsp;•&nbsp; Mon–Sat: 7:00 AM – 7:00 PM &nbsp;•&nbsp; 24/7 Emergency Storm Response</span>
+    <a href="tel:+17733028351">(773) 302-8351</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="nav-row container">
+    <a href="https://primetreecare.pages.dev/" class="brand">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      Prime Tree Care <span style="color:var(--ink-soft);font-weight:500;font-size:13px;">Chicago Arborists</span>
+    </a>
+    <nav class="links">
+      <a href="https://primetreecare.pages.dev/services/">Services</a>
+      <a href="https://primetreecare.pages.dev/#why-us">Why Prime</a>
+      <a href="https://primetreecare.pages.dev/#process">Our Process</a>
+      <a href="https://primetreecare.pages.dev/service-areas/">Service Areas</a>
+      <a href="https://primetreecare.pages.dev/#reviews">Reviews</a>
+      <a href="https://primetreecare.pages.dev/contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://primetreecare.pages.dev/contact" class="btn btn-ghost">Get a Free Estimate</a>
+      <a href="tel:+17733028351" class="phone">(773) 302-8351</a>
+    </div>
+  </div>
+</header>
+
+<p class="crumbs container">
+  <a href="https://primetreecare.pages.dev/">Home</a><span>/</span>
+  <a href="https://primetreecare.pages.dev/services/">Services</a><span>/</span>
+  Tree Health Inspection & Treatment
+</p>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">ISA-Certified Diagnosis · Serving Chicagoland</span>
+      <h1>Tree Health Inspection & Treatment in Chicago, IL</h1>
+      <p class="lede">Prime Tree Care provides ISA-certified tree health inspections throughout Chicago, helping homeowners identify Emerald Ash Borer infestations, canopy decline, disease issues, structural concerns, and environmental stress before trees become hazardous or treatment options disappear.</p>
+      <div class="hero-ctas">
+        <a href="https://primetreecare.pages.dev/contact" class="btn btn-primary">Schedule an Inspection</a>
+        <a href="https://primetreecare.pages.dev/contact" class="btn btn-outline">Request an Estimate</a>
+        <a href="tel:+17733028351" class="btn btn-outline">Call an Arborist</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>15+ yrs</b><span>Diagnosing Chicago trees</span></div>
+        <div><b>ISA</b><span>Certified Arborists</span></div>
+        <div><b>24/7</b><span>Storm & hazard response</span></div>
+        <div><b>Free</b><span>On-site assessments</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="https://primetreecare.pages.dev/images/tree-health-disease-treatment-by-prime-tree-care-chicago-iz.webp" alt="ISA-certified arborist performing tree health inspection on mature Chicago residential tree">
+      <div class="hero-badge">Diagnosing <b>Emerald Ash Borer</b>, disease & decline</div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="container">
+    <span class="item">ISA Certified Arborists</span>
+    <span class="item">Licensed & Insured</span>
+    <span class="item">Free On-Site Estimates</span>
+    <span class="item">Locally Owned & Operated</span>
+  </div>
+</div>
+
+<!-- SECTION 1: Why inspections matter -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>Why Tree Health Inspections Matter in Chicago</h2>
+    </div>
+    <div class="answer-box"><strong>Short answer:</strong> A professional inspection catches problems while treatment is still an option — often saving thousands of dollars in removal costs and protecting mature trees that took decades to grow.</div>
+    <p>Chicago's urban forest is under more pressure than most homeowners realize. <strong>Emerald Ash Borer (EAB)</strong> has moved through nearly every neighborhood in the city and suburbs, quietly killing ash trees from the inside out long before visible symptoms appear. <strong>Dutch Elm Disease</strong> continues to threaten the region's remaining American elms, and pockets of <strong>Oak Wilt</strong> show up wherever oaks are pruned or wounded during the growing season. Add in the structural weaknesses common to <strong>Silver Maples</strong> — a species planted heavily across Chicago decades ago — and the risk of sudden limb failure is real on almost every block.</p>
+    <p>It isn't only pests and disease. Chicago's heavy clay soil compacts easily and drains poorly, restricting root growth and starving trees of oxygen. Construction projects, sidewalk replacements, and utility work regularly damage root systems without anyone noticing until the canopy starts to thin a season or two later. Winter road salt splashes onto parkway trees and leaches into soil near driveways, while Chicagoland's increasingly frequent high-wind storms add mechanical stress that a weakened tree may not survive.</p>
+    <p>Most of these problems are diagnosable years before they become an emergency — but only if someone is looking for them. A certified arborist trained to recognize early-stage decline can often set a tree on a treatment path that costs a fraction of removal, preserves property value and shade coverage, and avoids the safety risk of a tree failing unexpectedly. Waiting until a tree looks obviously sick usually means the window for treatment has already closed.</p>
+  </div>
+</section>
+
+<!-- SECTION 2: Signs -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Warning Signs</span>
+      <h2>Signs Your Tree May Need Professional Inspection</h2>
+      <p>If you're noticing any of the following, it's worth having a certified arborist take a closer look before the situation worsens.</p>
+    </div>
+    <div class="check-grid">
+      <div class="check-card"><span class="tag">1</span><h4>Dead Branches</h4><p>Branches with no leaves during the growing season often signal disease, root damage, or advanced pest activity.</p></div>
+      <div class="check-card"><span class="tag">2</span><h4>Thinning Canopy</h4><p>A canopy that looks sparse compared to previous years is one of the earliest visible signs of decline.</p></div>
+      <div class="check-card"><span class="tag">3</span><h4>Premature Leaf Drop</h4><p>Leaves falling well before autumn usually point to drought stress, root problems, or vascular disease.</p></div>
+      <div class="check-card"><span class="tag">4</span><h4>Leaf Discoloration</h4><p>Yellowing, browning, or unusual mottling can indicate nutrient deficiency, soil issues, or infection.</p></div>
+      <div class="check-card"><span class="tag">5</span><h4>Bark Cracking</h4><p>Vertical cracks or peeling bark can expose internal decay and are a common precursor to canker disease.</p></div>
+      <div class="check-card"><span class="tag">6</span><h4>Fungal Growth</h4><p>Mushrooms or conks at the base or trunk are a strong indicator of internal root or wood decay.</p></div>
+      <div class="check-card"><span class="tag">7</span><h4>Leaning Trees</h4><p>A new or worsening lean can mean root failure and is often an urgent safety concern.</p></div>
+      <div class="check-card"><span class="tag">8</span><h4>Woodpecker Activity</h4><p>Increased woodpecker feeding often means the tree already hosts a significant insect infestation, including EAB.</p></div>
+      <div class="check-card"><span class="tag">9</span><h4>D-Shaped Exit Holes</h4><p>Small D-shaped holes in the bark are the signature sign of Emerald Ash Borer.</p></div>
+      <div class="check-card"><span class="tag">10</span><h4>Root Damage</h4><p>Construction, trenching, or grade changes near the root zone can compromise stability and nutrient uptake.</p></div>
+      <div class="check-card"><span class="tag">11</span><h4>Storm Injury</h4><p>Broken limbs, split unions, or exposed wood after a storm need evaluation for infection risk and structural integrity.</p></div>
+      <div class="check-card"><span class="tag">12</span><h4>Cavities & Decay</h4><p>Hollow sections or soft, crumbling wood reduce a tree's structural strength and raise failure risk.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: Process -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Method</span>
+      <h2>Our Tree Health Inspection Process</h2>
+      <p>Every inspection follows the same structured, six-part process so nothing gets missed — from the canopy down to the root flare.</p>
+    </div>
+    <div class="process-list">
+      <div class="p-step">
+        <div class="num">01</div>
+        <div><h4>Visual Tree Assessment</h4><p>We start with a full walk-around to establish the baseline picture before moving into detail.</p>
+          <ul><li>Species identification</li><li>Age estimation</li><li>Overall condition review</li></ul>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="num">02</div>
+        <div><h4>Canopy Evaluation</h4><p>The canopy tells us how the tree is functioning right now and how it has changed over recent seasons.</p>
+          <ul><li>Crown density</li><li>Dieback patterns</li><li>Stress indicators</li></ul>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="num">03</div>
+        <div><h4>Trunk & Bark Inspection</h4><p>The trunk is examined closely for structural and pest-related warning signs.</p>
+          <ul><li>Decay</li><li>Cracks</li><li>Insect activity</li><li>Exit holes</li></ul>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="num">04</div>
+        <div><h4>Root Zone Evaluation</h4><p>Root health is frequently the real cause behind canopy problems homeowners notice above ground.</p>
+          <ul><li>Soil condition</li><li>Root flare inspection</li><li>Compaction assessment</li></ul>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="num">05</div>
+        <div><h4>Disease & Pest Identification</h4><p>We check for the specific pests and pathogens most common to Chicago's tree population.</p>
+          <ul><li>EAB indicators</li><li>Dutch Elm Disease indicators</li><li>Oak Wilt symptoms</li><li>Other common Chicago pests</li></ul>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="num">06</div>
+        <div><h4>Treatment Recommendations</h4><p>You'll receive a written report with clear next steps — treatment, monitoring, pruning, or removal — along with the reasoning behind each recommendation and honest cost expectations for every path forward.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: EAB -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Chicago's #1 Tree Threat</span>
+      <h2>Emerald Ash Borer Detection & Treatment Planning</h2>
+    </div>
+    <div class="answer-box"><strong>Short answer:</strong> Emerald Ash Borer is an invasive beetle that has killed hundreds of millions of ash trees across North America, and Chicago's dense ash population has been hit especially hard. Caught early, many ash trees can be saved with insecticide treatment; caught late, removal is often the only safe option.</div>
+    <div class="eab-wrap">
+      <div>
+        <h3 style="font-size:20px;margin-bottom:10px;">What Is Emerald Ash Borer?</h3>
+        <p>Emerald Ash Borer (EAB) is a metallic-green invasive beetle whose larvae tunnel through the inner bark of ash trees, cutting off the flow of water and nutrients. Since arriving in the Chicago area, EAB has devastated the region's ash population — historically one of the most heavily planted street and residential trees in the city. Left undetected, EAB can kill a mature ash tree within two to four years of infestation.</p>
+        <h3 style="font-size:20px;margin:24px 0 10px;">Signs of EAB</h3>
+        <ul class="eab-signs">
+          <li>D-shaped exit holes in the bark, roughly 1/8 inch wide</li>
+          <li>Bark splitting to reveal S-shaped larval galleries underneath</li>
+          <li>Increased woodpecker activity as birds feed on larvae</li>
+          <li>Epicormic shoots sprouting from the trunk or major limbs</li>
+          <li>Canopy thinning that typically starts at the top of the tree</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:20px;margin-bottom:10px;">Treat vs. Remove: The Decision Framework</h3>
+        <p>Whether an ash tree can be saved comes down to how much canopy has already been lost and how structurally sound the tree remains. Here's how we generally advise homeowners:</p>
+        <div class="scroll-x">
+        <table class="compare">
+          <tr><th>Condition</th><th>Treatment Recommended</th><th>Removal Recommended</th></tr>
+          <tr><td>Canopy loss under 30%</td><td class="badge-treat">Yes — strong candidate</td><td>—</td></tr>
+          <tr><td>Canopy loss 30–50%</td><td class="badge-treat">Often, case-by-case</td><td>Consider if declining fast</td></tr>
+          <tr><td>Canopy loss over 50%</td><td>—</td><td class="badge-remove">Yes — treatment unlikely to succeed</td></tr>
+          <tr><td>Trunk decay or structural defects</td><td>—</td><td class="badge-remove">Yes — safety priority</td></tr>
+          <tr><td>Near home, driveway, or power line</td><td>Lower risk tolerance advised</td><td class="badge-remove">Often recommended sooner</td></tr>
+        </table>
+        </div>
+        <p style="margin-top:14px;font-size:14px;color:var(--ink-soft);">We also weigh treatment cost against the tree's long-term value — shade coverage, property value, and the years it would take a replacement tree to reach the same size — before making a recommendation. Given Chicago's extensive EAB history, we've evaluated thousands of ash trees across the region and know how quickly this decision window can close.</p>
+      </div>
+    </div>
+    <div class="link-row">
+      <a href="https://primetreecare.pages.dev/blog/emerald-ash-borer-chicago/">Learn more about Emerald Ash Borer in Chicago →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: Diseases -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Disease Diagnosis</span>
+      <h2>Tree Diseases We Commonly Diagnose</h2>
+      <p>Beyond EAB, our arborists regularly diagnose and treat these diseases across Chicago-area properties.</p>
+    </div>
+    <div class="disease-grid">
+      <div class="disease-card">
+        <span class="risk high">High Risk</span>
+        <h4>Dutch Elm Disease</h4>
+        <p><b>Symptoms:</b> Wilting, yellowing leaves in a single branch or section, followed by rapid canopy dieback.</p>
+        <p><b>Treatment:</b> Preventive fungicide injections for high-value elms; prompt removal of infected trees to stop beetle-borne spread.</p>
+      </div>
+      <div class="disease-card">
+        <span class="risk high">High Risk</span>
+        <h4>Oak Wilt</h4>
+        <p><b>Symptoms:</b> Leaves bronzing from the edges inward, sudden wilting in red oaks especially, rapid crown loss.</p>
+        <p><b>Treatment:</b> Root graft disruption, fungicide injection for high-value oaks, and strict avoidance of pruning during active transmission season.</p>
+      </div>
+      <div class="disease-card">
+        <span class="risk med">Moderate Risk</span>
+        <h4>Anthracnose</h4>
+        <p><b>Symptoms:</b> Irregular brown blotches on leaves, premature leaf drop, twig dieback in wet springs.</p>
+        <p><b>Treatment:</b> Sanitation pruning, canopy thinning for airflow, and fungicide in severe or recurring cases.</p>
+      </div>
+      <div class="disease-card">
+        <span class="risk med">Moderate Risk</span>
+        <h4>Bacterial Leaf Scorch</h4>
+        <p><b>Symptoms:</b> Leaf margins browning while the interior stays green, worsening yearly, slow canopy decline.</p>
+        <p><b>Treatment:</b> No cure exists; we focus on stress reduction, monitoring, and extending the tree's usable lifespan.</p>
+      </div>
+      <div class="disease-card">
+        <span class="risk high">High Risk</span>
+        <h4>Root Rot</h4>
+        <p><b>Symptoms:</b> Thinning canopy, mushroom growth at the base, soft or crumbling wood near the root flare.</p>
+        <p><b>Treatment:</b> Soil and drainage correction where possible; removal recommended once structural stability is compromised.</p>
+      </div>
+      <div class="disease-card">
+        <span class="risk mgmt">Manageable</span>
+        <h4>Canker Diseases</h4>
+        <p><b>Symptoms:</b> Sunken, discolored patches on bark or branches, oozing sap, localized dieback.</p>
+        <p><b>Treatment:</b> Pruning out affected wood, improving tree vigor, and monitoring for spread to healthy tissue.</p>
+      </div>
+    </div>
+    <div class="link-row">
+      <a href="https://primetreecare.pages.dev/blog/dutch-elm-disease-chicago/">Learn more about Dutch Elm Disease in Chicago →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: Canopy decline -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reading The Canopy</span>
+      <h2>Canopy Decline Diagnosis</h2>
+    </div>
+    <div class="answer-box"><strong>Short answer:</strong> Canopy decline is a gradual loss of leaf density, color, or size that signals the tree is under stress — and it's almost always caused by something happening below ground, not in the branches themselves.</div>
+    <p><strong>What canopy decline means:</strong> Instead of a sudden event, decline develops over one or more growing seasons as smaller leaves, sparse foliage, and dead twigs accumulate. Because the symptoms show up in the canopy, homeowners often assume the problem is "in the leaves" — but the canopy is usually the last part of the tree to show a problem that started elsewhere.</p>
+    <p><strong>Common causes</strong> include drought stress from Chicago's variable rainfall, soil compaction in high-traffic yards, root damage from construction or trenching, grade changes near the root flare, active disease, and insect pressure such as EAB. Often more than one factor is at work simultaneously.</p>
+    <p><strong>Why early detection matters:</strong> A tree that's caught in early-stage decline usually responds well to soil correction, fertilization, or targeted treatment. Once decline reaches 50% or more of the canopy, recovery becomes far less likely and removal often becomes the safer, more cost-effective option.</p>
+    <div class="scenario-grid">
+      <div class="scenario"><h4>The Backyard Oak</h4><p>A homeowner in Elmhurst noticed thinning at the top of a mature oak after a driveway repaving. Root damage from the construction was the cause — soil decompaction and fertilization brought the canopy back over two seasons.</p></div>
+      <div class="scenario"><h4>The Parkway Ash</h4><p>A Chicago Northwest Side resident assumed drought was behind a thinning ash canopy. Inspection revealed early-stage EAB — treatment was started in time to save the tree.</p></div>
+      <div class="scenario"><h4>The Silver Maple</h4><p>A Schaumburg property owner delayed a canopy inspection for two years. By the time we were called, decline had passed 60% and removal was the only safe path forward.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: Risk assessment -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Safety First</span>
+      <h2>Tree Risk Assessments & Safety Evaluations</h2>
+      <p>Not every unhealthy tree is dangerous, and not every dangerous tree looks unhealthy. A formal risk assessment evaluates the specific factors that determine whether a tree is a safety liability.</p>
+    </div>
+    <div class="risk-grid">
+      <div class="risk-item"><div class="ico">1</div><div><h4>Hazard Identification</h4><p>We identify the specific defects that could lead to failure — not just general "poor health."</p></div></div>
+      <div class="risk-item"><div class="ico">2</div><div><h4>Structural Defects</h4><p>Cracks, included bark, cavities, and co-dominant stems are evaluated for failure potential.</p></div></div>
+      <div class="risk-item"><div class="ico">3</div><div><h4>Failure Potential</h4><p>We assess the likelihood of whole-tree failure versus limb failure, and the timeline involved.</p></div></div>
+      <div class="risk-item"><div class="ico">4</div><div><h4>Storm Vulnerability</h4><p>Trees are evaluated against Chicagoland's high-wind derecho and straight-line wind risk specifically.</p></div></div>
+      <div class="risk-item"><div class="ico">5</div><div><h4>Utility Line Risks</h4><p>Proximity to power lines factors into both risk rating and recommended mitigation approach.</p></div></div>
+      <div class="risk-item"><div class="ico">6</div><div><h4>Liability Concerns</h4><p>We document findings clearly for homeowners, HOAs, and property managers concerned about liability exposure.</p></div></div>
+    </div>
+    <p style="margin-top:24px;">Our risk assessments support <strong>Tree Risk Assessment</strong> documentation, <strong>Utility Vegetation Management</strong> coordination, and general <strong>property protection</strong> planning for both residential and commercial clients across Chicagoland.</p>
+  </div>
+</section>
+
+<!-- SECTION 8: Species table -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Local Species Knowledge</span>
+      <h2>Chicago Tree Species We Frequently Inspect</h2>
+    </div>
+    <div class="scroll-x">
+    <table class="species">
+      <tr><th>Tree Species</th><th>Common Problems</th><th>Typical Recommendation</th></tr>
+      <tr><td>Ash</td><td>Emerald Ash Borer</td><td>Insecticide treatment if canopy loss is under 30%; removal beyond that</td></tr>
+      <tr><td>Elm</td><td>Dutch Elm Disease</td><td>Preventive fungicide injection for high-value trees; rapid removal if infected</td></tr>
+      <tr><td>Oak</td><td>Oak Wilt, root compaction</td><td>Avoid pruning in growing season; root graft disruption if wilt is confirmed nearby</td></tr>
+      <tr><td>Silver Maple</td><td>Weak wood, limb failure, decay</td><td>Structural pruning, cabling, or removal depending on defect severity</td></tr>
+      <tr><td>Norway Maple</td><td>Girdling roots, verticillium wilt</td><td>Root collar excavation and monitoring; selective pruning</td></tr>
+      <tr><td>Honey Locust</td><td>Canker disease, webworm</td><td>Sanitation pruning and canopy monitoring</td></tr>
+      <tr><td>Hackberry</td><td>Nipple gall, witches' broom</td><td>Generally cosmetic; monitoring recommended, treatment rarely needed</td></tr>
+      <tr><td>Kentucky Coffeetree</td><td>Minor pest pressure, transplant stress</td><td>Soil and fertilization support during establishment years</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: Treatment options -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Comes Next</span>
+      <h2>Treatment Options After Inspection</h2>
+      <p>Every inspection ends with a written recommendation. Depending on what we find, that plan may include one or more of the following.</p>
+    </div>
+    <div class="treat-grid">
+      <div class="treat-card"><h4>Insect Treatments</h4><p>Trunk injections or soil-applied insecticide for EAB and other boring pests.</p></div>
+      <div class="treat-card"><h4>Disease Management</h4><p>Fungicide injection, sanitation pruning, and root graft disruption where applicable.</p></div>
+      <div class="treat-card"><h4>Fertilization Programs</h4><p>Soil-specific nutrient plans built for Chicago's heavy clay conditions. <a href="https://primetreecare.pages.dev/services/tree-shrub-fertilization" style="color:var(--forest-700);font-weight:600;">Learn more →</a></p></div>
+      <div class="treat-card"><h4>Root Zone Improvements</h4><p>Decompaction, aeration, and drainage correction to restore root function.</p></div>
+      <div class="treat-card"><h4>Structural Pruning</h4><p>Targeted cuts that reduce failure risk and improve long-term form. <a href="https://primetreecare.pages.dev/services/tree-trimming-and-pruning" style="color:var(--forest-700);font-weight:600;">Learn more →</a></p></div>
+      <div class="treat-card"><h4>Cabling & Bracing</h4><p>Support systems for weak unions and mature trees ahead of storm season. <a href="https://primetreecare.pages.dev/servicesstorm-prep-tree-support-systems" style="color:var(--forest-700);font-weight:600;">Learn more →</a></p></div>
+      <div class="treat-card"><h4>Monitoring Plans</h4><p>Scheduled follow-up inspections for trees in early-stage treatment or watch status.</p></div>
+      <div class="treat-card"><h4>Tree Removal</h4><p>When treatment is no longer viable, safe removal to eliminate the hazard. <a href="https://primetreecare.pages.dev/services/tree-removal" style="color:var(--forest-700);font-weight:600;">Learn more →</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10: Why choose us -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why Prime Tree Care</span>
+      <h2>Why Choose Prime Tree Care for Tree Health Evaluations?</h2>
+    </div>
+    <div class="why-grid">
+      <ul class="why-list">
+        <li><span class="chk">✓</span><div><h4>ISA-Certified Arborists</h4><p>Every inspection is led by a credentialed arborist, not a rotating crew of estimators.</p></div></li>
+        <li><span class="chk">✓</span><div><h4>Chicago-Specific Knowledge</h4><p>We diagnose against the pests, diseases, and soil conditions actually present in this region.</p></div></li>
+        <li><span class="chk">✓</span><div><h4>Honest Recommendations</h4><p>We recommend treatment when it makes sense — and tell you plainly when it doesn't.</p></div></li>
+        <li><span class="chk">✓</span><div><h4>Science-Based Diagnosis</h4><p>Findings are based on observable evidence, not guesswork or upsell incentives.</p></div></li>
+        <li><span class="chk">✓</span><div><h4>Detailed Reporting</h4><p>You receive a clear written report documenting findings and next steps.</p></div></li>
+        <li><span class="chk">✓</span><div><h4>Long-Term Tree Preservation Focus</h4><p>Our goal is keeping healthy trees on your property for decades, not maximizing removal jobs.</p></div></li>
+      </ul>
+      <div class="team-card">
+        <div class="initials">DK</div>
+        <h4>David Kowalski</h4>
+        <div class="role">Founder & Lead Arborist</div>
+        <p>15+ years diagnosing and treating trees across Chicago's Northwest Side, specializing in Emerald Ash Borer management, disease diagnosis, and tree risk assessments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Tree Health Inspection FAQs</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>How much does a tree inspection cost in Chicago?</summary>
+        <div class="a">Prime Tree Care provides free on-site assessments for most residential properties. More in-depth diagnostic work, such as lab sampling for disease confirmation, may carry an additional cost that we'll always explain upfront before proceeding.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can an arborist tell if a tree is dying?</summary>
+        <div class="a">Yes. A certified arborist evaluates canopy density, bark condition, root flare, and pest or disease indicators to determine whether a tree is declining, stable, or actively dying — and how much time remains to intervene.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know if I have Emerald Ash Borer?</summary>
+        <div class="a">Look for D-shaped exit holes in the bark, canopy thinning starting at the top of the tree, bark splitting over S-shaped larval tunnels, and increased woodpecker activity. An arborist inspection is the most reliable way to confirm EAB and determine whether treatment is still viable.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can a diseased tree be saved?</summary>
+        <div class="a">Often, yes — especially when caught early. The right treatment depends on the specific disease, how much of the tree is affected, and its overall structural condition. Some diseases, like bacterial leaf scorch, have no cure but can be managed to extend the tree's life.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What causes canopy decline?</summary>
+        <div class="a">Common causes include drought stress, soil compaction, root damage from construction, grade changes, disease, and insect pressure. Canopy decline is usually a visible symptom of a problem happening below ground.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Should I remove or treat an ash tree?</summary>
+        <div class="a">It depends on canopy loss and structural condition. Trees with less than 30% canopy loss and no structural defects are generally strong candidates for treatment. Trees with more than 50% canopy loss or trunk decay are usually recommended for removal.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How often should trees be inspected?</summary>
+        <div class="a">We recommend an annual inspection for mature trees, and more frequent monitoring for trees already under treatment, showing early decline, or located near a home, driveway, or power line.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is included in a tree health assessment?</summary>
+        <div class="a">A full assessment covers visual tree evaluation, canopy analysis, trunk and bark inspection, root zone evaluation, disease and pest identification, and a written treatment recommendation.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL SEO -->
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where We Work</span>
+      <h2>Tree Health Inspections Throughout Chicago & Nearby Suburbs</h2>
+      <p>Based in Hickory Hills, Prime Tree Care provides tree health inspections and treatment planning across the City of Chicago and surrounding Cook County suburbs — accounting for the urban tree stress, clay-heavy soil, aging tree populations, and EAB impacts specific to this region.</p>
+    </div>
+    <div class="suburbs">
+      <span>Chicago</span><span>Evanston</span><span>Oak Park</span><span>Elmhurst</span>
+      <span>Schaumburg</span><span>Villa Park</span><span>Aurora</span><span>Chicago Heights</span>
+      <span>McHenry</span><span>Westmont</span><span>West Chicago</span><span>Alsip</span>
+    </div>
+    <div class="link-row">
+      <a href="https://primetreecare.pages.dev/service-areas/">View all service areas →</a>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6641919270198!2d-87.84010494663066!3d41.73163458945334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e381997350f15%3A0x840f9867c3261480!2s8811%20W%2087th%20St%2C%20Hickory%20Hills%2C%20IL%2060457!5e0!3m2!1sen!2sus!4v1786290114801!5m2!1sen!2sus" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Prime Tree Care location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSION -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Concerned About a Tree on Your Property?</h2>
+    <p>Early diagnosis often prevents expensive removals and helps preserve valuable mature trees. Get a free, no-obligation inspection from an ISA-certified arborist.</p>
+    <div class="cta-row">
+      <a href="https://primetreecare.pages.dev/contact" class="btn btn-primary">Schedule Inspection</a>
+      <a href="tel:+17733028351" class="btn btn-outline">Call Now — (773) 302-8351</a>
+      <a href="https://primetreecare.pages.dev/contact" class="btn btn-outline">Emergency Assessment</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <div class="foot-brand">
+        <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+        Prime Tree Care
+      </div>
+      <p style="font-size:14px;color:#9fa89e;max-width:280px;">Professional, ISA-certified tree care serving Chicago and the surrounding suburbs — inspections, disease treatment, removal, trimming, and emergency storm response.</p>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <ul>
+        <li><a href="https://primetreecare.pages.dev/services/tree-removal">Tree Removal</a></li>
+        <li><a href="https://primetreecare.pages.dev/services/tree-trimming-and-pruning">Tree Trimming & Pruning</a></li>
+        <li><a href="https://primetreecare.pages.dev/services/stump-grinding">Stump Grinding</a></li>
+        <li><a href="https://primetreecare.pages.dev/services/emergency-tree-removal">Emergency Tree Service</a></li>
+        <li><a href="https://primetreecare.pages.dev/services/tree-health-inspection-treatment">Tree Health Inspection & Treatment</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="https://primetreecare.pages.dev/#why-us">Why Prime</a></li>
+        <li><a href="https://primetreecare.pages.dev/#process">Our Process</a></li>
+        <li><a href="https://primetreecare.pages.dev/service-areas/">Service Areas</a></li>
+        <li><a href="https://primetreecare.pages.dev/#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>8811 W 87th St<br>Hickory Hills, IL 60457</li>
+        <li><a href="tel:+17733028351">(773) 302-8351</a></li>
+        <li>Mon–Sat: 7:00 AM – 7:00 PM</li>
+        <li>24/7 Emergency Response</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+    <span><a href="https://primetreecare.pages.dev/privacy-policy">Privacy Policy</a> · <a href="https://primetreecare.pages.dev/terms-of-service">Terms of Service</a></span>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:+17733028351" class="btn btn-primary">Call Now</a>
+  <a href="https://primetreecare.pages.dev/contact" class="btn btn-outline">Free Estimate</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Tree Health Inspection & Treatment",
+      "serviceType": "Tree Health Inspection, Disease Diagnosis, Emerald Ash Borer Treatment",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Prime Tree Care Service",
+        "telephone": "+17733028351",
+        "url": "https://primetreecare.pages.dev",
+        "image": "https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8811 W 87th St",
+          "addressLocality": "Hickory Hills",
+          "addressRegion": "IL",
+          "postalCode": "60457",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.73224730,
+          "longitude": -87.83926210
+        }
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Chicago"},
+        {"@type": "City", "name": "Evanston"},
+        {"@type": "City", "name": "Oak Park"},
+        {"@type": "City", "name": "Elmhurst"},
+        {"@type": "City", "name": "Schaumburg"},
+        {"@type": "City", "name": "Villa Park"},
+        {"@type": "City", "name": "Aurora"},
+        {"@type": "City", "name": "Chicago Heights"},
+        {"@type": "City", "name": "McHenry"},
+        {"@type": "City", "name": "Westmont"},
+        {"@type": "City", "name": "West Chicago"},
+        {"@type": "City", "name": "Alsip"}
+      ],
+      "description": "ISA-certified tree health inspections in Chicago, including Emerald Ash Borer detection, disease diagnosis, canopy decline evaluation, tree risk assessment, and treatment planning.",
+      "url": "https://primetreecare.pages.dev/services/tree-health-inspection-treatment/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "How much does a tree inspection cost in Chicago?","acceptedAnswer": {"@type": "Answer","text": "Prime Tree Care provides free on-site assessments for most residential properties. More in-depth diagnostic work, such as lab sampling for disease confirmation, may carry an additional cost that we'll always explain upfront before proceeding."}},
+        {"@type": "Question","name": "Can an arborist tell if a tree is dying?","acceptedAnswer": {"@type": "Answer","text": "Yes. A certified arborist evaluates canopy density, bark condition, root flare, and pest or disease indicators to determine whether a tree is declining, stable, or actively dying, and how much time remains to intervene."}},
+        {"@type": "Question","name": "How do I know if I have Emerald Ash Borer?","acceptedAnswer": {"@type": "Answer","text": "Look for D-shaped exit holes in the bark, canopy thinning starting at the top of the tree, bark splitting over S-shaped larval tunnels, and increased woodpecker activity. An arborist inspection is the most reliable way to confirm EAB and determine whether treatment is still viable."}},
+        {"@type": "Question","name": "Can a diseased tree be saved?","acceptedAnswer": {"@type": "Answer","text": "Often, yes, especially when caught early. The right treatment depends on the specific disease, how much of the tree is affected, and its overall structural condition. Some diseases, like bacterial leaf scorch, have no cure but can be managed to extend the tree's life."}},
+        {"@type": "Question","name": "What causes canopy decline?","acceptedAnswer": {"@type": "Answer","text": "Common causes include drought stress, soil compaction, root damage from construction, grade changes, disease, and insect pressure. Canopy decline is usually a visible symptom of a problem happening below ground."}},
+        {"@type": "Question","name": "Should I remove or treat an ash tree?","acceptedAnswer": {"@type": "Answer","text": "It depends on canopy loss and structural condition. Trees with less than 30% canopy loss and no structural defects are generally strong candidates for treatment. Trees with more than 50% canopy loss or trunk decay are usually recommended for removal."}},
+        {"@type": "Question","name": "How often should trees be inspected?","acceptedAnswer": {"@type": "Answer","text": "We recommend an annual inspection for mature trees, and more frequent monitoring for trees already under treatment, showing early decline, or located near a home, driveway, or power line."}},
+        {"@type": "Question","name": "What is included in a tree health assessment?","acceptedAnswer": {"@type": "Answer","text": "A full assessment covers visual tree evaluation, canopy analysis, trunk and bark inspection, root zone evaluation, disease and pest identification, and a written treatment recommendation."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetreecare.pages.dev/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://primetreecare.pages.dev/services/"},
+        {"@type": "ListItem", "position": 3, "name": "Tree Health Inspection & Treatment", "item": "https://primetreecare.pages.dev/services/tree-health-inspection-treatment/"}
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "Prime Tree Care Service",
+      "image": "https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp",
+      "telephone": "+17733028351",
+      "url": "https://primetreecare.pages.dev",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8811 W 87th St",
+        "addressLocality": "Hickory Hills",
+        "addressRegion": "IL",
+        "postalCode": "60457",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.73224730,
+        "longitude": -87.83926210
+      },
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "07:00","closes": "19:00"}
+      ],
+      "hasMap": "https://maps.app.goo.gl/XtF7wAiftwWsLE6r6"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Tree Health Inspection & Treatment in Chicago, IL",
+      "url": "https://primetreecare.pages.dev/services/tree-health-inspection-treatment/",
+      "description": "ISA-certified tree health inspections in Chicago, IL. Diagnose Emerald Ash Borer, disease, and canopy decline before it's too late.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Prime Tree Care",
+        "url": "https://primetreecare.pages.dev"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
