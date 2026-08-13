@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | Prime Tree Care — Chicago, IL</title>
+<meta name="description" content="Read the Terms of Service governing use of the Prime Tree Care website and the tree care services we provide across Chicago, IL and Cook County.">
+<link rel="canonical" href="https://primetreecare.pages.dev/terms-of-service">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F;
+    --forest:#263A24;
+    --olive-light:#7A8750;
+    --cream:#F5F2E8;
+    --beige:#D8CDB5;
+    --charcoal:#252823;
+    --gold:#C58A32;
+    --white:#FFFFFF;
+    --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Open Sans', sans-serif;
+    color:var(--charcoal);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Montserrat', sans-serif;
+    color:var(--forest);
+    line-height:1.2;
+    letter-spacing:-0.01em;
+  }
+  a{ text-decoration:none; color:var(--olive); }
+  a:hover{ color:var(--forest); text-decoration:underline; }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    font-weight:700;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--olive);
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    padding:15px 30px;
+    border-radius:8px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+    white-space:nowrap;
+    text-decoration:none !important;
+  }
+  .btn-primary{ background:var(--olive); color:var(--white); }
+  .btn-primary:hover{ background:var(--forest); color:var(--white); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); }
+  .btn-gold:hover{ background:#b57b28; color:var(--forest); transform:translateY(-2px); }
+
+  /* ===== Top utility bar ===== */
+  .topbar{ background:var(--forest); color:var(--beige); font-size:13px; }
+  .topbar .container{ display:flex; justify-content:space-between; align-items:center; padding-top:8px; padding-bottom:8px; }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); }
+  .topbar a:hover{ color:var(--gold); }
+
+  /* ===== Header ===== */
+  header{ background:var(--white); border-bottom:1px solid var(--beige); position:sticky; top:0; z-index:100; }
+  .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; letter-spacing:-0.01em; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:14.5px; color:var(--charcoal); padding:6px 0; text-decoration:none; }
+  nav.primary-nav a:hover{ color:var(--olive); text-decoration:none; }
+
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .header-phone .ph-icon{ width:38px; height:38px; border-radius:50%; background:var(--cream); display:flex; align-items:center; justify-content:center; color:var(--olive); flex-shrink:0; }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* ===== Page hero (compact, no image — legal page) ===== */
+  .page-hero{
+    background:var(--forest);
+    color:var(--white);
+    padding:64px 0 56px;
+  }
+  .page-hero .eyebrow{ color:#A9B583; }
+  .page-hero h1{ color:var(--white); font-size:38px; font-weight:800; margin-top:12px; }
+  .page-hero p{ color:var(--beige); font-size:15.5px; margin-top:12px; }
+  .breadcrumb{ font-size:13px; color:var(--beige); opacity:.85; margin-bottom:16px; }
+  .breadcrumb a{ color:var(--beige); }
+  .breadcrumb a:hover{ color:var(--gold); }
+
+  /* ===== Legal content layout ===== */
+  .legal-wrap{ display:grid; grid-template-columns:280px 1fr; gap:56px; padding:72px 0 96px; align-items:start; }
+  .toc{
+    position:sticky; top:100px;
+    background:var(--cream);
+    border:1px solid var(--beige);
+    border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .toc h4{ font-family:'Montserrat',sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--olive); margin-bottom:16px; }
+  .toc ol{ list-style:none; counter-reset:toc; display:flex; flex-direction:column; gap:11px; }
+  .toc ol li{ counter-increment:toc; }
+  .toc ol li a{
+    display:flex; gap:9px; font-size:13.5px; color:var(--charcoal); text-decoration:none; line-height:1.4;
+  }
+  .toc ol li a::before{
+    content: counter(toc) "."; color:var(--olive); font-weight:700; flex-shrink:0;
+  }
+  .toc ol li a:hover{ color:var(--olive); }
+
+  .legal-body h2{
+    font-size:21px; margin-top:44px; margin-bottom:14px; padding-top:8px; scroll-margin-top:110px;
+  }
+  .legal-body h2:first-child{ margin-top:0; }
+  .legal-body p{ font-size:15px; color:#3d4139; margin-bottom:14px; }
+  .legal-body ul{ margin:0 0 14px 22px; }
+  .legal-body ul li{ font-size:15px; color:#3d4139; margin-bottom:8px; }
+  .legal-body strong{ color:var(--forest); }
+  .updated-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--cream); border:1px solid var(--beige); color:var(--forest);
+    font-family:'Montserrat',sans-serif; font-weight:600; font-size:12.5px;
+    padding:8px 16px; border-radius:100px; margin-bottom:28px;
+  }
+  .callout{
+    background:var(--cream); border-left:4px solid var(--olive); border-radius:0 var(--radius) var(--radius) 0;
+    padding:20px 24px; margin:20px 0;
+  }
+  .callout p{ margin-bottom:0; font-size:14.5px; }
+  .contact-block{
+    background:var(--forest); color:var(--cream); border-radius:var(--radius);
+    padding:32px 34px; margin-top:44px;
+  }
+  .contact-block h3{ color:var(--white); font-size:18px; margin-bottom:10px; }
+  .contact-block p{ color:var(--beige); font-size:14.5px; margin-bottom:4px; }
+  .contact-block a{ color:var(--gold); }
+
+  /* ===== Footer ===== */
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; margin:0; }
+  footer ul a{ font-size:14px; color:var(--beige); text-decoration:none; }
+  footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; text-decoration:none; }
+  .footer-bottom a:hover{ color:var(--gold); }
+
+  .mobile-call-bar{ display:none; }
+
+  @media (max-width: 900px){
+    .legal-wrap{ grid-template-columns:1fr; padding:48px 0 64px; }
+    .toc{ position:static; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .page-hero{ padding:44px 0 40px; }
+    .page-hero h1{ font-size:27px; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .mobile-call-bar{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200;
+      background:var(--forest); padding:12px 16px; gap:12px;
+      box-shadow:0 -8px 24px rgba(0,0,0,0.2);
+    }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left">
+      <a href="tel:+17733028351">(773) 302-8351</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="/" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text">
+        <span class="name">Prime Tree Care</span>
+        <span class="tag">Chicago Arborists</span>
+      </span>
+    </a>
+
+    <nav class="primary-nav">
+      <a href="/about">About</a>
+      <a href="/services/">Services</a>
+      <a href="/#why-us">Why Prime</a>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone" aria-label="Call Prime Tree Care at (773) 302-8351">
+        <span class="ph-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span class="ph-text">
+          <span class="ph-label">Call Us Now</span>
+          <span class="ph-num">(773) 302-8351</span>
+        </span>
+      </a>
+      <a href="/contact" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / Terms of Service</div>
+    <span class="eyebrow">Legal</span>
+    <h1>Terms of Service</h1>
+    <p>The terms and conditions governing your use of this website and the tree care services provided by Prime Tree Care Service.</p>
+  </div>
+</div>
+
+<!-- LEGAL CONTENT -->
+<section style="padding:0;">
+  <div class="container">
+    <div class="legal-wrap">
+
+      <!-- TOC -->
+      <aside class="toc">
+        <h4>On This Page</h4>
+        <ol>
+          <li><a href="#acceptance">Acceptance of Terms</a></li>
+          <li><a href="#services">Description of Services</a></li>
+          <li><a href="#estimates">Estimates & Pricing</a></li>
+          <li><a href="#scheduling">Scheduling & Cancellations</a></li>
+          <li><a href="#property">Property Access & Site Conditions</a></li>
+          <li><a href="#permits">Permits & Local Regulations</a></li>
+          <li><a href="#payment">Payment Terms</a></li>
+          <li><a href="#warranties">Warranties & Limitations</a></li>
+          <li><a href="#liability">Limitation of Liability</a></li>
+          <li><a href="#website-use">Website Use</a></li>
+          <li><a href="#ip">Intellectual Property</a></li>
+          <li><a href="#governing-law">Governing Law</a></li>
+          <li><a href="#changes">Changes to These Terms</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ol>
+      </aside>
+
+      <!-- BODY -->
+      <div class="legal-body">
+        <span class="updated-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          Last Updated: August 13, 2026
+        </span>
+
+        <p>These Terms of Service ("Terms") govern your access to and use of the Prime Tree Care Service website, and the tree care services provided by Prime Tree Care Service ("Prime Tree Care," "we," "us," or "our"). By using this website, submitting an estimate request, or engaging us for services, you agree to be bound by these Terms. If you do not agree, please do not use this website or our services.</p>
+
+        <h2 id="acceptance">1. Acceptance of Terms</h2>
+        <p>By accessing this website, requesting an estimate, or engaging Prime Tree Care for any service, you confirm that you have the legal authority to do so — either as the property owner or as an authorized representative of the property owner — and that you agree to these Terms in full.</p>
+
+        <h2 id="services">2. Description of Services</h2>
+        <p>Prime Tree Care provides residential and commercial tree care services across Chicago, IL and the surrounding Cook County area, including but not limited to tree removal, tree trimming and pruning, stump grinding, emergency tree service, tree cabling and bracing, tree health and disease treatment, land and lot clearing, and commercial tree care. Specific service details, scope, and pricing are confirmed in writing at the time of your estimate and are not guaranteed by general descriptions on this website.</p>
+
+        <h2 id="estimates">3. Estimates & Pricing</h2>
+        <p>Estimates provided through our website, by phone, or in person are based on the information and site conditions available at the time of the estimate. Final pricing may be adjusted if actual site conditions differ materially from what was assessed — for example, hidden obstacles, inaccurate property information, or scope changes requested by the client. Written estimates are typically valid for a limited period, which will be noted on the estimate itself. A free estimate does not constitute a binding contract until both parties agree to a scope of work and price.</p>
+
+        <h2 id="scheduling">4. Scheduling & Cancellations</h2>
+        <p>Scheduled appointments and job dates are subject to weather, safety conditions, equipment availability, and emergency prioritization (for example, active storm response may delay non-emergency work). We will make reasonable efforts to notify you of any delays. Cancellation policies, including any applicable fees for late cancellation of a confirmed job, will be communicated at the time of scheduling.</p>
+
+        <h2 id="property">5. Property Access & Site Conditions</h2>
+        <p>You agree to provide our crew with reasonably safe and unobstructed access to the work area, and to disclose known hazards on the property (such as underground utility lines, septic systems, unmarked buried objects, or structural concerns) prior to the start of work. Prime Tree Care is not responsible for damage to unmarked or undisclosed underground utilities, irrigation systems, or other hidden hazards that a reasonable pre-work inspection would not have identified.</p>
+
+        <h2 id="permits">6. Permits & Local Regulations</h2>
+        <p>Certain tree work in the City of Chicago and surrounding municipalities — particularly work involving parkway (city-owned) trees — may require permits or approval from the applicable local authority, such as the Chicago Bureau of Forestry. Where permits are required, we will advise you accordingly; however, it remains the property owner's responsibility to confirm and, where applicable, obtain any permits required for private-property work unless we have expressly agreed in writing to handle permitting as part of the scope of service.</p>
+
+        <h2 id="payment">7. Payment Terms</h2>
+        <p>Payment terms, including deposit requirements, accepted payment methods, and due dates, will be specified in your written estimate or invoice. Late payment may be subject to additional fees as disclosed at the time of service. Work may be paused or delayed for outstanding balances on prior services, at our discretion.</p>
+
+        <h2 id="warranties">8. Warranties & Limitations</h2>
+        <p>We perform all work using industry-standard arboricultural practices. However, tree care inherently involves biological and environmental variables outside our control — including a tree's pre-existing health, root structure, soil conditions, and future weather events. We do not guarantee the survival, health outcome, or future structural performance of any tree following treatment, pruning, cabling, or other non-removal service. Any specific warranty on workmanship or materials (such as a planted tree) will be stated explicitly in writing at the time of service.</p>
+
+        <h2 id="liability">9. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Prime Tree Care Service's total liability for any claim arising from our services is limited to the amount paid for the specific service giving rise to the claim. We are not liable for indirect, incidental, or consequential damages. Nothing in these Terms limits liability for damage directly caused by our crew's negligence during active performance of contracted work, which remains covered under our general liability insurance.</p>
+
+        <div class="callout">
+          <p><strong>Note:</strong> Prime Tree Care maintains general liability and workers' compensation insurance. Certificates of insurance are available upon request prior to the start of any job.</p>
+        </div>
+
+        <h2 id="website-use">10. Website Use</h2>
+        <p>This website and its content are provided for general informational purposes about our services and service area. You agree not to misuse the website, including attempting to interfere with its normal operation, submitting fraudulent information through our contact or estimate forms, or using automated tools to scrape or extract content without our prior written consent.</p>
+
+        <h2 id="ip">11. Intellectual Property</h2>
+        <p>All content on this website — including text, images, logos, and design elements — is the property of Prime Tree Care Service or its licensors and is protected by applicable copyright and trademark law. You may not reproduce, distribute, or use this content for commercial purposes without our prior written permission.</p>
+
+        <h2 id="governing-law">12. Governing Law</h2>
+        <p>These Terms are governed by the laws of the State of Illinois, without regard to conflict-of-law principles. Any disputes arising from these Terms or our services shall be resolved in the state or federal courts located in Cook County, Illinois.</p>
+
+        <h2 id="changes">13. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time to reflect changes in our services, business practices, or legal requirements. The "Last Updated" date at the top of this page reflects the most recent revision. Continued use of this website or our services after changes are posted constitutes acceptance of the updated Terms.</p>
+
+        <h2 id="contact-us">14. Contact Us</h2>
+        <p>If you have questions about these Terms of Service, please reach out to us directly:</p>
+
+        <div class="contact-block">
+          <h3>Prime Tree Care Service</h3>
+          <p>8811 W 87th St, Hickory Hills, IL 60457</p>
+          <p>Phone: <a href="tel:+17733028351">(773) 302-8351</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/tree-removal">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming-and-pruning">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/stump-grinding">Stump Grinding</a></li>
+          <li><a href="/services/emergency-tree-service">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-health-treatment">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/#process">Our Process</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="/contact" class="btn" style="border:2px solid var(--cream); color:var(--cream); background:transparent;">Free Estimate</a>
+</div>
+
+</body>
+</html>
