@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Trimming &amp; Pruning in Chicago, IL | Prime Tree Care (773) 302-8351</title>
+<meta name="description" content="Professional tree trimming, structural pruning &amp; dormant-season care in Chicago. ISA-certified arborists reduce storm risk, prevent Oak Wilt &amp; improve tree health. Free estimates: (773) 302-8351.">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="canonical" href="https://primetreecare.pages.dev/services/tree-trimming-pruning">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#12291f;
+    --green-800:#1a3b2c;
+    --green-700:#20503a;
+    --green-600:#2c6b48;
+    --green-500:#3d8a5f;
+    --green-100:#e7f0e9;
+    --cream:#f8f6f0;
+    --gold:#c99a3b;
+    --gold-dark:#a97f2c;
+    --ink:#182420;
+    --ink-soft:#4c5a54;
+    --line:#e2ddd0;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 12px 30px -12px rgba(18,41,31,.18);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.65;
+  }
+  h1,h2,h3,h4{font-family:'Poppins',system-ui,sans-serif;color:var(--green-900);margin:0 0 .5em;line-height:1.2;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    display:inline-block;font-family:'Poppins',sans-serif;font-weight:700;font-size:12.5px;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--green-600);
+    background:var(--green-100);padding:6px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  /* Topbar */
+  .topbar{background:var(--green-900);color:#cfe3d5;font-size:13.5px;}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:9px 24px;flex-wrap:wrap;gap:6px;}
+  .topbar a{color:#e9f3ec;font-weight:600;}
+  .topbar .tb-left{display:flex;gap:22px;flex-wrap:wrap;}
+  /* Header */
+  header.site{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:24px;}
+  .brand{display:flex;align-items:center;gap:12px;font-family:'Poppins',sans-serif;font-weight:700;color:var(--green-900);font-size:16px;}
+  .brand img{height:44px;width:44px;border-radius:10px;object-fit:cover;}
+  nav.main-links{display:flex;gap:28px;font-weight:600;font-size:14.5px;color:var(--green-800);}
+  nav.main-links a:hover{color:var(--gold-dark);}
+  .header-ctas{display:flex;gap:10px;align-items:center;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;
+    padding:12px 22px;border-radius:999px;border:2px solid transparent;cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-gold{background:var(--gold);color:var(--green-900);}
+  .btn-gold:hover{background:var(--gold-dark);transform:translateY(-1px);}
+  .btn-outline{border-color:var(--green-700);color:var(--green-800);background:transparent;}
+  .btn-outline:hover{background:var(--green-100);}
+  .btn-line{border-color:rgba(255,255,255,.5);color:#fff;background:transparent;}
+  .btn-line:hover{background:rgba(255,255,255,.12);}
+  .btn-lg{padding:15px 28px;font-size:15px;}
+  /* Breadcrumb */
+  .breadcrumb{background:var(--cream);border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-soft);}
+  .breadcrumb .wrap{padding:12px 24px;}
+  .breadcrumb a{color:var(--green-700);font-weight:600;}
+  .breadcrumb span{margin:0 6px;color:#b7ae98;}
+  /* Hero */
+  .hero{background:linear-gradient(180deg,var(--green-900) 0%, var(--green-800) 65%, var(--green-700) 100%);color:#fff;padding:64px 0 56px;}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
+  .hero .eyebrow{background:rgba(255,255,255,.12);color:#f3e6c6;}
+  .hero h1{color:#fff;font-size:clamp(30px,4vw,44px);}
+  .hero p.lede{color:#dcebe1;font-size:17.5px;max-width:56ch;margin-bottom:26px;}
+  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+  .trust-strip{display:flex;gap:26px;flex-wrap:wrap;font-size:13.5px;color:#cfe3d5;}
+  .trust-strip div{display:flex;align-items:center;gap:8px;}
+  .trust-strip .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .hero-figure{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.15);}
+  .hero-figure img{aspect-ratio:4/3;object-fit:cover;}
+  /* Stat strip */
+  .stat-strip{background:var(--green-100);border-bottom:1px solid var(--line);}
+  .stat-strip .wrap{display:flex;justify-content:space-between;padding:22px 24px;flex-wrap:wrap;gap:18px;}
+  .stat{text-align:center;flex:1;min-width:130px;}
+  .stat b{display:block;font-family:'Poppins',sans-serif;font-size:24px;color:var(--green-800);}
+  .stat span{font-size:12.5px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.05em;}
+  /* Sections */
+  section{padding:64px 0;}
+  section.alt{background:var(--cream);}
+  section h2{font-size:clamp(24px,3vw,32px);max-width:46ch;}
+  .lede-p{font-size:16.5px;color:var(--ink-soft);max-width:74ch;margin-bottom:28px;}
+  .direct-answer{
+    background:var(--green-100);border-left:4px solid var(--green-600);
+    padding:18px 22px;border-radius:0 10px 10px 0;font-size:15.5px;color:var(--green-900);margin-bottom:26px;max-width:78ch;
+  }
+  .direct-answer strong{color:var(--green-800);}
+  table.compare{width:100%;border-collapse:collapse;margin:20px 0 8px;font-size:14.5px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);}
+  table.compare th{background:var(--green-800);color:#fff;text-align:left;padding:13px 16px;font-family:'Poppins',sans-serif;font-weight:600;font-size:13.5px;}
+  table.compare td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top;}
+  table.compare tr:last-child td{border-bottom:none;}
+  table.compare tr:nth-child(even) td{background:#fbfaf6;}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:10px;}
+  .info-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);}
+  .info-card h4{font-size:16px;color:var(--green-800);margin-bottom:10px;}
+  .info-card ul{margin:0;padding-left:20px;color:var(--ink-soft);font-size:14.5px;}
+  .info-card ul li{margin-bottom:6px;}
+  .checklist{display:grid;grid-template-columns:1fr 1fr;gap:14px;list-style:none;margin:20px 0;padding:0;}
+  .checklist li{
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;
+    display:flex;gap:12px;align-items:flex-start;font-size:14.5px;box-shadow:0 4px 14px -8px rgba(0,0,0,.08);
+  }
+  .checklist li .mark{
+    flex:0 0 22px;height:22px;border-radius:50%;background:var(--green-600);color:#fff;
+    font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:700;margin-top:1px;
+  }
+  .checklist li p{margin:2px 0 0;color:var(--ink-soft);font-size:13.5px;}
+  .checklist li strong{color:var(--green-900);display:block;font-family:'Poppins',sans-serif;font-size:14.5px;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px;}
+  .step-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative;box-shadow:var(--shadow);}
+  .step-num{
+    font-family:'Poppins',sans-serif;font-weight:800;font-size:34px;color:var(--green-100);
+    -webkit-text-stroke:1.5px var(--green-500);letter-spacing:-1px;margin-bottom:6px;
+  }
+  .step-card h4{font-size:16.5px;margin-bottom:8px;}
+  .step-card ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:13.8px;}
+  .step-card ul li{margin-bottom:4px;}
+  .subgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:22px;}
+  .subgrid .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 4px 14px -8px rgba(0,0,0,.08);}
+  .subgrid .card h4{font-size:14.5px;margin-bottom:6px;color:var(--green-800);}
+  .subgrid .card p{font-size:13.3px;color:var(--ink-soft);margin:0;}
+  .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0;}
+  .tl-card{border-radius:12px;padding:18px 16px;color:#fff;box-shadow:var(--shadow);}
+  .tl-high{background:linear-gradient(160deg,#8f2f2f,#6f2323);}
+  .tl-mod{background:linear-gradient(160deg,#a97f2c,#8a641d);}
+  .tl-low{background:linear-gradient(160deg,#2c6b48,#1a3b2c);}
+  .tl-card .season{font-family:'Poppins',sans-serif;font-weight:700;font-size:14.5px;margin-bottom:4px;display:block;}
+  .tl-card .risk{font-size:12px;text-transform:uppercase;letter-spacing:.06em;opacity:.85;display:block;margin-bottom:8px;}
+  .tl-card p{font-size:13px;margin:0;opacity:.95;}
+  .callout-link{
+    display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:700;color:var(--green-700);
+    font-family:'Poppins',sans-serif;font-size:14.5px;border-bottom:2px solid var(--gold);padding-bottom:2px;
+  }
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px;}
+  .why-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);}
+  .why-card h4{font-size:16px;margin-bottom:8px;color:var(--green-800);}
+  .why-card p{font-size:14px;color:var(--ink-soft);margin:0;}
+  .team-card{
+    margin-top:34px;background:var(--green-900);color:#fff;border-radius:var(--radius);
+    padding:28px 30px;display:flex;gap:22px;align-items:center;box-shadow:var(--shadow);
+  }
+  .team-avatar{width:64px;height:64px;border-radius:50%;background:var(--gold);flex:0 0 64px;
+    display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;
+    font-size:24px;color:var(--green-900);}
+  .team-card h4{color:#fff;margin-bottom:2px;}
+  .team-card .role{color:#e9c987;font-size:13px;font-weight:600;margin-bottom:8px;}
+  .team-card p.bio{color:#d9e6dd;font-size:14.3px;margin:0;}
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;}
+  .faq-item summary{
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:15.5px;color:var(--green-900);
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary:after{content:'+';font-size:22px;color:var(--gold-dark);flex:0 0 auto;}
+  .faq-item[open] summary:after{content:'\2212';}
+  .faq-item p{color:var(--ink-soft);font-size:14.8px;margin:12px 0 0;max-width:78ch;}
+  /* Local seo */
+  .area-pills{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 6px;}
+  .area-pills span{background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--green-800);}
+  /* CTA band */
+  .cta-band{background:linear-gradient(120deg,var(--green-800),var(--green-900));color:#fff;text-align:center;padding:64px 0;}
+  .cta-band h2{color:#fff;}
+  .cta-band p{color:#d7e6dc;max-width:60ch;margin:0 auto 28px;font-size:16px;}
+  .cta-band .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .cta-triple{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;text-align:left;}
+  .cta-triple .box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px;}
+  .cta-triple h4{color:#fff;font-size:15.5px;margin-bottom:6px;}
+  .cta-triple p{font-size:13.5px;color:#c9dccf;margin:0;}
+  /* Footer */
+  footer{background:var(--green-900);color:#cfe0d4;padding:56px 0 24px;font-size:14px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .foot-brand{display:flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:700;color:#fff;margin-bottom:12px;}
+  .foot-brand img{height:38px;width:38px;border-radius:8px;}
+  footer h5{color:#fff;font-family:'Poppins',sans-serif;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+  footer ul{list-style:none;margin:0;padding:0;}
+  footer ul li{margin-bottom:9px;}
+  footer a:hover{color:#fff;}
+  .foot-bottom{display:flex;justify-content:space-between;padding-top:22px;flex-wrap:wrap;gap:10px;font-size:12.8px;color:#9db7a7;}
+  .map-embed{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.15);margin-top:14px;}
+  /* mobile sticky */
+  .mobile-cta{display:none;}
+  @media(max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .steps,.why-grid{grid-template-columns:1fr 1fr;}
+    .subgrid{grid-template-columns:1fr 1fr;}
+    .timeline{grid-template-columns:1fr 1fr;}
+    .two-col{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    nav.main-links{display:none;}
+  }
+  @media(max-width:640px){
+    .steps,.why-grid,.subgrid,.timeline,.checklist{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .team-card{flex-direction:column;text-align:center;}
+    .header-ctas .btn-outline{display:none;}
+    .mobile-cta{
+      display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;
+      background:var(--green-900);padding:12px 16px;gap:10px;box-shadow:0 -6px 20px rgba(0,0,0,.2);
+    }
+    .mobile-cta .btn{flex:1;}
+    body{padding-bottom:64px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <a href="tel:+17733028351">(773) 302-8351</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="nav-row wrap">
+    <a href="https://primetreecare.pages.dev/" class="brand">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      Prime Tree Care Chicago Arborists
+    </a>
+    <nav class="main-links">
+      <a href="https://primetreecare.pages.dev/services/">Services</a>
+      <a href="https://primetreecare.pages.dev/#why-us">Why Prime</a>
+      <a href="https://primetreecare.pages.dev/#process">Our Process</a>
+      <a href="https://primetreecare.pages.dev/service-areas/">Service Areas</a>
+      <a href="https://primetreecare.pages.dev/#reviews">Reviews</a>
+      <a href="https://primetreecare.pages.dev/contact">Contact</a>
+    </nav>
+    <div class="header-ctas">
+      <a href="tel:+17733028351" class="btn btn-outline">Call (773) 302-8351</a>
+      <a href="https://primetreecare.pages.dev/contact" class="btn btn-gold">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="wrap">
+    <a href="https://primetreecare.pages.dev/">Home</a><span>/</span>
+    <a href="https://primetreecare.pages.dev/services/">Services</a><span>/</span>
+    Tree Trimming &amp; Pruning
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">★ ISA-Certified Arborists · Serving Chicagoland</span>
+      <h1>Tree Trimming &amp; Pruning in Chicago, IL</h1>
+      <p class="lede">Prime Tree Care provides professional tree trimming and pruning services throughout Chicago, helping property owners improve tree structure, reduce storm damage risk, enhance appearance, and promote long-term health. Our ISA-certified arborists use proper pruning techniques and dormant-season scheduling to minimize disease transmission risks such as Oak Wilt while preserving the natural form of your trees.</p>
+      <div class="hero-ctas">
+        <a href="https://primetreecare.pages.dev/contact" class="btn btn-gold btn-lg">Schedule Tree Pruning</a>
+        <a href="https://primetreecare.pages.dev/contact" class="btn btn-line btn-lg">Request an Estimate</a>
+        <a href="tel:+17733028351" class="btn btn-line btn-lg">Call an Arborist</a>
+      </div>
+      <div class="trust-strip">
+        <div><span class="dot"></span> ISA Certified Arborists</div>
+        <div><span class="dot"></span> Licensed &amp; Insured</div>
+        <div><span class="dot"></span> Free On-Site Estimates</div>
+        <div><span class="dot"></span> Locally Owned &amp; Operated</div>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <img src="https://primetreecare.pages.dev/f/tree-trimming-and-pruning.webp" alt="Prime Tree Care arborist performing professional tree pruning on mature Chicago residential tree">
+    </div>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="wrap">
+    <div class="stat"><b>15+ yrs</b><span>Serving Chicagoland</span></div>
+    <div class="stat"><b>4.9★</b><span>Average Rating</span></div>
+    <div class="stat"><b>Licensed</b><span>&amp; Fully Insured</span></div>
+    <div class="stat"><b>24/7</b><span>Storm Response</span></div>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Why It Matters</span>
+    <h2>Why Proper Tree Pruning Matters in Chicago</h2>
+    <div class="direct-answer">
+      <strong>Direct answer:</strong> Proper pruning removes structural weaknesses before Chicago's storms find them — reducing the odds of limb failure, protecting your property, and extending the productive life of the tree.
+    </div>
+    <p class="lede-p">
+      Chicago trees carry a heavier structural burden than trees almost anywhere else in the Midwest. Heavy wet snow settles into unbalanced canopies, ice accumulation adds unforgiving dead weight to already-weak limb unions, and high-wind events — including the derecho-style straight-line wind storms that have grown more frequent across Chicagoland — test every branch attachment on the tree at once. Add in decades-old urban trees that were never trained when young, and you get a canopy full of latent hazards that only show themselves the moment a storm arrives.
+    </p>
+    <p class="lede-p">
+      Pruning is preventative maintenance for that risk. Removing dead, crossing, and overextended limbs reduces sail area and wind resistance, corrects weight distribution across the crown, and eliminates the weak branch unions most likely to fail under load. Pruning cuts made at the right time of year, in the right location on the branch, also close faster and cleaner — which matters directly for disease transmission risk in species like oak and elm that are common throughout Chicago's neighborhoods.
+    </p>
+    <p class="lede-p">
+      The inverse is just as true: improper pruning creates the exact hazards it's supposed to prevent. Topping, flush cuts, over-thinning, and "lion-tailing" (stripping interior growth and leaving foliage only at branch tips) all weaken a tree's structure, trigger stress-response sprouting that regrows even weaker, and leave large wounds that decay organisms exploit for years afterward. A tree pruned badly by an unqualified crew often looks fine the season it's cut and becomes a liability three, five, or ten years later — which is why species-specific technique and correct cut placement matter as much as the decision to prune in the first place.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Terminology</span>
+    <h2>Tree Trimming vs. Tree Pruning: What's the Difference?</h2>
+    <div class="direct-answer">
+      <strong>Direct answer:</strong> Trimming manages appearance and clearance; pruning targets the tree's structure and long-term health. Most professional visits do both at once.
+    </div>
+    <table class="compare">
+      <tr><th>Service</th><th>Purpose</th><th>Typical Goal</th></tr>
+      <tr><td><strong>Tree Trimming</strong></td><td>Appearance, canopy shaping, clearance from structures and walkways</td><td>Neater form, unobstructed sightlines and access</td></tr>
+      <tr><td><strong>Tree Pruning</strong></td><td>Structural correction, disease and decay management, hazard reduction</td><td>Stronger branch architecture, reduced storm and disease risk</td></tr>
+      <tr><td><strong>Combined Service</strong></td><td>Both appearance and structure addressed in a single visit</td><td>A tree that looks better and stands up to Chicago weather</td></tr>
+    </table>
+    <div class="two-col">
+      <div class="info-card">
+        <h4>Tree Trimming Covers</h4>
+        <ul>
+          <li>Overall appearance and canopy shape</li>
+          <li>Clearance from roofs, siding, and walkways</li>
+          <li>Canopy management for light and sightlines</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>Tree Pruning Covers</h4>
+        <ul>
+          <li>Structural integrity and branch architecture</li>
+          <li>Health improvement and deadwood removal</li>
+          <li>Risk reduction ahead of storm season</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Warning Signs</span>
+    <h2>Signs Your Tree May Need Professional Pruning</h2>
+    <p class="lede-p">Most tree failures give warning signs well before they happen. If you notice any of the following, it's worth having an ISA-certified arborist take a look before the next major storm.</p>
+    <ul class="checklist">
+      <li><span class="mark">✓</span><div><strong>Dead branches</strong><p>Dry, brittle, or bark-free limbs are structurally unpredictable and a common source of falling debris.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Crossing limbs</strong><p>Branches that rub together wear through bark, creating entry points for decay and pests.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Overextended limbs</strong><p>Long, heavy branches with little support are the first to fail under snow, ice, or wind load.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Storm damage</strong><p>Split, cracked, or hanging limbs need prompt attention to prevent further tearing and decay.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Canopy imbalance</strong><p>A lopsided crown puts uneven stress on the trunk and root plate, raising the risk of a full failure.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Branches near structures</strong><p>Limbs contacting roofs, siding, or windows create ongoing wear and storm-damage exposure.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Utility clearance concerns</strong><p>Growth near power lines is a safety hazard that requires trained, careful pruning.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Dense canopy growth</strong><p>Overcrowded interior growth blocks airflow and light, encouraging fungal issues.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Weak branch unions</strong><p>Co-dominant stems and included bark are leading causes of catastrophic limb failure.</p></div></li>
+      <li><span class="mark">✓</span><div><strong>Disease-related dieback</strong><p>Thinning foliage or dying sections can signal disease that spreads without corrective pruning.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Our Process</span>
+    <h2>Our Tree Trimming &amp; Pruning Process</h2>
+    <p class="lede-p">Every pruning job follows the same disciplined process, whether it's a single ornamental tree or a full-property canopy plan.</p>
+    <div class="steps">
+      <div class="step-card"><div class="step-num">01</div><h4>Arborist Evaluation</h4><ul><li>Species identification</li><li>Growth habit analysis</li><li>Risk assessment</li></ul></div>
+      <div class="step-card"><div class="step-num">02</div><h4>Pruning Plan Development</h4><ul><li>Structural objectives</li><li>Health objectives</li><li>Clearance requirements</li></ul></div>
+      <div class="step-card"><div class="step-num">03</div><h4>Safe Equipment Setup</h4><ul><li>Rope systems</li><li>Aerial lifts</li><li>Bucket trucks</li><li>Established safety zones</li></ul></div>
+      <div class="step-card"><div class="step-num">04</div><h4>Precision Pruning</h4><ul><li>Proper cut placement</li><li>Weight reduction</li><li>Crown improvement</li></ul></div>
+      <div class="step-card"><div class="step-num">05</div><h4>Site Cleanup</h4><ul><li>Debris removal</li><li>Branch chipping</li><li>Final inspection</li></ul></div>
+      <div class="step-card"><div class="step-num">06</div><h4>Long-Term Recommendations</h4><ul><li>Ongoing monitoring</li><li>Future pruning intervals</li><li>Tree health management</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Structural Pruning</span>
+    <h2>Structural Pruning for Stronger, Safer Trees</h2>
+    <div class="direct-answer">
+      <strong>Direct answer:</strong> Structural pruning corrects the branch architecture that leads to storm failures — it's the single most effective long-term tool for preventing limb and trunk failure.
+    </div>
+    <p class="lede-p"><strong>What is structural pruning?</strong> It's the deliberate shaping of a tree's branch architecture — establishing a dominant central leader, well-spaced scaffold limbs, and strong branch unions — so the tree develops (or is corrected toward) a form that can carry wind, snow, and ice loads without failing.</p>
+    <p class="lede-p"><strong>Why structural defects develop:</strong> Urban trees are frequently planted in tight spaces, pruned inconsistently by different crews over the years, or left completely unpruned until a defect is already established. Without early correction, trees develop the same predictable weak points again and again.</p>
+    <div class="subgrid">
+      <div class="card"><h4>Co-Dominant Stems</h4><p>Two same-size stems competing for dominance create a narrow, weak union prone to splitting under load.</p></div>
+      <div class="card"><h4>Included Bark</h4><p>Bark trapped inside a tight branch union prevents strong wood-to-wood connection, creating a hidden failure point.</p></div>
+      <div class="card"><h4>Weak Branch Attachments</h4><p>Steep, narrow-angle attachments carry far less structural strength than wide, well-spaced unions.</p></div>
+      <div class="card"><h4>Long-Term Risk Reduction</h4><p>Correcting defects early prevents them from becoming major hazards decades later.</p></div>
+      <div class="card"><h4>Young Tree Training</h4><p>Early structural pruning is the cheapest, most effective intervention a tree will ever receive.</p></div>
+      <div class="card"><h4>Mature Tree Management</h4><p>Established trees are managed conservatively — reducing risk without over-pruning stressed limbs.</p></div>
+    </div>
+    <p class="lede-p" style="margin-top:22px;">Consistent structural pruning over a tree's lifetime meaningfully reduces the odds of catastrophic failure during Chicago's high-wind and heavy-snow events — it's an investment that pays off every storm season for decades.</p>
+  </div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Timing</span>
+    <h2>Dormant-Season Pruning in Chicago</h2>
+    <div class="direct-answer">
+      <strong>Direct answer:</strong> Late fall through early spring, while trees are dormant, is the best window for most structural pruning in Chicago — the tree is unstressed, defects are easiest to see, and disease pathogens are least active.
+    </div>
+    <p class="lede-p"><strong>What is dormant-season pruning?</strong> Pruning performed after leaf drop and before spring bud break, when the tree has entered its winter dormancy and growth has stopped.</p>
+    <div class="two-col">
+      <div class="info-card">
+        <h4>Best Times of Year</h4>
+        <ul>
+          <li>Late November through early March</li>
+          <li>Before sap begins rising in early spring</li>
+          <li>Timed around species-specific disease windows</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>Winter Benefits</h4>
+        <ul>
+          <li><strong>Improved visibility</strong> of branch structure with no leaf cover</li>
+          <li><strong>Reduced stress</strong> on the tree during its dormant period</li>
+          <li><strong>Better healing</strong> in time for spring growth to seal wounds</li>
+          <li><strong>Reduced disease transmission</strong> while pests and pathogens are inactive</li>
+        </ul>
+      </div>
+    </div>
+    <p class="lede-p" style="margin-top:20px;">Chicago's cold winters make dormant pruning especially practical — frozen or firm ground reduces soil compaction and turf damage from equipment, and our crews can access more of the canopy safely with a clear view of every cut.</p>
+  </div>
+</section>
+
+<!-- SECTION 7 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Cornerstone Guide</span>
+    <h2>Oak Wilt Prevention Through Proper Pruning Timing</h2>
+    <div class="direct-answer">
+      <strong>Direct answer:</strong> Never prune oak trees in Chicago between April and July. Pruning wounds during this window attract sap-feeding beetles that actively spread Oak Wilt from infected trees to healthy ones.
+    </div>
+    <p class="lede-p"><strong>What is Oak Wilt?</strong> Oak Wilt is an aggressive fungal disease that blocks a tree's water-conducting tissue, killing red oak family trees — often within weeks of infection — and spreading to neighboring oaks through connected root systems.</p>
+    <p class="lede-p"><strong>How it spreads:</strong> Two ways — underground through grafted root systems between nearby oaks, and above ground when sap beetles, attracted to the smell of a fresh pruning wound, carry fungal spores from an infected tree to a healthy cut.</p>
+    <p class="lede-p"><strong>Why timing matters:</strong> A single ill-timed cut during beetle season can introduce Oak Wilt to an otherwise healthy tree — and once established, it can move through an entire block of connected oaks. Timing is the single biggest controllable factor in prevention.</p>
+    <div class="timeline">
+      <div class="tl-card tl-high"><span class="season">April – May</span><span class="risk">High Risk</span><p>Peak beetle activity. Avoid all oak pruning and wounding.</p></div>
+      <div class="tl-card tl-high"><span class="season">June – July</span><span class="risk">High Risk</span><p>Beetles remain active. Emergency pruning only, with wound treatment.</p></div>
+      <div class="tl-card tl-mod"><span class="season">August – October</span><span class="risk">Moderate Risk</span><p>Beetle activity declining. Non-urgent pruning still best delayed.</p></div>
+      <div class="tl-card tl-low"><span class="season">November – March</span><span class="risk">Low Risk</span><p>Dormant season. The recommended window for oak pruning in Chicago.</p></div>
+    </div>
+    <p class="lede-p"><strong>Special considerations for oak trees:</strong> If an oak must be pruned outside the dormant window due to storm damage or safety hazards, wounds should be sealed immediately and equipment sanitized between trees to limit spread risk.</p>
+    <a href="https://primetreecare.pages.dev/blog/oak-wilt-dutch-elm-dormant-pruning-season" class="callout-link">Read our full guide to Oak Wilt &amp; Dutch Elm dormant pruning season →</a>
+  </div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Species Guide</span>
+    <h2>Tree Species We Commonly Prune in Chicago</h2>
+    <p class="lede-p">Chicago's urban canopy is dominated by a handful of species, each with its own pruning considerations and vulnerabilities.</p>
+    <table class="compare">
+      <tr><th>Species</th><th>Common Issues</th><th>Pruning Objective</th></tr>
+      <tr><td><strong>Oak</strong></td><td>Oak Wilt vulnerability, co-dominant stems</td><td>Strict dormant-season timing, structural correction</td></tr>
+      <tr><td><strong>Maple</strong></td><td>Included bark, weak branch unions</td><td>Structural pruning, weight reduction</td></tr>
+      <tr><td><strong>Elm</strong></td><td>Dutch Elm Disease risk</td><td>Timed pruning, sanitized equipment, deadwood removal</td></tr>
+      <tr><td><strong>Ash</strong></td><td>Emerald Ash Borer decline</td><td>Health assessment prior to pruning, canopy thinning</td></tr>
+      <tr><td><strong>Honey Locust</strong></td><td>Fast, dense re-growth</td><td>Canopy thinning, clearance pruning</td></tr>
+      <tr><td><strong>Hackberry</strong></td><td>Witches'-broom growth, weak wood</td><td>Deadwood removal, structural thinning</td></tr>
+      <tr><td><strong>Kentucky Coffeetree</strong></td><td>Coarse branching, uneven form</td><td>Crown shaping, structural training</td></tr>
+      <tr><td><strong>Ornamental Trees</strong></td><td>Overcrowding, poor early training</td><td>Formative and maintenance pruning</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- SECTION 9 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Storm Prep</span>
+    <h2>How Pruning Reduces Storm Damage Risk</h2>
+    <p class="lede-p">Chicagoland's exposure to derecho-strength wind events and severe summer storms makes proactive pruning one of the most effective property-protection steps a homeowner can take.</p>
+    <div class="subgrid">
+      <div class="card"><h4>Wind Resistance</h4><p>A thinned, balanced canopy lets wind pass through instead of catching it like a sail.</p></div>
+      <div class="card"><h4>Weight Reduction</h4><p>Shortening overextended limbs reduces leverage and stress on weak branch unions.</p></div>
+      <div class="card"><h4>Crown Balancing</h4><p>An evenly distributed canopy reduces uneven stress on the trunk and root system.</p></div>
+      <div class="card"><h4>Weak Limb Removal</h4><p>Eliminating the branches most likely to fail removes the biggest storm-damage risk first.</p></div>
+      <div class="card"><h4>Snow &amp; Ice Load Management</h4><p>A properly thinned crown carries winter loads far more safely than a dense, uncorrected one.</p></div>
+      <div class="card"><h4>Utility Clearance</h4><p>Clearance pruning near power lines reduces the risk of outages and fire hazards during storms.</p></div>
+    </div>
+    <a href="https://primetreecare.pages.dev/services/storm-prep-tree-support-systems" class="callout-link">See our storm prep &amp; tree support systems guide →</a>
+  </div>
+</section>
+
+<!-- SECTION 10 -->
+<section class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Decision Guide</span>
+    <h2>When Tree Removal May Be Better Than Pruning</h2>
+    <p class="lede-p">Pruning can't fix every tree. Our arborists will always tell you honestly when removal is the safer, more cost-effective option.</p>
+    <table class="compare">
+      <tr><th>Condition</th><th>Pruning Recommended</th><th>Removal Recommended</th></tr>
+      <tr><td><strong>Severe decay</strong></td><td>Localized, minor decay</td><td>Decay affecting the main trunk or root flare</td></tr>
+      <tr><td><strong>Structural instability</strong></td><td>Correctable defect in an otherwise sound tree</td><td>Leaning trees with root plate movement</td></tr>
+      <tr><td><strong>Advanced disease</strong></td><td>Early-stage, treatable conditions</td><td>Widespread infection with no viable treatment</td></tr>
+      <tr><td><strong>Hazardous defects</strong></td><td>Single correctable defect</td><td>Multiple compounding structural failures</td></tr>
+    </table>
+    <p class="lede-p" style="margin-top:12px;">Not sure which category your tree falls into? Our <a href="https://primetreecare.pages.dev/services/tree-health-inspection-treatment" style="color:var(--green-700);font-weight:700;">tree health inspection &amp; treatment</a> service can determine whether pruning, treatment, or <a href="https://primetreecare.pages.dev/services/tree-removal" style="color:var(--green-700);font-weight:700;">removal</a> is the right call for your property.</p>
+  </div>
+</section>
+
+<!-- SECTION 11 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Why Prime</span>
+    <h2>Why Choose Prime Tree Care for Tree Pruning?</h2>
+    <div class="why-grid">
+      <div class="why-card"><h4>ISA-Certified Arborists</h4><p>Every pruning plan is designed and led by a credentialed arborist, not a general landscaping crew.</p></div>
+      <div class="why-card"><h4>Species-Specific Expertise</h4><p>We prune oak, elm, maple, and ash differently — because their structure and vulnerabilities are different.</p></div>
+      <div class="why-card"><h4>Oak Wilt Awareness</h4><p>Strict adherence to dormant-season timing and sanitized equipment on every oak we touch.</p></div>
+      <div class="why-card"><h4>Safety-Focused Operations</h4><p>Rope systems, bucket trucks, and defined safety zones on every job, every time.</p></div>
+      <div class="why-card"><h4>Modern Equipment</h4><p>Aerial lifts and proper rigging mean cleaner cuts and safer work around structures and power lines.</p></div>
+      <div class="why-card"><h4>Long-Term Tree Preservation</h4><p>Our goal is always the healthiest outcome for your tree, not the fastest job for us.</p></div>
+    </div>
+    <div class="team-card">
+      <div class="team-avatar">B</div>
+      <div>
+        <h4>Ben — Crew Lead, Storm Response</h4>
+        <div class="role">10 Years of Experience</div>
+        <p class="bio">Leads emergency tree operations throughout Chicago, specializing in structural pruning, cabling systems, storm mitigation, and safe work around structures and power lines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Common Questions</span>
+    <h2>Tree Trimming &amp; Pruning FAQs</h2>
+
+    <details class="faq-item" open>
+      <summary>What is the best time to prune trees in Chicago?</summary>
+      <p>For most species, late fall through early spring — while trees are dormant — is the best window. It reduces stress on the tree, improves visibility of branch structure, and minimizes disease transmission risk.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What is the difference between trimming and pruning?</summary>
+      <p>Trimming focuses on appearance and clearance, shaping the canopy and keeping branches away from structures. Pruning targets structural integrity and tree health, removing defects that create long-term risk.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can pruning improve tree health?</summary>
+      <p>Yes. Removing dead, damaged, or diseased wood improves airflow and light penetration, reduces pest and fungal pressure, and redirects the tree's energy toward healthy growth.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How often should trees be pruned?</summary>
+      <p>Most mature trees benefit from professional pruning every 2–4 years, though young trees in structural training and storm-damaged trees may need more frequent attention.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is winter the best time to prune?</summary>
+      <p>For most Chicago species, yes. Dormant-season pruning reduces stress on the tree, improves visibility of defects, and lowers the risk of spreading pests or disease active during warmer months.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can pruning prevent storm damage?</summary>
+      <p>Pruning significantly reduces storm damage risk by removing weak limbs, balancing the canopy, and reducing wind resistance — though it cannot eliminate risk entirely on a severely compromised tree.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What is structural pruning?</summary>
+      <p>Structural pruning corrects a tree's branch architecture — establishing strong scaffold limbs and branch unions — to reduce the likelihood of limb or trunk failure over the tree's lifetime.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is pruning safe near power lines?</summary>
+      <p>It requires specialized training and equipment. Our crews are trained to work safely around power lines and structures, and we coordinate with utility providers when clearance work is required.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can pruning stop Oak Wilt?</summary>
+      <p>Properly timed pruning during the dormant season is one of the most effective ways to prevent Oak Wilt transmission. Pruning oaks between April and July significantly raises infection risk and should be avoided.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How much does tree trimming cost in Chicago?</summary>
+      <p>Cost depends on tree size, species, condition, and site access. Visit our <a href="https://primetreecare.pages.dev/blog/tree-trimming-cost-chicago" style="color:var(--green-700);font-weight:700;">tree trimming cost guide</a> for typical Chicago pricing, or request a free on-site estimate for an exact quote.</p>
+    </details>
+  </div>
+</section>
+
+<!-- LOCAL SEO -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Where We Work</span>
+    <h2>Tree Trimming Services Throughout Chicago &amp; Nearby Suburbs</h2>
+    <p class="lede-p">
+      Prime Tree Care provides tree trimming and structural pruning across the City of Chicago and surrounding Cook, DuPage, Kane, and McHenry County suburbs. Urban tree maintenance in Chicago comes with its own challenges — compacted soil, tight-access lots, aging parkway trees, and canopy pressure from storms and disease — and our crews handle it street by street, neighborhood by neighborhood, rather than applying one generic plan everywhere.
+    </p>
+    <p class="lede-p">
+      From dense city blocks to wooded suburban lots, we tailor pruning schedules to local species mix, storm exposure, and each neighborhood's canopy history — helping protect property values and prevent the kind of storm damage that catches unprepared homeowners off guard every season.
+    </p>
+    <div class="area-pills">
+      <span>Chicago</span><span>Evanston</span><span>Oak Park</span><span>Elmhurst</span>
+      <span>Schaumburg</span><span>Villa Park</span><span>Aurora</span><span>Chicago Heights</span>
+      <span>McHenry</span><span>Westmont</span><span>West Chicago</span><span>Alsip</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#f3e6c6;">Get Started</span>
+    <h2>Schedule Professional Tree Pruning Today</h2>
+    <p>Professional pruning improves tree health, protects property, enhances appearance, and helps trees withstand Chicago's challenging weather conditions.</p>
+    <div class="btn-row">
+      <a href="https://primetreecare.pages.dev/contact" class="btn btn-gold btn-lg">Request an Estimate</a>
+      <a href="tel:+17733028351" class="btn btn-line btn-lg">Call (773) 302-8351</a>
+    </div>
+    <div class="cta-triple">
+      <div class="box"><h4>Request an Estimate</h4><p>Free, no-obligation written pricing from a certified arborist.</p></div>
+      <div class="box"><h4>Schedule an Arborist Visit</h4><p>On-site evaluation of your tree's structure, health, and pruning needs.</p></div>
+      <div class="box"><h4>Emergency Tree Assessment</h4><p>24/7 response for storm-damaged limbs and hazardous trees.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          Prime Tree Care
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6641919270198!2d-87.84010494663066!3d41.73163458945334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e381997350f15%3A0x840f9867c3261480!2s8811%20W%2087th%20St%2C%20Hickory%20Hills%2C%20IL%2060457!5e0!3m2!1sen!2sus!4v1786290114801!5m2!1sen!2sus" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="https://primetreecare.pages.dev/services/tree-removal">Tree Removal</a></li>
+          <li><a href="https://primetreecare.pages.dev/services/tree-trimming-pruning">Tree Trimming &amp; Pruning</a></li>
+          <li><a href="https://primetreecare.pages.dev/services/tree-health-inspection-treatment">Tree Health Treatment</a></li>
+          <li><a href="https://primetreecare.pages.dev/services/tree-shrub-fertilization">Tree &amp; Shrub Fertilization</a></li>
+          <li><a href="https://primetreecare.pages.dev/services/storm-prep-tree-support-systems">Storm Prep &amp; Support Systems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="https://primetreecare.pages.dev/blog/oak-wilt-dutch-elm-dormant-pruning-season">Oak Wilt &amp; Dormant Pruning Season</a></li>
+          <li><a href="https://primetreecare.pages.dev/blog/tree-trimming-cost-chicago">Tree Trimming Cost in Chicago</a></li>
+          <li><a href="https://primetreecare.pages.dev/blog/chicago-derecho-storm-damage-trees">Chicago Derecho Storm Damage</a></li>
+          <li><a href="https://primetreecare.pages.dev/service-areas/">Service Areas</a></li>
+          <li><a href="https://primetreecare.pages.dev/services/">All Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>8811 W 87th St<br>Hickory Hills, IL 60457</li>
+          <li><a href="tel:+17733028351">(773) 302-8351</a></li>
+          <li>Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</li>
+          <li><a href="https://maps.app.goo.gl/XtF7wAiftwWsLE6r6" target="_blank" rel="noopener">Get Directions →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="https://primetreecare.pages.dev/privacy-policy">Privacy Policy</a> · <a href="https://primetreecare.pages.dev/terms-of-service">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="tel:+17733028351" class="btn btn-line">Call Now</a>
+  <a href="https://primetreecare.pages.dev/contact" class="btn btn-gold">Free Estimate</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Tree Trimming and Pruning",
+  "name": "Tree Trimming & Pruning",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Prime Tree Care Service",
+    "telephone": "+1-773-302-8351",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8811 W 87th St",
+      "addressLocality": "Hickory Hills",
+      "addressRegion": "IL",
+      "postalCode": "60457",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Chicago"},
+    {"@type": "City", "name": "Evanston"},
+    {"@type": "City", "name": "Oak Park"},
+    {"@type": "City", "name": "Elmhurst"},
+    {"@type": "City", "name": "Schaumburg"},
+    {"@type": "City", "name": "Villa Park"},
+    {"@type": "City", "name": "Aurora"},
+    {"@type": "City", "name": "Chicago Heights"},
+    {"@type": "City", "name": "McHenry"},
+    {"@type": "City", "name": "Westmont"},
+    {"@type": "City", "name": "West Chicago"},
+    {"@type": "City", "name": "Alsip"}
+  ],
+  "description": "Professional tree trimming, structural pruning, canopy management, and dormant-season pruning services throughout Chicago, IL and surrounding suburbs by ISA-certified arborists.",
+  "url": "https://primetreecare.pages.dev/services/tree-trimming-pruning/"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the best time to prune trees in Chicago?", "acceptedAnswer": {"@type": "Answer", "text": "For most species, late fall through early spring — while trees are dormant — is the best window. It reduces stress on the tree, improves visibility of branch structure, and minimizes disease transmission risk."}},
+    {"@type": "Question", "name": "What is the difference between trimming and pruning?", "acceptedAnswer": {"@type": "Answer", "text": "Trimming focuses on appearance and clearance, shaping the canopy and keeping branches away from structures. Pruning targets structural integrity and tree health, removing defects that create long-term risk."}},
+    {"@type": "Question", "name": "Can pruning improve tree health?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Removing dead, damaged, or diseased wood improves airflow and light penetration, reduces pest and fungal pressure, and redirects the tree's energy toward healthy growth."}},
+    {"@type": "Question", "name": "How often should trees be pruned?", "acceptedAnswer": {"@type": "Answer", "text": "Most mature trees benefit from professional pruning every 2-4 years, though young trees in structural training and storm-damaged trees may need more frequent attention."}},
+    {"@type": "Question", "name": "Is winter the best time to prune?", "acceptedAnswer": {"@type": "Answer", "text": "For most Chicago species, yes. Dormant-season pruning reduces stress on the tree, improves visibility of defects, and lowers the risk of spreading pests or disease active during warmer months."}},
+    {"@type": "Question", "name": "Can pruning prevent storm damage?", "acceptedAnswer": {"@type": "Answer", "text": "Pruning significantly reduces storm damage risk by removing weak limbs, balancing the canopy, and reducing wind resistance, though it cannot eliminate risk entirely on a severely compromised tree."}},
+    {"@type": "Question", "name": "What is structural pruning?", "acceptedAnswer": {"@type": "Answer", "text": "Structural pruning corrects a tree's branch architecture, establishing strong scaffold limbs and branch unions, to reduce the likelihood of limb or trunk failure over the tree's lifetime."}},
+    {"@type": "Question", "name": "Is pruning safe near power lines?", "acceptedAnswer": {"@type": "Answer", "text": "It requires specialized training and equipment. Our crews are trained to work safely around power lines and structures, and we coordinate with utility providers when clearance work is required."}},
+    {"@type": "Question", "name": "Can pruning stop Oak Wilt?", "acceptedAnswer": {"@type": "Answer", "text": "Properly timed pruning during the dormant season is one of the most effective ways to prevent Oak Wilt transmission. Pruning oaks between April and July significantly raises infection risk and should be avoided."}},
+    {"@type": "Question", "name": "How much does tree trimming cost in Chicago?", "acceptedAnswer": {"@type": "Answer", "text": "Cost depends on tree size, species, condition, and site access. Visit our tree trimming cost guide for typical Chicago pricing, or request a free on-site estimate for an exact quote."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetreecare.pages.dev/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://primetreecare.pages.dev/services/"},
+    {"@type": "ListItem", "position": 3, "name": "Tree Trimming & Pruning", "item": "https://primetreecare.pages.dev/services/tree-trimming-pruning/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Prime Tree Care Service",
+  "image": "https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp",
+  "telephone": "+1-773-302-8351",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8811 W 87th St",
+    "addressLocality": "Hickory Hills",
+    "addressRegion": "IL",
+    "postalCode": "60457",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.7322473,
+    "longitude": -87.8392621
+  },
+  "url": "https://primetreecare.pages.dev/",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "19:00"}
+  ],
+  "hasMap": "https://maps.app.goo.gl/XtF7wAiftwWsLE6r6",
+  "areaServed": "Chicago, IL and surrounding suburbs"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Tree Trimming & Pruning in Chicago, IL | Prime Tree Care",
+  "description": "Professional tree trimming, structural pruning & dormant-season care in Chicago. ISA-certified arborists reduce storm risk, prevent Oak Wilt & improve tree health.",
+  "url": "https://primetreecare.pages.dev/services/tree-trimming-pruning/",
+  "isPartOf": {"@type": "WebSite", "name": "Prime Tree Care", "url": "https://primetreecare.pages.dev/"},
+  "primaryImageOfPage": "https://primetreecare.pages.dev/f/tree-trimming-and-pruning.webp"
+}
+</script>
+
+</body>
+</html>
