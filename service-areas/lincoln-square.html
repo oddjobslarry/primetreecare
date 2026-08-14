@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lincoln Square Tree Service | ISA Certified Arborists in Lincoln Square Chicago</title>
+<meta name="description" content="Professional tree service in Lincoln Square Chicago. ISA-certified arborists providing tree trimming, tree removal, health inspections, emergency tree service, stump grinding, and urban tree care for Lincoln Square's mature residential canopy.">
+<link rel="canonical" href="https://primetreecare.pages.dev/service-areas/lincoln-square">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F; --forest:#263A24; --olive-light:#7A8750;
+    --cream:#F5F2E8; --beige:#D8CDB5; --charcoal:#252823;
+    --gold:#C58A32; --white:#FFFFFF; --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Open Sans', sans-serif; color:var(--charcoal); background:var(--white); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,h4{ font-family:'Montserrat', sans-serif; color:var(--forest); line-height:1.2; letter-spacing:-0.01em; }
+  a{ text-decoration:none; color:var(--olive); }
+  a:hover{ color:var(--forest); }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{ font-family:'Montserrat', sans-serif; font-weight:700; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--olive); }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:'Montserrat', sans-serif; font-weight:600; font-size:15px; padding:15px 30px; border-radius:8px; border:2px solid transparent; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease; white-space:nowrap; text-decoration:none !important; }
+  .btn-primary{ background:var(--olive); color:var(--white); }
+  .btn-primary:hover{ background:var(--forest); color:var(--white); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); }
+  .btn-gold:hover{ background:#b57b28; color:var(--forest); transform:translateY(-2px); }
+  .btn-outline{ border-color:var(--cream); color:var(--cream); background:transparent; }
+  .btn-outline:hover{ background:rgba(245,242,232,0.12); color:var(--cream); }
+
+  .topbar{ background:var(--forest); color:var(--beige); font-size:13px; }
+  .topbar .container{ display:flex; justify-content:space-between; align-items:center; padding-top:8px; padding-bottom:8px; }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); }
+  .topbar a:hover{ color:var(--gold); }
+
+  header{ background:var(--white); border-bottom:1px solid var(--beige); position:sticky; top:0; z-index:100; }
+  .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:14.5px; color:var(--charcoal); padding:6px 0; }
+  nav.primary-nav a:hover{ color:var(--olive); }
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; }
+  .header-phone .ph-icon{ width:38px; height:38px; border-radius:50%; background:var(--cream); display:flex; align-items:center; justify-content:center; color:var(--olive); flex-shrink:0; }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* Page hero */
+  .page-hero{
+    position:relative;
+    background-image: linear-gradient(120deg, rgba(19,29,17,0.90) 0%, rgba(38,58,36,0.82) 45%, rgba(38,58,36,0.58) 100%), url('https://primetreecare.pages.dev/images/chicago-tree-care-prime-tree-care-back-ground-pic.webp');
+    background-size:cover; background-position:center; color:var(--white); padding:64px 0 88px;
+  }
+  .breadcrumb{ font-size:13px; color:var(--beige); opacity:.85; margin-bottom:18px; }
+  .breadcrumb a{ color:var(--beige); } .breadcrumb a:hover{ color:var(--gold); }
+  .page-hero .eyebrow{ color:var(--beige); opacity:.9; }
+  .page-hero h1{ color:var(--white); font-size:44px; font-weight:800; margin-top:12px; max-width:760px; }
+  .page-hero h2.sub{ color:var(--beige); font-family:'Montserrat',sans-serif; font-weight:600; font-size:18px; margin-top:10px; max-width:620px; }
+  .direct-answer{
+    background:rgba(245,242,232,0.08); border:1px solid rgba(245,242,232,0.25); border-radius:var(--radius);
+    padding:22px 26px; margin-top:26px; max-width:720px; font-size:15.5px; color:var(--beige);
+  }
+  .hero-ctas{ display:flex; gap:16px; flex-wrap:wrap; margin-top:28px; }
+
+  section{ padding:88px 0; }
+  .bg-cream{ background:var(--cream); }
+  .bg-forest{ background:var(--forest); color:var(--cream); }
+  .section-head{ max-width:700px; margin-bottom:44px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  .section-head h2{ font-size:32px; font-weight:800; margin-top:10px; }
+  .section-head p{ margin-top:14px; color:#5b5f52; font-size:16px; }
+  .prose p{ font-size:15.5px; color:#3d4139; margin-bottom:16px; }
+  .prose h3{ font-size:19px; margin-top:32px; margin-bottom:12px; }
+  .prose h3:first-child{ margin-top:0; }
+  .prose ul{ margin:0 0 16px 22px; }
+  .prose ul li{ font-size:15.5px; color:#3d4139; margin-bottom:8px; }
+  .prose strong{ color:var(--forest); }
+  .two-col{ display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+
+  /* problem cards */
+  .problem-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .problem-card{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:28px; }
+  .problem-card h3{ font-size:17px; margin-bottom:10px; display:flex; align-items:center; gap:10px; }
+  .problem-card h3 .tag-icon{ width:34px; height:34px; border-radius:9px; background:var(--cream); color:var(--olive); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .problem-card p{ font-size:14.5px; color:#5b5f52; }
+  .problem-card a{ font-weight:600; font-size:13.5px; }
+
+  /* service blocks */
+  .service-mini-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .service-mini{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:24px 22px; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+  .service-mini:hover{ transform:translateY(-5px); box-shadow:var(--shadow); border-color:var(--olive-light); }
+  .service-mini .icon{ width:40px; height:40px; border-radius:10px; background:var(--cream); color:var(--olive); display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+  .service-mini h3{ font-size:15.5px; margin-bottom:8px; }
+  .service-mini ul{ margin:0 0 12px 18px; }
+  .service-mini ul li{ font-size:13px; color:#5b5f52; margin-bottom:4px; }
+  .service-mini a{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:12.5px; }
+
+  /* species cards */
+  .species-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .species-card{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:24px; }
+  .species-card h3{ font-size:16px; margin-bottom:8px; }
+  .species-card p{ font-size:13.5px; color:#5b5f52; margin-bottom:8px; }
+  .species-card .tag{ display:inline-block; background:var(--cream); color:var(--forest); font-size:11px; font-family:'Montserrat',sans-serif; font-weight:600; padding:3px 10px; border-radius:100px; margin-top:4px; }
+
+  /* Process timeline (horizontal) */
+  .process-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:16px; }
+  .process-step{ text-align:left; }
+  .process-step .step-num{ font-family:'Montserrat',sans-serif; font-weight:800; font-size:30px; color:var(--olive-light); opacity:.6; margin-bottom:8px; }
+  .process-step h4{ font-size:14px; color:var(--white); margin-bottom:6px; }
+  .process-step p{ font-size:12.5px; color:var(--beige); }
+
+  /* why us list */
+  .feature-list{ display:flex; flex-direction:column; gap:20px; }
+  .feature-list-item{ display:flex; gap:14px; }
+  .feature-list-item .num{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--gold); font-size:14px; width:32px; height:32px; border-radius:50%; border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .feature-list-item h4{ font-size:15.5px; margin-bottom:3px; }
+  .feature-list-item p{ font-size:14px; color:#5b5f52; }
+
+  /* nearby communities */
+  .nearby-pills{ display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
+  .nearby-pills a{
+    background:var(--white); border:1px solid var(--beige); color:var(--forest);
+    font-family:'Montserrat',sans-serif; font-weight:600; font-size:13.5px;
+    padding:11px 20px; border-radius:100px; display:inline-flex; align-items:center; gap:8px;
+  }
+  .nearby-pills a:hover{ background:var(--olive); color:var(--white); border-color:var(--olive); }
+
+  /* FAQ */
+  .faq-item{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:24px 26px; margin-bottom:14px; }
+  .faq-item h3{ font-size:16px; margin-bottom:8px; }
+  .faq-item p{ font-size:14.5px; color:#5b5f52; }
+
+  /* internal links block */
+  .link-cols{ display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+  .link-cols h4{ font-family:'Montserrat',sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--olive); margin-bottom:14px; }
+  .link-cols ul{ list-style:none; display:flex; flex-direction:column; gap:10px; }
+  .link-cols ul a{ font-size:14.5px; color:var(--charcoal); }
+  .link-cols ul a:hover{ color:var(--olive); text-decoration:underline; }
+
+  .cta-band{ background: linear-gradient(120deg, var(--forest), #1b2a19); color:var(--white); border-radius:20px; padding:60px 56px; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; }
+  .cta-band h3{ color:var(--white); font-size:28px; max-width:480px; }
+  .cta-band p{ color:var(--beige); margin-top:10px; max-width:480px; }
+  .cta-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; margin:0; }
+  footer ul a{ font-size:14px; color:var(--beige); } footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; } .footer-bottom a:hover{ color:var(--gold); }
+
+  .mobile-call-bar{ display:none; }
+
+  @media (max-width: 1024px){
+    .two-col{ grid-template-columns:1fr; }
+    .problem-grid{ grid-template-columns:1fr; }
+    .service-mini-grid{ grid-template-columns:repeat(2,1fr); }
+    .species-grid{ grid-template-columns:repeat(2,1fr); }
+    .process-grid{ grid-template-columns:repeat(3,1fr); row-gap:28px; }
+    .link-cols{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .page-hero{ padding:48px 0 64px; }
+    .page-hero h1{ font-size:29px; }
+    .service-mini-grid{ grid-template-columns:1fr; }
+    .species-grid{ grid-template-columns:1fr; }
+    .process-grid{ grid-template-columns:1fr 1fr; }
+    .footer-grid{ grid-template-columns:1fr; }
+    section{ padding:56px 0; }
+    .cta-band{ flex-direction:column; text-align:center; padding:40px 26px; }
+    .cta-band h3{ margin:0 auto; }
+    .mobile-call-bar{ display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200; background:var(--forest); padding:12px 16px; gap:12px; box-shadow:0 -8px 24px rgba(0,0,0,0.2); }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetreecare.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://primetreecare.pages.dev/service-areas/" },
+        { "@type": "ListItem", "position": 3, "name": "Lincoln Square", "item": "https://primetreecare.pages.dev/service-areas/lincoln-square/" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Tree Service",
+      "name": "Lincoln Square Tree Service",
+      "provider": { "@id": "https://primetreecare.pages.dev/#business" },
+      "areaServed": { "@type": "Place", "name": "Lincoln Square, Chicago, IL" },
+      "url": "https://primetreecare.pages.dev/service-areas/lincoln-square/",
+      "description": "ISA-certified arborist tree care for Lincoln Square, Chicago — tree trimming, removal, health treatment, emergency response, and storm prep for the neighborhood's mature boulevard and residential canopy."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do you provide tree services throughout Lincoln Square?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prime Tree Care serves all of Lincoln Square, including the residential streets around Western, Lincoln, and Lawrence Avenues, as well as the boulevard corridors and side streets running toward Ravenswood and North Center." } },
+        { "@type": "Question", "name": "Can you trim trees near power lines?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our crews are trained in utility vegetation management and safe clearance pruning near overhead service lines, which are common on Lincoln Square's older residential streets. For work directly on utility-owned equipment, we coordinate with the utility company as required." } },
+        { "@type": "Question", "name": "Who is responsible for parkway trees in Lincoln Square?", "acceptedAnswer": { "@type": "Answer", "text": "Parkway trees, the trees planted between the sidewalk and the street, are owned and maintained by the City of Chicago's Bureau of Forestry. Trees anywhere else on your property are your responsibility as the homeowner." } },
+        { "@type": "Question", "name": "How often should mature boulevard trees be inspected?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend a structural inspection every one to two years for large, mature boulevard trees, and sooner after any major storm event or if you notice deadwood, cracks, or canopy dieback." } },
+        { "@type": "Question", "name": "What is the best time to prune trees in Lincoln Square?", "acceptedAnswer": { "@type": "Answer", "text": "Late winter through early spring, during the dormant season, is generally best for structural pruning on oaks and elms, since it reduces the risk of spreading oak wilt or Dutch elm disease compared to pruning during the growing season." } },
+        { "@type": "Question", "name": "Can you remove trees in tight residential spaces?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lincoln Square's narrow lots, shared property lines, and limited alley access are common, and our crews plan removals around crane access, rigging, or sectional dismantling depending on the site." } },
+        { "@type": "Question", "name": "What should I do after storm damage?", "acceptedAnswer": { "@type": "Answer", "text": "If a tree or limb is threatening a structure, vehicle, or power line, keep people and pets away and call us for emergency response. For non-urgent damage, document it with photos for insurance purposes before scheduling cleanup." } },
+        { "@type": "Question", "name": "Can an arborist evaluate tree health before removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. An ISA-certified arborist can assess whether a declining or damaged tree can be treated and preserved, or whether removal is genuinely the safer, more cost-effective option." } },
+        { "@type": "Question", "name": "Do you offer emergency tree service?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Prime Tree Care offers 24/7 emergency tree service across Lincoln Square and the surrounding North Side neighborhoods for storm damage, fallen limbs, and hazardous leaning trees." } },
+        { "@type": "Question", "name": "How much does tree removal cost in Lincoln Square?", "acceptedAnswer": { "@type": "Answer", "text": "Cost depends on the tree's size, condition, and access. Small trees under 12 inches in diameter typically run a few hundred dollars, while large, mature boulevard-scale trees requiring crane access can run several thousand. We provide a written, itemized estimate after an on-site assessment." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left"><a href="tel:+17733028351">(773) 302-8351</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="/" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text"><span class="name">Prime Tree Care</span><span class="tag">Chicago Arborists</span></span>
+    </a>
+    <nav class="primary-nav">
+      <a href="/about.html">About</a>
+      <a href="/index.html#services">Services</a>
+      <a href="/index.html#areas">Service Areas</a>
+      <a href="/index.html#reviews">Reviews</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone" aria-label="Call Prime Tree Care at (773) 302-8351">
+        <span class="ph-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="ph-text"><span class="ph-label">Call Us Now</span><span class="ph-num">(773) 302-8351</span></span>
+      </a>
+      <a href="/contact.html" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / <a href="/index.html#areas">Service Areas</a> / Lincoln Square</div>
+    <span class="eyebrow">Lincoln Square, Chicago</span>
+    <h1>Lincoln Square Tree Service</h1>
+    <h2 class="sub">Expert Tree Care for Lincoln Square's Historic Boulevards and Residential Streets</h2>
+    <div class="direct-answer">
+      Prime Tree Care provides ISA-certified tree removal, trimming, and health care throughout Lincoln Square, Chicago — from the boulevard plantings along Western and Lincoln Avenue to the tight residential lots off Lawrence. Lincoln Square's mature parkway trees, overhead utility lines, historic housing stock, and dense urban canopy demand arborists who understand this streetscape specifically, not a generic citywide crew. We do.
+    </div>
+    <div class="hero-ctas">
+      <a href="/contact.html" class="btn btn-gold">Get a Free Lincoln Square Estimate</a>
+      <a href="tel:+17733028351" class="btn btn-outline">Call (773) 302-8351</a>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: URBAN CANOPY -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Neighborhood Expertise</span>
+      <h2>Tree Care in Lincoln Square's Mature Urban Canopy</h2>
+    </div>
+
+    <div class="two-col prose">
+      <div>
+        <h3>Historic Boulevard Plantings</h3>
+        <p>Lincoln Square's tree-lined boulevards are one of the neighborhood's defining features, and much of that canopy dates back decades. Walk the residential blocks around Western Avenue, Lincoln Avenue, and the side streets feeding into Ravenswood, and you'll see mature <strong>maples</strong>, <strong>oaks</strong>, and <strong>honey locust</strong> plantings standing shoulder to shoulder with newer <strong>elm replacement varieties</strong> installed after Dutch elm disease swept through the city's original elm-lined streets decades ago.</p>
+        <p>These aren't young, easily managed trees. A boulevard oak or maple planted in the 1960s or earlier has a large, established root system, a heavy crown, and — often — years of deferred structural pruning. Ongoing structural pruning and health monitoring isn't optional for trees this size; it's what keeps a beautiful, century-old streetscape from becoming a liability during the next major windstorm.</p>
+      </div>
+      <div>
+        <h3>Dense Residential Development</h3>
+        <p>Lincoln Square's housing stock is dense by design — smaller lot sizes, homes built close to property lines, and canopies from neighboring yards that overlap and intertwine. This changes how tree work actually gets done here. A removal that would be straightforward on a wide suburban lot becomes a rigging and sectional-dismantling problem when the tree is six feet from a neighbor's garage, growing through a shared fence line, or accessible only via a narrow gangway or alley.</p>
+        <p>We plan every Lincoln Square job around these realities from the first site visit — confirming access before we quote, not after the crew shows up and finds out the truck can't fit down the alley.</p>
+      </div>
+    </div>
+
+    <div class="prose" style="margin-top:8px;">
+      <h3>Parkway Tree Management</h3>
+      <p>One of the most common points of confusion for Lincoln Square homeowners is the difference between a <strong>parkway tree</strong> — the tree growing in the strip of grass between the sidewalk and the curb — and a <strong>private tree</strong> anywhere else on the property. Parkway trees are owned and maintained by the City of Chicago's <strong>Bureau of Forestry</strong>, not by the adjacent homeowner, even though it sits directly in front of your house. Requests for city-owned parkway tree trimming or removal typically go through <strong>311 or the CHI311 app</strong>, and the city works through a rotating grid system rather than responding to individual requests in the order they're received, which means realistic wait times can run into months or longer for routine trimming.</p>
+      <p>Private trees, meanwhile — anything on your own lot — are entirely your responsibility, and depending on the diameter and location, may or may not require a permit to remove. We walk every Lincoln Square client through exactly which category their tree falls into before recommending a course of action, since this single distinction changes who's responsible, what it costs, and how fast it can actually get done.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: COMMON PROBLEMS -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We See on the Ground</span>
+      <h2>Common Tree Problems We See in Lincoln Square</h2>
+      <p>Every neighborhood has its own tree-care fingerprint. Here's what shows up again and again on Lincoln Square properties.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3l12 18M18 3L6 21M3 12h18"/></svg></span>Overgrown Parkway Trees</h3>
+        <p>Decades of growth on parkway trees can crowd sidewalk clearance, obstruct street visibility at intersections, and push low branches into pedestrian and vehicle paths — common along the narrower residential blocks off Lawrence Avenue.</p>
+      </div>
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></span>Utility Line Conflicts</h3>
+        <p>Older residential streets in Lincoln Square often have overhead service lines running directly through mature canopy. This calls for genuine <strong>utility vegetation management</strong> knowledge and safe clearance-pruning technique, not just a chainsaw and a ladder.</p>
+      </div>
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z"/></svg></span>Emerald Ash Borer</h3>
+        <p>Lincoln Square lost a meaningful share of its ash trees as EAB moved through the North Side over the past decade. For ash trees still standing, the real decision is treatment versus removal — and increasingly, replacement planning with a diversified species mix. See our full <a href="/emerald-ash-borer-chicago/">Emerald Ash Borer Chicago guide</a>.</p>
+      </div>
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></span>Aging Shade Trees</h3>
+        <p>Mature oaks throughout the neighborhood are reaching the age where internal decay and structural defects become a real risk, even when the canopy still looks healthy from the sidewalk. Long-term management, not just reactive pruning, is what keeps these trees safe and standing.</p>
+      </div>
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M8 6l4-4 4 4M7 14a5 5 0 0010 0"/></svg></span>Storm Damage</h3>
+        <p>Straight-line winds, heavy snow loads, ice accumulation, and sudden summer storm events all put stress on Lincoln Square's mature canopy. Older, larger trees with existing structural weaknesses are the first to show damage after a major event.</p>
+      </div>
+      <div class="problem-card">
+        <h3><span class="tag-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>Root Conflicts With Older Foundations</h3>
+        <p>Many Lincoln Square homes predate modern root-barrier standards. Mature root systems from boulevard and yard trees can intrude on aging foundations, sewer lines, and driveways — often solvable with root management instead of removal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: SERVICES -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Full-Service Tree Care</span>
+      <h2>Tree Services Available in Lincoln Square</h2>
+    </div>
+
+    <div class="service-mini-grid">
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg></div>
+        <h3>Tree Health Inspection & Treatment</h3>
+        <ul><li>Canopy decline diagnosis</li><li>Disease identification</li><li>EAB assessments</li></ul>
+        <a href="/services/tree-health-inspection-treatment/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3l12 18M18 3L6 21M3 12h18"/></svg></div>
+        <h3>Tree Trimming & Pruning</h3>
+        <ul><li>Structural pruning</li><li>Crown cleaning</li><li>Dormant-season pruning</li><li>Oak wilt risk reduction</li></ul>
+        <a href="/services/tree-trimming-pruning/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v10M12 12l6-4M12 12L6 8M12 12v10"/><circle cx="12" cy="4" r="2"/></svg></div>
+        <h3>Tree Removal</h3>
+        <ul><li>Hazardous trees</li><li>Tight-access removals</li><li>Crane-assisted removals</li></ul>
+        <a href="/services/tree-removal/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+        <h3>Emergency Tree Service</h3>
+        <ul><li>Storm cleanup</li><li>Fallen limbs</li><li>Leaning trees</li></ul>
+        <a href="/services/emergency-tree-removal/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-4.5-9-9V6l9-4 9 4v7c-2 4.5-9 9-9 9z"/></svg></div>
+        <h3>Tree Planting & Transplanting</h3>
+        <ul><li>Species diversification</li><li>Urban tree replacement</li></ul>
+        <a href="/services/tree-planting-transplanting/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>Tree & Shrub Fertilization</h3>
+        <ul><li>Clay soil improvement</li><li>Root-zone care</li></ul>
+        <a href="/services/tree-shrub-fertilization/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M8 6l4-4 4 4M7 14a5 5 0 0010 0"/></svg></div>
+        <h3>Storm Prep & Tree Support Systems</h3>
+        <ul><li>Cabling</li><li>Bracing</li><li>Wind-load mitigation</li></ul>
+        <a href="/services/storm-prep-tree-support-systems/">Learn More →</a>
+      </div>
+      <div class="service-mini">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>Stump Grinding</h3>
+        <ul><li>Hazard elimination</li><li>Replanting preparation</li></ul>
+        <a href="/services/stump-grinding/">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: SPECIES -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Local Tree Inventory</span>
+      <h2>Tree Species Commonly Found in Lincoln Square</h2>
+      <p>Recognizing what's actually growing on your block matters — each species carries different maintenance needs and risk factors.</p>
+    </div>
+
+    <div class="species-grid">
+      <div class="species-card"><h3>Red Oak</h3><p>A dominant boulevard species with a broad, dense crown. Needs periodic structural pruning and monitoring for oak wilt, especially if pruned outside the dormant season.</p><span class="tag">Structural pruning</span></div>
+      <div class="species-card"><h3>White Oak</h3><p>Slower-growing and long-lived, common on older residential lots. Susceptible to internal decay as it matures; benefits from regular risk assessment.</p><span class="tag">Long-term monitoring</span></div>
+      <div class="species-card"><h3>Bur Oak</h3><p>Highly tolerant of urban stress and compacted soil, making it well-suited to Lincoln Square's dense development pattern. Deep taproot generally means fewer sidewalk conflicts.</p><span class="tag">Urban-tolerant</span></div>
+      <div class="species-card"><h3>Honey Locust</h3><p>A common boulevard replacement tree thanks to its light, filtered canopy and tolerance for street conditions. Prone to weak branch unions that benefit from early structural pruning.</p><span class="tag">Boulevard staple</span></div>
+      <div class="species-card"><h3>Hackberry</h3><p>Tough and adaptable, frequently found on residential lots. Susceptible to witches'-broom growth and nipple gall, which are cosmetic rather than structural concerns.</p><span class="tag">Low-maintenance</span></div>
+      <div class="species-card"><h3>Kentucky Coffeetree</h3><p>An increasingly popular EAB-resistant replacement species in city plantings, valued for its bold branching structure and drought tolerance.</p><span class="tag">EAB-resistant</span></div>
+      <div class="species-card"><h3>London Plane Tree</h3><p>Highly tolerant of pollution and soil compaction, occasionally used in Lincoln Square boulevard plantings. Distinctive exfoliating bark; needs space for its broad mature canopy.</p><span class="tag">Pollution-tolerant</span></div>
+      <div class="species-card"><h3>Elm Varieties</h3><p>Disease-resistant elm cultivars planted as replacements following historic Dutch elm losses. Still require monitoring, as no cultivar is fully immune.</p><span class="tag">DED-resistant cultivars</span></div>
+      <div class="species-card"><h3>Maple Species</h3><p>Common on both boulevards and private lots. Silver and Norway maples in particular are prone to weak wood and storm damage as they age, and benefit from proactive structural pruning.</p><span class="tag">Storm-prone with age</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: REMOVAL CHALLENGES -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Hard Jobs</span>
+      <h2>Lincoln Square Tree Removal Challenges</h2>
+    </div>
+
+    <div class="prose two-col">
+      <div>
+        <h3>Narrow Lots & Shared Property Lines</h3>
+        <p>Lincoln Square's residential lots are frequently narrower than in newer Chicago suburbs, with trees growing right along shared fence lines. Removal planning has to account for a neighbor's garage, fence, or landscaping on the other side of that property line — not just your own yard.</p>
+        <h3>Alley Access & Garage Protection</h3>
+        <p>Many Lincoln Square garages sit directly off the alley, which is often the only realistic access point for equipment on a tight lot. We plan rigging and equipment placement specifically to protect garages, fences, and neighboring structures during the removal.</p>
+      </div>
+      <div>
+        <h3>Mature Canopy Preservation & Utility Conflicts</h3>
+        <p>When a tree is genuinely healthy but growing into overhead lines or crowding a structure, removal isn't always the right call — targeted structural pruning or cabling can often preserve a mature tree that took decades to grow. We assess this honestly, not just as an upsell to remove more.</p>
+        <h3>Parkway Tree Considerations</h3>
+        <p>If the tree in question is a parkway tree, permits and city coordination through the Bureau of Forestry come into play before any removal happens — this is different from a private-property removal, and we walk clients through which category applies before quoting.</p>
+      </div>
+    </div>
+
+    <p style="font-size:15.5px; color:#3d4139; margin-top:8px;">Every removal in a space this tight starts with a genuine <strong>tree risk assessment</strong> — evaluating structural condition, lean, decay, and proximity to structures — before deciding whether the job calls for a <strong>crane removal</strong>, a <strong>bucket truck</strong>, an <strong>aerial lift</strong>, or careful sectional dismantling by hand. Learn more about typical pricing in our <a href="/tree-removal-cost-chicago/">Chicago tree removal cost guide</a>.</p>
+  </div>
+</section>
+
+<!-- SECTION 6: PROCESS -->
+<section class="bg-forest">
+  <div class="container">
+    <div class="section-head center" style="color:var(--cream);">
+      <span class="eyebrow" style="color:#A9B583;">How It Works</span>
+      <h2 style="color:var(--white);">Our Tree Care Process in Lincoln Square</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step"><div class="step-num">01</div><h4>On-Site Consultation</h4><p>We walk the property with you and discuss your concerns firsthand.</p></div>
+      <div class="process-step"><div class="step-num">02</div><h4>ISA-Certified Inspection</h4><p>A certified arborist evaluates structural defects, health, and root conditions.</p></div>
+      <div class="process-step"><div class="step-num">03</div><h4>Tree Risk Assessment</h4><p>We formally assess hazard level, decay, lean, and proximity risk.</p></div>
+      <div class="process-step"><div class="step-num">04</div><h4>Recommendations & Estimate</h4><p>You receive a clear, written estimate with treatment or removal options.</p></div>
+      <div class="process-step"><div class="step-num">05</div><h4>Professional Tree Work</h4><p>Our crew performs the work safely, respecting tight-lot access constraints.</p></div>
+      <div class="process-step"><div class="step-num">06</div><h4>Cleanup & Long-Term Planning</h4><p>Site is cleaned, and we discuss ongoing preservation or replanting plans.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: WHY CHOOSE US -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="two-col" style="align-items:center;">
+      <img src="https://primetreecare.pages.dev/images/tree-trimming-and-pruning-by-prime-tree-care-chicago-iz.webp" alt="Prime Tree Care arborist trimming a mature tree in Lincoln Square, Chicago" style="border-radius:var(--radius); box-shadow:var(--shadow);">
+      <div>
+        <span class="eyebrow">Why Lincoln Square Chooses Prime</span>
+        <h2 style="margin-top:10px; font-size:30px;">Local Familiarity, Certified Expertise</h2>
+        <div class="feature-list" style="margin-top:22px;">
+          <div class="feature-list-item"><div class="num">1</div><div><h4>ISA Certified Arborists</h4><p>Every inspection and cut is led by a credentialed arborist, not a rotating subcontracted crew.</p></div></div>
+          <div class="feature-list-item"><div class="num">2</div><div><h4>Experience With Mature Urban Trees</h4><p>Decades-old boulevard oaks and maples require different judgment than young suburban plantings — we work on them regularly.</p></div></div>
+          <div class="feature-list-item"><div class="num">3</div><div><h4>Familiarity With Lincoln Square Streetscapes</h4><p>We know the access constraints on Western, Lincoln, and the residential side streets before we ever arrive on-site.</p></div></div>
+          <div class="feature-list-item"><div class="num">4</div><div><h4>Fully Insured Operations</h4><p>General liability and workers' comp coverage on every job, verifiable on request.</p></div></div>
+          <div class="feature-list-item"><div class="num">5</div><div><h4>Emergency Response Availability</h4><p>24/7 coverage for storm damage and hazardous leaning trees across the North Side.</p></div></div>
+          <div class="feature-list-item"><div class="num">6</div><div><h4>Modern Equipment</h4><p>Bucket trucks, aerial lifts, crane-assisted removal capability, and commercial stump grinders for every job type.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: NEARBY COMMUNITIES -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Regional Coverage</span>
+      <h2>Nearby Communities We Also Serve</h2>
+      <p>Lincoln Square sits at the crossroads of several North Side neighborhoods with similar mature canopy and streetscape characteristics — we serve all of them.</p>
+    </div>
+    <div class="nearby-pills" style="justify-content:center;">
+      <a href="/service-areas/north-side-chicago/">North Side Chicago</a>
+      <a href="/service-areas/ravenswood/">Ravenswood</a>
+      <a href="/service-areas/albany-park/">Albany Park</a>
+      <a href="/service-areas/north-center/">North Center</a>
+      <a href="/service-areas/irving-park/">Irving Park</a>
+      <a href="/service-areas/dunning/">Dunning</a>
+      <a href="/service-areas/hyde-park/">Hyde Park</a>
+      <a href="/service-areas/evanston/">Evanston</a>
+      <a href="/service-areas/oak-park/">Oak Park</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-cream">
+  <div class="container" style="max-width:820px;">
+    <div class="section-head center">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Lincoln Square Tree Service FAQ</h2>
+    </div>
+
+    <div class="faq-item"><h3>Do you provide tree services throughout Lincoln Square?</h3><p>Yes. Prime Tree Care serves all of Lincoln Square, including the residential streets around Western, Lincoln, and Lawrence Avenues, as well as the boulevard corridors and side streets running toward Ravenswood and North Center.</p></div>
+    <div class="faq-item"><h3>Can you trim trees near power lines?</h3><p>Yes. Our crews are trained in utility vegetation management and safe clearance pruning near overhead service lines, common on Lincoln Square's older residential streets. For work directly on utility-owned equipment, we coordinate with the utility company as required.</p></div>
+    <div class="faq-item"><h3>Who is responsible for parkway trees in Lincoln Square?</h3><p>Parkway trees — those planted between the sidewalk and the street — are owned and maintained by the City of Chicago's Bureau of Forestry. Trees anywhere else on your property are your responsibility as the homeowner.</p></div>
+    <div class="faq-item"><h3>How often should mature boulevard trees be inspected?</h3><p>We recommend a structural inspection every one to two years for large, mature boulevard trees, and sooner after any major storm event or if you notice deadwood, cracks, or canopy dieback.</p></div>
+    <div class="faq-item"><h3>What is the best time to prune trees in Lincoln Square?</h3><p>Late winter through early spring, during the dormant season, is generally best for structural pruning on oaks and elms, since it reduces the risk of spreading oak wilt or Dutch elm disease compared to pruning during the growing season.</p></div>
+    <div class="faq-item"><h3>Can you remove trees in tight residential spaces?</h3><p>Yes. Lincoln Square's narrow lots, shared property lines, and limited alley access are common, and our crews plan removals around crane access, rigging, or sectional dismantling depending on the site.</p></div>
+    <div class="faq-item"><h3>What should I do after storm damage?</h3><p>If a tree or limb is threatening a structure, vehicle, or power line, keep people and pets away and call us for emergency response. For non-urgent damage, document it with photos for insurance purposes before scheduling cleanup.</p></div>
+    <div class="faq-item"><h3>Can an arborist evaluate tree health before removal?</h3><p>Yes. An ISA-certified arborist can assess whether a declining or damaged tree can be treated and preserved, or whether removal is genuinely the safer, more cost-effective option.</p></div>
+    <div class="faq-item"><h3>Do you offer emergency tree service?</h3><p>Yes, Prime Tree Care offers 24/7 emergency tree service across Lincoln Square and the surrounding North Side neighborhoods for storm damage, fallen limbs, and hazardous leaning trees.</p></div>
+    <div class="faq-item"><h3>How much does tree removal cost in Lincoln Square?</h3><p>Cost depends on the tree's size, condition, and access. Small trees under 12 inches in diameter typically run a few hundred dollars, while large, mature boulevard-scale trees requiring crane access can run several thousand. We provide a written, itemized estimate after an on-site assessment. See our full <a href="/tree-removal-cost-chicago/">Chicago tree removal cost guide</a>.</p></div>
+  </div>
+</section>
+
+<!-- INTERNAL LINKS -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Explore Further</span>
+      <h2>Related Services & Guides</h2>
+    </div>
+    <div class="link-cols">
+      <div>
+        <h4>Service Pages</h4>
+        <ul>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Inspection & Treatment</a></li>
+          <li><a href="/services/tree-trimming-pruning/">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-shrub-fertilization/">Tree & Shrub Fertilization</a></li>
+          <li><a href="/services/tree-planting-transplanting/">Tree Planting & Transplanting</a></li>
+          <li><a href="/services/storm-prep-tree-support-systems/">Storm Prep & Tree Support Systems</a></li>
+          <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Chicago Tree Care Guides</h4>
+        <ul>
+          <li><a href="/emerald-ash-borer-chicago/">Emerald Ash Borer in Chicago</a></li>
+          <li><a href="/tree-removal-cost-chicago/">Tree Removal Cost Chicago</a></li>
+          <li><a href="/tree-trimming-cost-chicago/">Tree Trimming Cost Chicago</a></li>
+          <li><a href="/parkway-trees-vs-private-trees-chicago/">Parkway Trees vs. Private Trees</a></li>
+          <li><a href="/city-of-chicago-tree-trimming-grid-system/">City of Chicago Tree Trimming Grid System</a></li>
+          <li><a href="/oak-wilt-dutch-elm-dormant-pruning-season/">Oak Wilt, Dutch Elm & Dormant Pruning Season</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h3>Get a Free Tree Care Estimate in Lincoln Square</h3>
+        <p>Speak with an ISA-certified arborist who actually knows this neighborhood's canopy — same-day response for most requests.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+17733028351" class="btn btn-gold">Call (773) 302-8351</a>
+        <a href="/contact.html" class="btn btn-outline">Request Estimate Online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming-pruning/">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/index.html#process">Our Process</a></li>
+          <li><a href="/index.html#areas">Service Areas</a></li>
+          <li><a href="/index.html#reviews">Reviews</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="/privacy-policy.html">Privacy Policy</a> · <a href="/terms-of-service.html">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="/contact.html" class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Free Estimate</a>
+</div>
+
+</body>
+</html>
