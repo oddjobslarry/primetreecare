@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City of Chicago Tree Trimming Grid System: How It Works & What to Do | Prime Tree Care</title>
+<meta name="description" content="A complete guide to how Chicago's Bureau of Forestry trims parkway trees, why wait times happen, how to use CHI311 effectively, when to contact your alderman, and what to do while you wait.">
+<link rel="canonical" href="https://primetreecare.pages.dev/blog/city-of-chicago-tree-trimming-grid-system">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F; --forest:#263A24; --olive-light:#7A8750;
+    --cream:#F5F2E8; --beige:#D8CDB5; --charcoal:#252823;
+    --gold:#C58A32; --white:#FFFFFF; --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Open Sans', sans-serif; color:var(--charcoal); background:var(--white); line-height:1.7; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,h4{ font-family:'Montserrat', sans-serif; color:var(--forest); line-height:1.2; letter-spacing:-0.01em; }
+  a{ text-decoration:none; color:var(--olive); } a:hover{ color:var(--forest); }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{ font-family:'Montserrat', sans-serif; font-weight:700; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--olive); }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:'Montserrat', sans-serif; font-weight:600; font-size:15px; padding:15px 30px; border-radius:8px; border:2px solid transparent; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease; white-space:nowrap; text-decoration:none !important; }
+  .btn-primary{ background:var(--olive); color:var(--white); } .btn-primary:hover{ background:var(--forest); color:var(--white); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); } .btn-gold:hover{ background:#b57b28; transform:translateY(-2px); }
+  .btn-outline{ border-color:var(--cream); color:var(--cream); background:transparent; } .btn-outline:hover{ background:rgba(245,242,232,0.12); }
+
+  .topbar{ background:var(--forest); color:var(--beige); font-size:13px; }
+  .topbar .container{ display:flex; justify-content:space-between; align-items:center; padding-top:8px; padding-bottom:8px; }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); } .topbar a:hover{ color:var(--gold); }
+
+  header{ background:var(--white); border-bottom:1px solid var(--beige); position:sticky; top:0; z-index:100; }
+  .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:14.5px; color:var(--charcoal); padding:6px 0; }
+  nav.primary-nav a:hover{ color:var(--olive); }
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; }
+  .header-phone .ph-icon{ width:38px; height:38px; border-radius:50%; background:var(--cream); display:flex; align-items:center; justify-content:center; color:var(--olive); flex-shrink:0; }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* Article hero */
+  .article-hero{ background:var(--forest); color:var(--white); padding:52px 0 0; }
+  .breadcrumb{ font-size:13px; color:var(--beige); opacity:.85; margin-bottom:18px; }
+  .breadcrumb a{ color:var(--beige); } .breadcrumb a:hover{ color:var(--gold); }
+  .article-hero .eyebrow{ color:#A9B583; }
+  .article-hero h1{ color:var(--white); font-size:38px; font-weight:800; margin-top:14px; max-width:880px; }
+  .article-meta{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-top:22px; padding-bottom:36px; font-size:13.5px; color:var(--beige); }
+  .article-meta .author{ display:flex; align-items:center; gap:10px; }
+  .author-avatar{ width:36px; height:36px; border-radius:50%; background:var(--olive); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; }
+  .feature-image{ margin-top:0; }
+  .feature-image img{ width:100%; height:420px; object-fit:cover; }
+
+  /* Direct answer */
+  .direct-answer-block{
+    background:var(--cream); border-left:4px solid var(--olive); border-radius:0 var(--radius) var(--radius) 0;
+    padding:26px 30px; margin:36px 0; font-size:16px; color:var(--charcoal);
+  }
+  .direct-answer-block .tag{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--olive); display:block; margin-bottom:8px; }
+
+  /* Layout */
+  .article-wrap{ display:grid; grid-template-columns:270px 1fr; gap:56px; padding:56px 0 96px; align-items:start; }
+  .toc{ position:sticky; top:100px; background:var(--cream); border:1px solid var(--beige); border-radius:var(--radius); padding:26px 24px; max-height:calc(100vh - 130px); overflow-y:auto; }
+  .toc h4{ font-family:'Montserrat',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--olive); margin-bottom:14px; }
+  .toc ol{ list-style:none; counter-reset:toc; display:flex; flex-direction:column; gap:9px; }
+  .toc ol li{ counter-increment:toc; }
+  .toc ol li a{ display:flex; gap:8px; font-size:13px; color:var(--charcoal); line-height:1.35; }
+  .toc ol li a::before{ content: counter(toc) "."; color:var(--olive); font-weight:700; flex-shrink:0; }
+  .toc ol li a:hover{ color:var(--olive); }
+  .toc-cta{ margin-top:20px; padding-top:18px; border-top:1px solid var(--beige); }
+  .toc-cta p{ font-size:12.5px; color:#5b5f52; margin-bottom:10px; }
+
+  .article-body h2{ font-size:26px; margin-top:52px; margin-bottom:16px; scroll-margin-top:110px; }
+  .article-body h2:first-of-type{ margin-top:0; }
+  .article-body h3{ font-size:18.5px; margin-top:28px; margin-bottom:12px; }
+  .article-body p{ font-size:16px; color:#3d4139; margin-bottom:16px; }
+  .article-body ul, .article-body ol{ margin:0 0 16px 24px; }
+  .article-body ul li, .article-body ol li{ font-size:16px; color:#3d4139; margin-bottom:8px; }
+  .article-body strong{ color:var(--forest); }
+  .article-body a{ text-decoration:underline; text-decoration-color:var(--beige); }
+
+  /* Callouts */
+  .callout{ border-radius:var(--radius); padding:22px 26px; margin:24px 0; font-size:15px; }
+  .callout-hazard{ background:#fbeaea; border:1px solid #e0a3a3; }
+  .callout-hazard h4{ color:#7a2323; font-size:15px; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+  .callout-safe{ background:#eef3e6; border:1px solid var(--olive-light); }
+  .callout-safe h4{ color:var(--forest); font-size:15px; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+  .callout-info{ background:var(--cream); border:1px solid var(--beige); }
+  .callout-info h4{ color:var(--olive); font-size:15px; margin-bottom:8px; }
+  .callout p{ margin-bottom:0; color:#3d4139; }
+  .callout ul{ margin-bottom:0; }
+
+  /* Tables */
+  .table-wrap{ overflow-x:auto; margin:24px 0; border-radius:var(--radius); border:1px solid var(--beige); }
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; }
+  table th{ background:var(--forest); color:var(--white); font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; text-align:left; padding:14px 18px; }
+  table td{ padding:14px 18px; border-top:1px solid var(--beige); color:#3d4139; }
+  table tr:nth-child(even) td{ background:var(--cream); }
+  .priority-emergency{ color:#b3261e; font-weight:700; }
+  .priority-high{ color:var(--gold); font-weight:700; }
+  .priority-standard{ color:var(--olive); font-weight:700; }
+  .priority-low{ color:#7a7d70; font-weight:700; }
+
+  /* Org diagram */
+  .org-diagram{ display:flex; flex-direction:column; align-items:center; gap:0; margin:32px 0; }
+  .org-box{ background:var(--white); border:2px solid var(--olive); border-radius:10px; padding:14px 22px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:var(--forest); text-align:center; }
+  .org-box.top{ background:var(--forest); color:var(--white); border-color:var(--forest); }
+  .org-connector{ width:2px; height:26px; background:var(--beige); }
+  .org-row{ display:flex; gap:20px; margin-top:0; }
+  .org-row .org-box{ font-size:12.5px; padding:12px 16px; }
+
+  /* Process flow */
+  .flow-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:14px; margin:28px 0; }
+  .flow-step{ background:var(--white); border:1px solid var(--beige); border-radius:10px; padding:16px 14px; text-align:center; }
+  .flow-step .n{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--olive); font-size:20px; margin-bottom:6px; }
+  .flow-step p{ font-size:12px; color:#5b5f52; margin:0; }
+
+  /* Scenario cards */
+  .scenario-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin:28px 0; }
+  .scenario-card{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:24px; }
+  .scenario-card h4{ font-size:15.5px; margin-bottom:8px; color:var(--olive); font-family:'Montserrat',sans-serif; text-transform:uppercase; letter-spacing:.03em; }
+  .scenario-card p{ font-size:14.5px; color:#3d4139; margin:0; }
+
+  /* FAQ */
+  .faq-item{ background:var(--cream); border:1px solid var(--beige); border-radius:var(--radius); padding:22px 24px; margin-bottom:14px; }
+  .faq-item h3{ font-size:16px; margin:0 0 8px; }
+  .faq-item p{ font-size:14.5px; color:#5b5f52; margin:0; }
+
+  /* Author box (EEAT) */
+  .author-box{ background:var(--forest); color:var(--cream); border-radius:var(--radius); padding:32px 34px; margin-top:52px; display:flex; gap:22px; align-items:flex-start; }
+  .author-box .avatar-lg{ width:64px; height:64px; border-radius:50%; background:var(--gold); color:var(--forest); display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; flex-shrink:0; }
+  .author-box h4{ color:var(--white); font-size:17px; margin-bottom:4px; }
+  .author-box .role{ font-family:'Montserrat',sans-serif; font-weight:600; font-size:12.5px; color:var(--gold); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; }
+  .author-box p{ color:var(--beige); font-size:14.5px; margin:0; }
+
+  /* internal links */
+  .link-cols{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; margin-top:24px; }
+  .link-cols h4{ font-family:'Montserrat',sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--olive); margin-bottom:12px; }
+  .link-cols ul{ list-style:none; display:flex; flex-direction:column; gap:9px; margin:0; }
+  .link-cols ul a{ font-size:14px; color:var(--charcoal); text-decoration:none; }
+  .link-cols ul a:hover{ color:var(--olive); text-decoration:underline; }
+
+  section.plain{ padding:0; }
+  .bg-cream{ background:var(--cream); padding:80px 0; }
+
+  .cta-band{ background: linear-gradient(120deg, var(--forest), #1b2a19); color:var(--white); border-radius:20px; padding:56px 50px; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; margin:56px 0 0; }
+  .cta-band h3{ color:var(--white); font-size:26px; max-width:480px; }
+  .cta-band p{ color:var(--beige); margin-top:8px; max-width:480px; }
+  .cta-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; margin:0; }
+  footer ul a{ font-size:14px; color:var(--beige); } footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; } .footer-bottom a:hover{ color:var(--gold); }
+  .mobile-call-bar{ display:none; }
+  .container.narrow{ max-width:960px; }
+
+  @media (max-width: 1024px){
+    .article-wrap{ grid-template-columns:1fr; }
+    .toc{ position:static; max-height:none; }
+    .flow-grid{ grid-template-columns:repeat(3,1fr); }
+    .scenario-grid{ grid-template-columns:1fr; }
+    .link-cols{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .article-hero h1{ font-size:26px; }
+    .feature-image img{ height:220px; }
+    .flow-grid{ grid-template-columns:repeat(2,1fr); }
+    .author-box{ flex-direction:column; text-align:center; align-items:center; }
+    .cta-band{ flex-direction:column; text-align:center; padding:40px 26px; }
+    .cta-band h3{ margin:0 auto; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .mobile-call-bar{ display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200; background:var(--forest); padding:12px 16px; gap:12px; box-shadow:0 -8px 24px rgba(0,0,0,0.2); }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetreecare.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://primetreecare.pages.dev/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "City of Chicago Tree Trimming Grid System", "item": "https://primetreecare.pages.dev/blog/city-of-chicago-tree-trimming-grid-system/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "City of Chicago Tree Trimming Grid System: How It Works, Why Wait Times Happen, and What Homeowners Can Do",
+      "description": "A complete guide to how Chicago's Bureau of Forestry trims parkway trees, why wait times happen, how to use CHI311 effectively, when to contact your alderman, and what to do while you wait.",
+      "image": "https://primetreecare.pages.dev/images/city-of-chicago-tree-trimming-grid-system.webp",
+      "author": { "@type": "Person", "name": "David Kowalski", "jobTitle": "ISA Certified Arborist", "worksFor": { "@id": "https://primetreecare.pages.dev/#business" } },
+      "publisher": { "@id": "https://primetreecare.pages.dev/#business" },
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "mainEntityOfPage": "https://primetreecare.pages.dev/blog/city-of-chicago-tree-trimming-grid-system/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How often does Chicago trim trees?", "acceptedAnswer": { "@type": "Answer", "text": "Chicago's Bureau of Forestry aims to trim every parkway tree in the city on a rotating multi-year cycle, moving through geographic grid zones rather than responding to individual requests in the order received. In practice, a given block may see routine crews once every several years, with hazard and emergency situations handled outside the normal rotation." } },
+        { "@type": "Question", "name": "How do I request tree trimming in Chicago?", "acceptedAnswer": { "@type": "Answer", "text": "Submit a request through CHI311 — via the CHI311 mobile app, the 311 website, or by calling 311. Include the exact address, a description of the issue, and photos if possible. This creates a service request that the Bureau of Forestry uses to schedule an inspection." } },
+        { "@type": "Question", "name": "What is the Chicago tree trimming grid system?", "acceptedAnswer": { "@type": "Answer", "text": "It's a rotational maintenance model where the Bureau of Forestry divides the city into geographic zones and works through them block by block, rather than responding to individual complaint-based requests one at a time. Emergency hazards are pulled out of the normal rotation and addressed immediately." } },
+        { "@type": "Question", "name": "How long does Chicago take to trim trees?", "acceptedAnswer": { "@type": "Answer", "text": "For routine, non-emergency requests, wait times can realistically run from many months to a few years, depending on where a block sits in the current grid rotation and how many storm-related emergencies have redirected crews in the meantime. True hazards are prioritized well ahead of routine requests." } },
+        { "@type": "Question", "name": "Can I trim a city tree myself?", "acceptedAnswer": { "@type": "Answer", "text": "No. Parkway trees are owned by the City of Chicago, and altering, pruning, or removing them without authorization is not permitted, even though they sit directly in front of your property. A private arborist can inspect and document a parkway tree's condition, but pruning or removal work requires the city's involvement." } },
+        { "@type": "Question", "name": "What qualifies as a hazardous tree?", "acceptedAnswer": { "@type": "Answer", "text": "Generally, a hazardous tree shows signs like a split or cracked trunk, visible uprooting or lifted root plate, a hanging or partially detached limb, contact with power lines, or a lean that threatens a structure, vehicle, or roadway. Minor deadwood or aesthetic overgrowth typically does not qualify as an emergency." } },
+        { "@type": "Question", "name": "What if a tree is touching power lines?", "acceptedAnswer": { "@type": "Answer", "text": "Treat this as an emergency. Keep people and pets away from the area and avoid touching the tree or any nearby metal objects. Report it immediately through 311 as a hazard, and if a line appears to be down or arcing, contact ComEd and 911 directly rather than waiting on a routine forestry request." } },
+        { "@type": "Question", "name": "Should I call 311 or an arborist?", "acceptedAnswer": { "@type": "Answer", "text": "For a city-owned parkway tree, 311 is the correct first step for any request involving pruning or removal. A private ISA-certified arborist is useful in parallel for documenting the tree's condition, providing a professional risk assessment, and advising you on interim safety steps while you wait on the city." } },
+        { "@type": "Question", "name": "Can my alderman speed up a request?", "acceptedAnswer": { "@type": "Answer", "text": "Ward offices can sometimes help escalate a stalled or long-unresolved request, particularly for genuine safety concerns, but they generally cannot override the Bureau of Forestry's technical prioritization process or guarantee a specific timeline." } },
+        { "@type": "Question", "name": "Who owns parkway trees in Chicago?", "acceptedAnswer": { "@type": "Answer", "text": "The City of Chicago owns and is responsible for parkway trees — the trees planted in the strip of land between the sidewalk and the street. Trees anywhere else on a private lot belong to the property owner." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left"><a href="tel:+17733028351">(773) 302-8351</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="/" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text"><span class="name">Prime Tree Care</span><span class="tag">Chicago Arborists</span></span>
+    </a>
+    <nav class="primary-nav">
+      <a href="/about">About</a>
+      <a href="/services/">Services</a>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone" aria-label="Call Prime Tree Care at (773) 302-8351">
+        <span class="ph-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="ph-text"><span class="ph-label">Call Us Now</span><span class="ph-num">(773) 302-8351</span></span>
+      </a>
+      <a href="/contact" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Tree Trimming Grid System</div>
+    <span class="eyebrow">Chicago Tree Care Guide</span>
+    <h1>City of Chicago Tree Trimming Grid System: How It Works, Why Wait Times Happen, and What Homeowners Can Do</h1>
+    <div class="article-meta">
+      <div class="author">
+        <div class="author-avatar">DK</div>
+        <div>By David Kowalski, ISA Certified Arborist</div>
+      </div>
+      <span>·</span>
+      <span>Updated August 13, 2026</span>
+      <span>·</span>
+      <span>18 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="feature-image">
+  <img src="https://primetreecare.pages.dev/images/city-of-chicago-tree-trimming-grid-system.webp" alt="City of Chicago Bureau of Forestry crew trimming a parkway tree as part of the grid trimming system">
+</div>
+
+<!-- ARTICLE BODY -->
+<section class="plain">
+  <div class="container article-wrap">
+
+    <!-- TOC -->
+    <aside class="toc">
+      <h3>In This Guide</h3>
+      <ol>
+        <li><a href="#responsible">Who's Responsible for Parkway Trees?</a></li>
+        <li><a href="#grid-system">What Is the Tree Trimming Grid System?</a></li>
+        <li><a href="#why-wait">Why Residents Sometimes Wait So Long</a></li>
+        <li><a href="#priority-levels">Understanding Tree Priority Levels</a></li>
+        <li><a href="#hazardous">What Counts as a Hazardous Tree?</a></li>
+        <li><a href="#chi311">How to Submit a Request Through CHI311</a></li>
+        <li><a href="#after-submit">What Happens After You Submit a Request?</a></li>
+        <li><a href="#alderman">When Should You Contact Your Alderman?</a></li>
+        <li><a href="#while-waiting">What to Do While Waiting</a></li>
+        <li><a href="#private-arborist">Can a Private Arborist Work on a Parkway Tree?</a></li>
+        <li><a href="#common-problems">Common Parkway Tree Problems</a></li>
+        <li><a href="#after-storms">After Major Storms: What to Expect</a></li>
+        <li><a href="#comparison">Parkway Trees vs. Private Trees</a></li>
+        <li><a href="#scenarios">Real Chicago Scenarios</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+      <div class="toc-cta">
+        <p>Dealing with a tree that can't wait on the city?</p>
+        <a href="/contact" class="btn btn-primary" style="width:100%; padding:12px 20px; font-size:13.5px;">Get a Free Estimate</a>
+      </div>
+    </aside>
+
+    <!-- BODY -->
+    <div class="article-body">
+
+      <div class="direct-answer-block">
+        <span class="tag">Direct Answer</span>
+        Chicago primarily trims parkway trees through a rotating grid-based maintenance program managed by the Bureau of Forestry. The city moves neighborhood by neighborhood, prioritizing public safety hazards, storm damage, and emergency requests ahead of routine pruning. Residents can report concerns through <strong>CHI311</strong>, but wait times vary significantly depending on the tree's condition, current workload, recent weather events, and where a block falls in the rotation.
+      </div>
+
+      <p>If you've ever submitted a 311 request for an overgrown parkway tree and then waited months — or years — without hearing back, you're not imagining things, and you're not alone. Across Reddit threads, neighborhood Facebook groups, and local news investigations, the same frustrations come up again and again: uncertainty about who actually owns the tree in front of a house, confusion about how CHI311 requests are prioritized, and real concern about dead limbs hanging over a sidewalk or driveway with no clear timeline for when the city will address them.</p>
+
+      <p>This guide isn't a criticism of the Bureau of Forestry — Chicago's urban forest is genuinely massive, and the people maintaining it are working within real staffing and budget constraints. Instead, this is an honest, detailed explanation of how the system actually works, why certain requests move faster than others, and — most importantly — what you can realistically do if you're staring at a tree that concerns you right now.</p>
+
+      <h2 id="responsible">Who Is Responsible for Chicago's Parkway Trees?</h2>
+      <p>The <strong>Bureau of Forestry</strong>, a division within the Chicago Department of Streets and Sanitation, is responsible for the city's public tree inventory. That includes:</p>
+      <ul>
+        <li>Parkway tree pruning and routine maintenance</li>
+        <li>Tree inspections following resident requests or storm events</li>
+        <li>Hazard response for trees posing an immediate public safety risk</li>
+        <li>Tree removals when a public tree is dead, dying, diseased, or hazardous</li>
+        <li>Tree planting, including replacement plantings and species diversification efforts</li>
+        <li>Broader urban forest management, including tracking the health of the public tree inventory citywide</li>
+      </ul>
+
+      <p>Here's how the pieces fit together in practice:</p>
+
+      <div class="org-diagram">
+        <div class="org-box top">City of Chicago — Department of Streets & Sanitation</div>
+        <div class="org-connector"></div>
+        <div class="org-box">Bureau of Forestry</div>
+        <div class="org-connector"></div>
+        <div class="org-row">
+          <div class="org-box">CHI311 (Resident Requests)</div>
+          <div class="org-box">Ward / Alderman Offices</div>
+          <div class="org-box">Field Crews & Inspectors</div>
+        </div>
+      </div>
+
+      <p>Residents submit requests through <strong>CHI311</strong>, which creates a service ticket the Bureau of Forestry uses to schedule inspections and prioritize field work. Ward offices sit alongside this process — they can advocate for constituents and help escalate stalled or clearly urgent requests, but they don't directly control forestry crew scheduling or override the department's technical prioritization.</p>
+
+      <h2 id="grid-system">What Is Chicago's Tree Trimming Grid System?</h2>
+      <p>Chicago maintains a public tree inventory numbering in the hundreds of thousands, spread across every neighborhood in the city. With that scale, and with a limited number of forestry crews, responding to every individual trimming request the moment it's submitted simply isn't operationally possible. So instead of a purely complaint-driven model, the Bureau of Forestry runs a <strong>rotational grid system</strong>.</p>
+
+      <h3>Why a Grid System Exists</h3>
+      <p>A grid-based approach lets crews move efficiently through a geographic area, trimming every tree on a block or set of blocks in one pass rather than repeatedly sending trucks back to the same neighborhood for one-off requests. This reduces windshield time between jobs, allows more trees to be serviced overall, and creates a more predictable (if slower-feeling) long-term maintenance cycle for the public tree inventory.</p>
+
+      <h3>How Grid Cycles Work</h3>
+      <p>The city is divided into geographic zones, and forestry crews work through scheduled pruning routes zone by zone. A given city block is generally serviced once every several years as part of this rotation — meaning your street might be "due" this year, or it might be years out, purely based on where it sits in the current cycle, not based on how long ago you personally submitted a request.</p>
+
+      <div class="flow-grid">
+        <div class="flow-step"><div class="n">1</div><p>City divided into geographic grid zones</p></div>
+        <div class="flow-step"><div class="n">2</div><p>Zones scheduled into a rotational route</p></div>
+        <div class="flow-step"><div class="n">3</div><p>Crews service every tree in a zone</p></div>
+        <div class="flow-step"><div class="n">4</div><p>Crew moves to next zone in sequence</p></div>
+        <div class="flow-step"><div class="n">5</div><p>Emergencies pulled off-cycle as needed</p></div>
+        <div class="flow-step"><div class="n">6</div><p>Zone returns to rotation years later</p></div>
+      </div>
+
+      <p>This explains a common point of confusion: why a neighbor's block seemingly "got trimmed" while yours, a few blocks away, didn't. It's rarely about favoritism — it almost always comes down to grid zone boundaries and where each block sits in the multi-year cycle.</p>
+
+      <h2 id="why-wait">Why Residents Sometimes Wait So Long</h2>
+      <p>Beyond the base grid rotation, several factors regularly push routine requests further out:</p>
+
+      <h3>Storm Backlogs</h3>
+      <p>Major storm events — <strong>derechos</strong>, <strong>straight-line winds</strong>, ice storms, or heavy wet snow — immediately redirect forestry crews away from scheduled grid work and toward emergency cleanup. A single significant storm can generate thousands of new hazard tickets almost overnight, and those legitimately take priority over routine pruning.</p>
+
+      <h3>Emergency Prioritization</h3>
+      <p>Genuine hazard trees — split trunks, hanging limbs, trees blocking a roadway — are pulled out of the standard rotation and addressed on an emergency basis. This is the correct approach from a public-safety standpoint, but it means routine requests effectively pause every time a new round of hazards comes in.</p>
+
+      <h3>Seasonal Workload Shifts</h3>
+      <p>Forestry work isn't evenly distributed across the year. Spring often brings a wave of inspection requests as new growth reveals winter damage; summer brings storm response; fall brings cleanup ahead of winter; and winter is typically when structural, dormant-season pruning is prioritized, since it's safer for both the tree and the crew. Your request's timing relative to this seasonal rhythm affects how quickly it's addressed.</p>
+
+      <h3>Staffing and Resource Constraints</h3>
+      <p>Like most municipal forestry departments across the country, Chicago's Bureau of Forestry operates with a finite number of trained crews relative to the size of the public tree inventory it maintains. This is simply a resource reality, not a reflection of any particular block being deprioritized.</p>
+
+      <h2 id="priority-levels">Understanding Tree Priority Levels</h2>
+      <p>Not every request is treated equally, and understanding how forestry staff generally triage situations can help set realistic expectations for your own request.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Situation</th><th>Typical Priority</th></tr></thead>
+          <tbody>
+            <tr><td>Dead branch over sidewalk</td><td class="priority-high">High</td></tr>
+            <tr><td>Hanging limb after storm</td><td class="priority-emergency">Emergency</td></tr>
+            <tr><td>Routine pruning request</td><td class="priority-standard">Standard</td></tr>
+            <tr><td>Leaning tree threatening a structure</td><td class="priority-high">High</td></tr>
+            <tr><td>Tree blocking roadway</td><td class="priority-emergency">Emergency</td></tr>
+            <tr><td>Minor aesthetic trimming</td><td class="priority-low">Low</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Arborists generally determine risk level through a combination of factors identified during a formal <strong>tree risk assessment</strong>: visible structural defects, evidence of internal decay, signs of root plate failure or uprooting, and weak or cracked limb attachments. A tree can look fine from the street and still carry a serious structural defect, which is exactly why a proper inspection — not just a visual drive-by — matters for anything you're genuinely worried about.</p>
+
+      <h2 id="hazardous">What Counts as a Hazardous Tree?</h2>
+      <p>This is one of the most common questions residents have, and the honest answer is that severity and immediacy matter more than how "bad" a tree looks aesthetically.</p>
+
+      <div class="callout callout-hazard">
+        <h3>⚠ Immediate Hazards — Treat as Emergency</h3>
+        <ul>
+          <li>Split or cracked trunk</li>
+          <li>Visible uprooting or a lifted root plate</li>
+          <li>A hanging or partially detached limb</li>
+          <li>A tree in contact with power lines</li>
+          <li>A tree blocking a street, sidewalk, or driveway entirely</li>
+        </ul>
+      </div>
+
+      <div class="callout callout-safe">
+        <h3>✓ Non-Emergency Concerns — Standard Request</h3>
+        <ul>
+          <li>Minor deadwood scattered in the upper canopy</li>
+          <li>General light pruning needs</li>
+          <li>Canopy shaping or aesthetic overgrowth</li>
+        </ul>
+      </div>
+
+      <h2 id="chi311">How to Submit a Tree Request Through CHI311</h2>
+      <p>CHI311 is the correct channel for reporting a concern about a city-owned parkway tree. You can submit a request three ways:</p>
+      <ul>
+        <li><strong>Mobile App:</strong> The CHI311 app allows you to submit a request with photos directly from your phone, and lets you track the status of your ticket over time.</li>
+        <li><strong>Website:</strong> The 311 website offers the same request form, useful if you'd rather submit from a desktop.</li>
+        <li><strong>Phone:</strong> Calling 311 directly connects you with a representative who can log the request on your behalf — helpful if you're not comfortable with the app or website, or if the situation feels urgent.</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <h3>What to Include for a Faster, More Useful Request</h3>
+        <ul>
+          <li>The exact address of the tree, not just a nearby cross street</li>
+          <li>Clear photos showing the specific concern (cracking, hanging limbs, lean angle)</li>
+          <li>A concise, factual description — "large dead limb over sidewalk, approximately 15 feet up" is more useful than "tree looks bad"</li>
+          <li>Whether the issue affects a structure, vehicle, sidewalk, or roadway</li>
+        </ul>
+      </div>
+
+      <p>Once submitted, your request generates a tracking number you can use to check status through the app or website. Keep this number — it's useful if you need to follow up or escalate later.</p>
+
+      <h2 id="after-submit">What Happens After You Submit a Request?</h2>
+      <p>Understanding the internal process helps explain where delays typically happen:</p>
+      <ol>
+        <li><strong>Request received</strong> — Your ticket enters the Bureau of Forestry's queue.</li>
+        <li><strong>Forestry review</strong> — Staff review the description and photos to make an initial priority determination.</li>
+        <li><strong>Inspection assignment</strong> — A field inspector or crew is assigned to visit the site, though this step can take considerable time for non-emergency requests.</li>
+        <li><strong>Risk assessment</strong> — On-site, the tree is evaluated for genuine hazard indicators versus routine maintenance needs.</li>
+        <li><strong>Scheduling</strong> — The job is slotted into either the grid rotation (routine) or an expedited hazard queue (emergency).</li>
+        <li><strong>Completion</strong> — Crews perform the work and close out the ticket.</li>
+      </ol>
+      <p>Most of the perceived delay happens between steps 1 and 3 — the gap between submitting a request and an inspector actually assessing priority — especially for requests that don't obviously read as emergencies from the initial description alone.</p>
+
+      <h2 id="alderman">When Should You Contact Your Alderman?</h2>
+      <p>Ward offices can be a useful escalation path in specific situations:</p>
+      <ul>
+        <li>A genuinely hazardous tree that has gone unaddressed for an extended period despite a submitted 311 request</li>
+        <li>Repeated requests for the same issue with no visible movement or update</li>
+        <li>A clear, ongoing public safety concern affecting multiple residents on a block</li>
+      </ul>
+
+      <p><strong>What alderman offices can and cannot do:</strong> Ward staff can often help follow up on a stalled request and add visibility to a genuine safety concern within city departments. What they generally cannot do is override the Bureau of Forestry's technical assessment process, guarantee a specific completion date, or move a routine cosmetic request ahead of a legitimately higher-priority hazard elsewhere in the ward.</p>
+
+      <h2 id="while-waiting">What To Do While Waiting for City Service</h2>
+      <p>This is the part most guides skip entirely — practical steps you can take that don't require the city to act first.</p>
+
+      <h3>Document Conditions</h3>
+      <p>Take dated photos of the tree from multiple angles, especially anything showing cracking, lean, or hanging material. This creates a timestamped record that's useful both for your own tracking and for any future insurance conversation, should the tree cause damage before it's addressed.</p>
+
+      <h3>Track Changes Over Time</h3>
+      <p>Periodically check for changes in:</p>
+      <ul>
+        <li>New or widening cracks in the trunk or major limbs</li>
+        <li>Increasing lean angle</li>
+        <li>Root lifting or soil heaving at the base</li>
+        <li>Expanding dead canopy sections</li>
+      </ul>
+      <p>A meaningful change in any of these is worth an updated 311 report noting the deterioration, since it may re-trigger a higher priority classification.</p>
+
+      <h3>Get a Private Arborist Evaluation</h3>
+      <p>An <strong>ISA-certified arborist</strong> can conduct an independent inspection and provide a written risk assessment — even for a parkway tree you don't own. This documentation can help you make informed decisions about precautions on your own property (for example, temporarily avoiding parking directly under a concerning limb), and provides a professional paper trail that can matter significantly for insurance purposes if the tree does fail before the city addresses it.</p>
+
+      <h2 id="private-arborist">Can a Private Arborist Work on a Parkway Tree?</h2>
+      <p>This is a common misconception worth clarifying directly.</p>
+
+      <div class="two-col-callouts" style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:24px 0;">
+        <div class="callout callout-safe" style="margin:0;">
+          <h3>✓ What a Private Arborist Can Do</h3>
+          <ul>
+            <li>Inspect the tree and assess its condition</li>
+            <li>Provide a professional risk assessment</li>
+            <li>Document conditions with photos and written findings</li>
+            <li>Advise you on interim safety precautions</li>
+          </ul>
+        </div>
+        <div class="callout callout-hazard" style="margin:0;">
+          <h3>✗ What Requires City Authorization</h3>
+          <ul>
+            <li>Any pruning of the parkway tree itself</li>
+            <li>Removal of a city-owned parkway tree</li>
+            <li>Any modification affecting the public right-of-way</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>In short: a private arborist can tell you exactly how concerned to be and document that professionally, but the actual pruning or removal work on a parkway tree has to go through the city.</p>
+
+      <h2 id="common-problems">Common Chicago Parkway Tree Problems</h2>
+      <p>Certain issues show up repeatedly across the city's parkway inventory, and each affects inspection and trimming priority differently:</p>
+
+      <h3>Emerald Ash Borer</h3>
+      <p>A significant share of Chicago's parkway trees are ash, and EAB has moved through most of the city's neighborhoods over the past decade. Read our full <a href="/blog/emerald-ash-borer-chicago">Emerald Ash Borer in Chicago guide</a> for detection signs and treatment-versus-removal decision factors.</p>
+
+      <h3>Dutch Elm Disease</h3>
+      <p>Though less widespread today than during the historic outbreaks that reshaped Chicago's tree-lined streets, DED still circulates and remains a factor in city pruning schedules, particularly around timing to reduce beetle-driven spread.</p>
+
+      <h3>Silver Maple Failures</h3>
+      <p>Older silver maples throughout the city are structurally weaker than many other common street trees and are disproportionately represented in storm-damage and limb-failure reports.</p>
+
+      <h3>Storm-Damaged Oaks</h3>
+      <p>Mature oaks can sustain internal structural damage from severe wind events that isn't always visible externally, making post-storm inspection important even when a tree looks intact from the sidewalk.</p>
+
+      <h3>Root-Lifted Sidewalks</h3>
+      <p>Mature parkway tree roots can lift and crack adjacent sidewalk panels over time — a trip-hazard issue that sits at the intersection of forestry and the city's sidewalk repair program.</p>
+
+      <h3>Salt Damage</h3>
+      <p>Winter road salt runoff affects parkway trees positioned close to the curb, contributing to soil stress and canopy decline that can compound existing health issues.</p>
+
+      <h3>Utility Conflicts</h3>
+      <p>Overhead service lines running through mature canopy require ongoing <strong>utility vegetation management</strong> coordination, since this work often falls at the boundary between city forestry and the utility company's own line-clearance obligations.</p>
+
+      <h2 id="after-storms">After Major Storms: What Residents Should Expect</h2>
+      <p>Severe weather events reshape forestry priorities immediately and predictably:</p>
+      <ul>
+        <li><strong>Derecho events</strong> — Widespread, fast-moving windstorms capable of downing large numbers of trees across the metro area in a single event, generating a surge of emergency tickets.</li>
+        <li><strong>Straight-line winds</strong> — Even without a formal derecho classification, sustained straight-line wind events routinely cause significant limb failure on already-weakened trees.</li>
+        <li><strong>Ice storms</strong> — Ice accumulation adds substantial weight to limbs, a common cause of sudden, unpredictable branch failure.</li>
+        <li><strong>Heavy wet snow</strong> — Similar to ice, heavy wet snow loads can snap limbs that would otherwise handle normal winter conditions without issue.</li>
+      </ul>
+      <p>After any of these events, expect routine grid-rotation work to pause almost entirely while crews address the emergency backlog first. This is standard, appropriate practice — but it's also the single biggest reason a routine request can feel like it's "gone quiet" for an extended stretch.</p>
+
+      <h2 id="comparison">Chicago Parkway Trees vs. Private Trees</h2>
+      <p>Understanding this distinction clearly is the single most useful thing a Chicago homeowner can know about tree ownership. For a full breakdown, see our dedicated guide: <a href="/blog/parkway-trees-vs-private-trees-chicago">Parkway Trees vs. Private Trees in Chicago</a>.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Topic</th><th>Parkway Tree</th><th>Private Tree</th></tr></thead>
+          <tbody>
+            <tr><td>Ownership</td><td>City of Chicago</td><td>Property Owner</td></tr>
+            <tr><td>Routine Pruning</td><td>City (Bureau of Forestry)</td><td>Owner's responsibility</td></tr>
+            <tr><td>Removal Approval</td><td>City authorization required</td><td>Owner decides (permit rules may still apply)</td></tr>
+            <tr><td>Inspection Requests</td><td>CHI311</td><td>Private arborist</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="scenarios">Real Chicago Scenarios</h2>
+      <div class="scenario-grid">
+        <div class="scenario-card">
+          <h3>Lincoln Square</h3>
+          <p>A large boulevard oak along a residential side street is visibly overdue for structural pruning, with deadwood accumulating in the upper canopy over several growing seasons. This reads as a standard-priority request — worth documenting and submitting, but unlikely to jump the queue absent visible hazard signs like cracking or significant lean.</p>
+        </div>
+        <div class="scenario-card">
+          <h3>Hyde Park</h3>
+          <p>A mature, historic canopy tree overhangs a heavily trafficked sidewalk near a school. Low-hanging deadwood over a high-pedestrian-traffic area can reasonably be flagged as high priority given the foot traffic exposure, even without a full structural failure.</p>
+        </div>
+        <div class="scenario-card">
+          <h3>Dunning</h3>
+          <p>A storm-damaged silver maple has a large split limb still partially attached following a summer wind event. This is a textbook emergency-priority situation — silver maples are already known for weaker wood, and a partially detached limb over a yard or driveway warrants an emergency 311 report, not a routine one.</p>
+        </div>
+        <div class="scenario-card">
+          <h3>Mount Greenwood</h3>
+          <p>A large, mature lot has several hanging limbs across multiple trees following recent area storms. Given the real 2026 storm activity that hit this part of the city hard, this kind of multi-tree hazard cluster is common in the weeks following a major event, and residents here should expect crews to be stretched thin across many similar reports simultaneously.</p>
+        </div>
+        <div class="scenario-card">
+          <h3>Evanston</h3>
+          <p>Lakefront wind exposure creates unique stress on trees close to the shoreline. While Evanston operates its own forestry department separate from Chicago's, the same underlying principles — grid-based rotation, hazard prioritization, and CHI311-equivalent reporting through the city's own portal — generally apply.</p>
+        </div>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item"><h3>How often does Chicago trim trees?</h3><p>The Bureau of Forestry aims to service every parkway tree on a rotating multi-year cycle through the grid system, rather than on a strict per-request basis. A given block might see routine crews once every several years, while hazards are handled outside this normal rotation.</p></div>
+      <div class="faq-item"><h3>How do I request tree trimming in Chicago?</h3><p>Submit a request through CHI311 — via the mobile app, the 311 website, or by phone. Include the exact address, a description of the issue, and photos if possible.</p></div>
+      <div class="faq-item"><h3>What is the Chicago tree trimming grid system?</h3><p>A rotational maintenance model where the Bureau of Forestry divides the city into geographic zones and works through them systematically, rather than responding to individual complaints in submission order. Emergencies are pulled out of the normal rotation.</p></div>
+      <div class="faq-item"><h3>How long does Chicago take to trim trees?</h3><p>For routine requests, realistic wait times can run from many months to a few years depending on grid position and recent storm activity. Genuine hazards are prioritized well ahead of routine work.</p></div>
+      <div class="faq-item"><h3>Can I trim a city tree myself?</h3><p>No. Parkway trees are city-owned, and unauthorized pruning or removal isn't permitted. A private arborist can inspect and document conditions, but the actual work requires city involvement.</p></div>
+      <div class="faq-item"><h3>What qualifies as a hazardous tree?</h3><p>A split or cracked trunk, visible uprooting, a hanging or partially detached limb, contact with power lines, or a lean threatening a structure, vehicle, or roadway. Minor deadwood or aesthetic overgrowth typically doesn't qualify as an emergency.</p></div>
+      <div class="faq-item"><h3>What if a tree is touching power lines?</h3><p>Treat it as an emergency. Keep people and pets away, avoid touching the tree or nearby metal, and report it immediately. If a line is down or arcing, contact ComEd and 911 directly rather than waiting on a routine forestry request.</p></div>
+      <div class="faq-item"><h3>Should I call 311 or an arborist?</h3><p>For a parkway tree, 311 is the correct first step for pruning or removal requests. A private ISA-certified arborist is useful in parallel for documenting condition and advising on interim safety while you wait on the city.</p></div>
+      <div class="faq-item"><h3>Can my alderman speed up a request?</h3><p>Ward offices can sometimes help escalate a stalled or clearly urgent request, but they generally cannot override the Bureau of Forestry's technical prioritization process or guarantee a specific timeline.</p></div>
+      <div class="faq-item"><h3>Who owns parkway trees in Chicago?</h3><p>The City of Chicago owns and maintains parkway trees — those planted between the sidewalk and the street. Trees anywhere else on a private lot belong to the property owner.</p></div>
+
+      <!-- AUTHOR BOX -->
+      <div class="author-box">
+        <div class="avatar-lg">DK</div>
+        <div>
+          <h3>About the Author David Kowalski, ISA Certified Arborist</h3>
+          <div class="role">Founder & Lead Arborist, Prime Tree Care</div>
+          <p>David has spent 15+ years assessing and treating trees across Chicago's Northwest Side, with hands-on experience conducting tree risk assessments on both private and parkway trees, coordinating with utility vegetation management crews on line-clearance work, and helping homeowners navigate the Bureau of Forestry's request and inspection process. This guide reflects that direct, on-the-ground experience with Chicago's urban forestry system — not just publicly available policy documents.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTERNAL LINKS -->
+<section class="bg-cream">
+  <div class="container narrow">
+    <div style="text-align:center; margin-bottom:8px;">
+      <span class="eyebrow">Explore Further</span>
+      <h2 style="margin-top:10px; font-size:26px;">Related Services & Guides</h2>
+    </div>
+    <div class="link-cols">
+      <div>
+        <h3>Related Services</h3>
+        <ul>
+          <li><a href="/services/tree-health-inspection-treatment">Tree Health Inspection & Treatment</a></li>
+          <li><a href="/services/tree-trimming-pruning">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/tree-removal">Tree Removal</a></li>
+          <li><a href="/services/emergency-tree-removal">Emergency Tree Service</a></li>
+          <li><a href="/services/storm-prep-tree-support-systems">Storm Prep & Tree Support Systems</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Related Guides</h3>
+        <ul>
+          <li><a href="/blog/parkway-trees-vs-private-trees-chicago">Parkway Trees vs. Private Trees</a></li>
+          <li><a href="/blog/hazardous-city-tree-chicago-what-to-do">Hazardous City Tree: What to Do</a></li>
+          <li><a href="/blog/tree-law-chicago-neighbor-disputes">Tree Law: Chicago Neighbor Disputes</a></li>
+          <li><a href="/blog/emerald-ash-borer-chicago">Emerald Ash Borer in Chicago</a></li>
+          <li><a href="/blog/chicago-derecho-storm-damage-trees">Chicago Derecho Storm Damage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service Areas</h3>
+        <ul>
+          <li><a href="/service-areas/tree-service-chicago-il">Chicago, IL</a></li>
+          <li><a href="/service-areas/tree-service-lincoln-square">Lincoln Square</a></li>
+          <li><a href="/service-areas/tree-service-hyde-park">Hyde Park</a></li>
+          <li><a href="/service-areas/tree-service-mount-greenwood">Mount Greenwood</a></li>
+          <li><a href="/service-areas/tree-service-dunning">Dunning</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <div>
+        <h3>Worried About a Tree the City Hasn't Gotten To Yet?</h3>
+        <p>Get an independent risk assessment from an ISA-certified arborist — documentation you can use while you wait on the city, or fast action if it's genuinely urgent.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+17733028351" class="btn btn-gold">Call (773) 302-8351</a>
+        <a href="/contact" class="btn btn-outline">Request an Assessment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/tree-removal">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming-pruning">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/stump-grinding">Stump Grinding</a></li>
+          <li><a href="/services/emergency-tree-removal">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-health-inspection-treatment">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/#process">Our Process</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="/contact" class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Free Estimate</a>
+</div>
+
+</body>
+</html>
