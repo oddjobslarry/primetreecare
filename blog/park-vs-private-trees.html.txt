@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parkway Trees vs Private Trees in Chicago: Who Owns What, Who Pays, Who to Call</title>
+<meta name="description" content="A Chicago homeowner's guide to parkway trees vs private trees: ownership, Bureau of Forestry responsibilities, removal rules, storm damage liability, and when to call 311 vs an ISA-certified arborist.">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" type="image/webp">
+<link rel="canonical" href="https://primetreecare.pages.dev/blog/parkway-trees-vs-private-trees-chicago/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest-950:#0f2419;--forest-900:#153a26;--forest-800:#1d4f32;--forest-700:#25643f;--forest-600:#2f7c4f;
+  --bark-100:#f4f1ea;--bark-50:#faf8f3;--amber-500:#e07a2c;--amber-600:#c9631a;--amber-100:#fdeee0;
+  --red-100:#fdecec;--red-600:#c23b3b;
+  --ink-900:#1a2019;--ink-600:#4d574d;--ink-400:#7c8a7c;--line:#dfe3da;--white:#ffffff;--radius:14px;
+  --shadow-sm:0 1px 2px rgba(15,36,25,.06);--shadow-md:0 8px 24px rgba(15,36,25,.10);--shadow-lg:0 20px 50px rgba(15,36,25,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink-900);background:var(--bark-50);line-height:1.7;-webkit-font-smoothing:antialiased;}
+img{max-width:100%;display:block;}
+a{color:var(--forest-700);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;color:var(--forest-950);line-height:1.18;letter-spacing:-.01em;}
+h1{font-size:clamp(2rem,4.2vw,3.1rem);font-weight:700;}
+h2{font-size:clamp(1.45rem,2.6vw,1.9rem);margin-top:44px;margin-bottom:14px;}
+h3{font-size:1.1rem;margin-top:26px;margin-bottom:10px;color:var(--forest-800);}
+p{color:var(--ink-600);margin-bottom:14px;font-size:1.02rem;}
+ul,ol{color:var(--ink-600);margin:0 0 16px 22px;font-size:1.02rem;}
+li{margin-bottom:6px;}
+strong{color:var(--ink-900);}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest-700);font-weight:700;}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--amber-500);display:inline-block;}
+
+/* Header */
+.topbar{background:var(--forest-950);color:#cfe0d3;font-size:.83rem;}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:8px 24px;flex-wrap:wrap;gap:6px;}
+.topbar a{color:#cfe0d3;}
+header.site-header{position:sticky;top:0;z-index:50;background:rgba(250,248,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:24px;}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--forest-950);}
+.brand img{height:44px;width:auto;border-radius:8px;}
+nav.main-nav{display:flex;gap:26px;align-items:center;}
+nav.main-nav a{font-size:.9rem;font-weight:600;color:var(--ink-900);text-decoration:none;}
+nav.main-nav a:hover{color:var(--forest-700);text-decoration:none;}
+.header-cta{display:flex;gap:12px;align-items:center;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.92rem;cursor:pointer;border:1px solid transparent;white-space:nowrap;transition:transform .15s ease,box-shadow .15s ease;text-decoration:none;}
+.btn:hover{transform:translateY(-1px);text-decoration:none;}
+.btn-primary{background:var(--amber-500);color:var(--white);box-shadow:var(--shadow-sm);}
+.btn-primary:hover{background:var(--amber-600);box-shadow:var(--shadow-md);}
+.btn-outline{background:transparent;color:var(--forest-900);border-color:var(--forest-900);}
+.btn-outline:hover{background:var(--forest-900);color:#fff;}
+.btn-white{background:#fff;color:var(--forest-900);}
+.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}
+.btn-ghost-light:hover{background:rgba(255,255,255,.12);}
+.btn-sm{padding:9px 16px;font-size:.82rem;}
+.menu-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--forest-950);cursor:pointer;}
+.crumbs{font-size:.8rem;color:var(--ink-400);padding:14px 0;}
+.crumbs a{color:var(--forest-700);font-weight:600;}
+.crumbs span{margin:0 6px;}
+
+/* Article hero */
+.article-hero{padding:28px 0 40px;}
+.article-meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:16px;font-size:.82rem;color:var(--ink-400);}
+.article-meta .tag{background:var(--amber-100);color:var(--amber-600);font-weight:700;padding:5px 12px;border-radius:999px;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;}
+.article-hero h1{max-width:920px;}
+.article-sub{font-size:1.1rem;color:var(--ink-600);max-width:820px;margin-top:14px;}
+.feature-img{margin-top:28px;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:21/9;}
+.feature-img img{width:100%;height:100%;object-fit:cover;}
+
+/* Direct answer box */
+.direct-answer{background:var(--forest-950);color:#fff;border-radius:var(--radius);padding:28px 30px;margin:32px 0;}
+.direct-answer .eyebrow{color:#8fd6a4;}
+.direct-answer .eyebrow::before{background:#8fd6a4;}
+.direct-answer h2{color:#fff;margin-top:10px;font-size:1.3rem;}
+.direct-answer p{color:#d9e6d7;margin-bottom:0;font-size:1.03rem;}
+
+/* Layout: article + TOC sidebar */
+.article-layout{display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:start;padding:10px 0 70px;}
+.toc-sidebar{position:sticky;top:100px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.toc-sidebar h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--forest-700);margin-bottom:12px;}
+.toc-sidebar ol{margin:0;padding-left:18px;font-size:.83rem;}
+.toc-sidebar li{margin-bottom:9px;}
+.toc-sidebar a{color:var(--ink-600);text-decoration:none;}
+.toc-sidebar a:hover{color:var(--forest-800);}
+.toc-cta{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);}
+.toc-cta p{font-size:.82rem;margin-bottom:10px;}
+
+/* Tables */
+.table-wrap{overflow-x:auto;margin:18px 0 22px;}
+table{width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);}
+table th,table td{padding:13px 16px;text-align:left;font-size:.9rem;border-bottom:1px solid var(--line);vertical-align:top;}
+table th{background:var(--forest-950);color:#fff;font-family:'Fraunces',serif;font-weight:600;}
+table tr:last-child td{border-bottom:none;}
+table td:first-child{font-weight:700;color:var(--forest-900);}
+
+/* Callout boxes */
+.callout{border-radius:12px;padding:20px 22px;margin:20px 0;border-left:4px solid var(--forest-600);background:var(--bark-100);}
+.callout h4{font-family:'Fraunces',serif;font-size:1rem;margin-bottom:8px;color:var(--forest-800);}
+.callout p{margin-bottom:0;font-size:.95rem;}
+.callout-warning{border-left-color:var(--red-600);background:var(--red-100);}
+.callout-warning h4{color:var(--red-600);}
+.callout-tip{border-left-color:var(--amber-500);background:var(--amber-100);}
+.callout-tip h4{color:var(--amber-600);}
+
+/* Decision chart */
+.decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:22px 0;}
+.decision-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.decision-card h4{font-family:'Fraunces',serif;font-size:1.05rem;margin-bottom:12px;}
+.decision-card.city h4{color:var(--forest-700);}
+.decision-card.private h4{color:var(--amber-600);}
+.decision-card ul{margin:0 0 0 18px;font-size:.9rem;}
+
+/* Misconception list */
+.myth{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;}
+.myth .claim{font-weight:700;color:var(--red-600);font-style:italic;margin-bottom:8px;font-size:.95rem;}
+.myth .fact{font-size:.92rem;color:var(--ink-600);margin-bottom:0;}
+
+/* Scenario cards */
+.scenario-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0;}
+.scenario-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;}
+.scenario-card h4{font-size:.98rem;margin-bottom:8px;color:var(--forest-800);}
+.scenario-card p{font-size:.9rem;margin-bottom:0;}
+
+/* Service links row */
+.link-row{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0;}
+.pill-link{font-size:.83rem;font-weight:600;color:var(--forest-800);background:var(--white);border:1px solid var(--line);padding:9px 14px;border-radius:999px;text-decoration:none;}
+.pill-link:hover{border-color:var(--forest-700);color:var(--forest-900);text-decoration:none;}
+
+/* Author box */
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:40px;}
+.author-box .avatar{width:56px;height:56px;border-radius:50%;background:var(--forest-800);flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;}
+.author-box h4{font-size:.98rem;margin-bottom:4px;}
+.author-box p{font-size:.87rem;margin-bottom:0;}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:12px;margin-top:16px;}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.faq-item summary{cursor:pointer;list-style:none;padding:17px 20px;font-weight:700;font-family:'Fraunces',serif;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--forest-950);font-size:.98rem;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+";font-size:1.4rem;color:var(--amber-600);font-family:'Inter',sans-serif;flex:none;}
+.faq-item[open] summary::after{content:"−";}
+.faq-item .a{padding:0 20px 18px;font-size:.92rem;color:var(--ink-600);}
+
+/* CTA */
+.section{padding:56px 0;}
+.section-alt{background:var(--bark-100);}
+.cta-final{background:linear-gradient(135deg,var(--forest-900),var(--forest-950));color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;}
+.cta-final h2{color:#fff;margin-top:0;}
+.cta-final p{color:#c9dac6;}
+.cta-final .stack{display:flex;flex-direction:column;gap:12px;}
+.cta-final .btn{width:100%;}
+
+/* Footer */
+footer{background:var(--forest-950);color:#a9bfa8;padding:52px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:32px;}
+footer h4{color:#fff;font-family:'Fraunces',serif;font-size:1rem;margin-bottom:12px;}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.86rem;margin:0;}
+footer a{color:#a9bfa8;}
+footer a:hover{color:#fff;}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.footer-brand img{height:36px;border-radius:8px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+
+@media (max-width:980px){
+  nav.main-nav,.header-cta .btn-outline{display:none;}
+  .menu-toggle{display:block;}
+  .article-layout{grid-template-columns:1fr;}
+  .toc-sidebar{position:static;}
+  .cta-final{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .decision-grid,.scenario-grid{grid-template-columns:1fr;}
+}
+@media (max-width:620px){
+  .footer-grid{grid-template-columns:1fr;}
+  table{font-size:.78rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ SCHEMA ============ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Parkway Trees vs Private Trees in Chicago: Who Owns What, Who Pays, and Who You Should Call",
+  "description":"A Chicago homeowner's guide to parkway trees vs private trees: ownership, Bureau of Forestry responsibilities, removal rules, storm damage liability, and when to call 311 vs an ISA-certified arborist.",
+  "image":"https://primetreecare.pages.dev/images/parkway-trees-vs-private-trees-chicago.webp",
+  "author":{"@type":"Organization","name":"Prime Tree Care","url":"https://primetreecare.pages.dev/"},
+  "publisher":{"@type":"Organization","name":"Prime Tree Care","logo":{"@type":"ImageObject","url":"https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp"}},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://primetreecare.pages.dev/blog/parkway-trees-vs-private-trees-chicago/"},
+  "datePublished":"2026-08-20",
+  "dateModified":"2026-08-20"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://primetreecare.pages.dev/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://primetreecare.pages.dev/blog/"},
+    {"@type":"ListItem","position":3,"name":"Parkway Trees vs Private Trees Chicago","item":"https://primetreecare.pages.dev/blog/parkway-trees-vs-private-trees-chicago/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Who owns parkway trees in Chicago?","acceptedAnswer":{"@type":"Answer","text":"The City of Chicago owns parkway trees because they grow in the public right-of-way between the sidewalk and the street. The Bureau of Forestry manages planting, trimming, and removal of these trees, even though they sit directly in front of a private home."}},
+    {"@type":"Question","name":"Can I cut down a parkway tree?","acceptedAnswer":{"@type":"Answer","text":"No. Parkway trees are city property, and removing or cutting one down without authorization from the Bureau of Forestry can result in penalties. If a parkway tree is dead, damaged, or hazardous, report it through CHI311 instead of removing it yourself."}},
+    {"@type":"Question","name":"Can I request tree trimming from the city?","acceptedAnswer":{"@type":"Answer","text":"Yes. Chicago residents can request parkway tree trimming or inspection through CHI311. The city generally works through a zone-based trimming schedule, though hazardous conditions can often be prioritized."}},
+    {"@type":"Question","name":"Does Chicago replace removed parkway trees?","acceptedAnswer":{"@type":"Answer","text":"The city often replants parkway locations where a tree was removed, factoring in species diversity to reduce vulnerability to pests like Emerald Ash Borer, though timing and availability can vary by location and program funding."}},
+    {"@type":"Question","name":"Who pays for sidewalk damage caused by tree roots?","acceptedAnswer":{"@type":"Answer","text":"Responsibility depends on whether the tree is a parkway tree or a private tree and on the specific circumstances. For parkway trees, the city generally handles public sidewalk repair as part of its infrastructure programs; for private trees, the property owner is typically responsible. Documentation and inspection records help clarify these situations."}},
+    {"@type":"Question","name":"Can I plant a different species in the parkway?","acceptedAnswer":{"@type":"Answer","text":"Generally, no without approval. The Bureau of Forestry manages parkway species selection to maintain canopy diversity and reduce pest and disease vulnerability, so residents typically need to request a specific planting through CHI311 rather than planting independently."}},
+    {"@type":"Question","name":"What if a city tree looks dangerous?","acceptedAnswer":{"@type":"Answer","text":"Report it to CHI311 as a hazard in the public right-of-way. Avoid attempting to trim or remove the tree yourself, since it remains city property even if it appears to pose an immediate risk."}},
+    {"@type":"Question","name":"How long does city tree service take?","acceptedAnswer":{"@type":"Answer","text":"Timing varies based on the city's zone-based trimming schedule and current request volume. Hazardous conditions are typically prioritized over routine trimming requests, but exact timelines depend on the Bureau of Forestry's current workload."}},
+    {"@type":"Question","name":"What is the Bureau of Forestry?","acceptedAnswer":{"@type":"Answer","text":"The Bureau of Forestry is the City of Chicago department responsible for managing the city's public tree canopy, including parkway tree planting, inspection, trimming, and removal, typically coordinated through the Department of Streets and Sanitation."}},
+    {"@type":"Question","name":"Can a private arborist inspect a city tree?","acceptedAnswer":{"@type":"Answer","text":"Yes. An ISA-certified arborist can perform an independent tree risk assessment on a parkway tree for documentation, insurance, or second-opinion purposes, though authority to trim or remove the tree still rests with the Bureau of Forestry."}}
+  ]
+}
+</script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span>Serving Chicago &amp; Suburbs</span> &nbsp;·&nbsp; <a href="https://maps.app.goo.gl/XtF7wAiftwWsLE6r6" target="_blank" rel="noopener">8811 W 87th St, Hickory Hills, IL 60457</a></div>
+    <div><span>ISA-Certified · Fully Insured · 24/7 Emergency Response</span> &nbsp;·&nbsp; <a href="tel:+17733028351">📞 (773) 302-8351</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="/" class="brand">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care Chicago IL logo">
+      Prime Tree Care
+    </a>
+    <nav class="main-nav">
+      <a href="/services/">Services</a>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#estimate" class="btn btn-outline btn-sm">Request an Estimate</a>
+      <a href="tel:+17733028351" class="btn btn-primary btn-sm">Call Now</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap crumbs">
+  <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>Parkway Trees vs Private Trees Chicago
+</div>
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero">
+  <div class="wrap">
+    <div class="article-meta">
+      <span class="tag">Chicago Tree Law</span>
+      <span>Updated August 20, 2026</span>
+      <span>·</span>
+      <span>12 min read</span>
+      <span>·</span>
+      <span>By Prime Tree Care Arborists</span>
+    </div>
+    <h1>Parkway Trees vs Private Trees in Chicago: Who Owns What, Who Pays, and Who You Should Call</h1>
+    <p class="article-sub">
+      A practical, homeowner-first guide to Chicago's parkway tree rules — ownership, Bureau of Forestry
+      responsibilities, removal restrictions, storm damage liability, and exactly when to call 311 versus an
+      ISA-certified arborist.
+    </p>
+    <div class="feature-img">
+      <img src="/images/parkway-trees-vs-private-trees-chicago.webp" alt="Parkway tree between the sidewalk and street next to a private yard tree in a Chicago neighborhood">
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="direct-answer">
+    <span class="eyebrow">Direct Answer</span>
+    <h2>Who Owns a Parkway Tree in Chicago?</h2>
+    <p>
+      A parkway tree is generally considered a city tree because it grows within the public right-of-way — the
+      parkway strip between the sidewalk and the street — while trees located inside your property boundary belong
+      to you. The <strong>Chicago Bureau of Forestry</strong> manages parkway trees, although adjacent property
+      owners may still have certain maintenance responsibilities, like watering and reporting hazards.
+    </p>
+  </div>
+</div>
+
+<!-- ============ ARTICLE LAYOUT ============ -->
+<div class="wrap article-layout">
+  <article>
+
+    <h2 id="what-is-parkway">1. What Is a Parkway Tree?</h2>
+    <p>
+      In Chicago, the <strong>parkway</strong> is the strip of public land between the curb (street) and the
+      sidewalk, or between the sidewalk and the private property line where no separate strip exists. It's public
+      right-of-way — legally part of the street system, not part of anyone's yard — even though it often looks and
+      feels like an extension of a homeowner's lawn.
+    </p>
+    <p>
+      Chicago's Municipal Code defines a parkway as the area between the street and the nearest property line,
+      which includes the sidewalk area itself. That means the strip of grass in front of your house, the tree
+      planted in it, and even the sidewalk running through it are all technically public property under the city's
+      jurisdiction — not yours, even though you're the one mowing it.
+    </p>
+    <h3>Street, Sidewalk, Parkway, and Private Yard — What's the Difference?</h3>
+    <ul>
+      <li><strong>Street:</strong> The paved roadway itself, owned and maintained by the city.</li>
+      <li><strong>Parkway:</strong> The public strip between the street/curb and the sidewalk (or between the sidewalk and the property line). This is where most city-owned street trees grow.</li>
+      <li><strong>Sidewalk:</strong> The public pedestrian path, often running through or alongside the parkway.</li>
+      <li><strong>Private yard:</strong> Everything on your side of the property line — the area you actually own and control.</li>
+    </ul>
+    <p>
+      On many Chicago blocks the parkway is a narrow grass strip a few feet wide; on tree-lined boulevards like
+      those near the Midway Plaisance or in neighborhoods with wide medians, the parkway can be substantially
+      larger, sometimes described as a <strong>boulevard parkway</strong>. Either way — narrow residential parkway
+      or wide boulevard planting strip — the ownership rule is the same: if it's between the curb and your property
+      line, it's public land.
+    </p>
+
+    <h2 id="what-is-private">2. What Is a Private Tree?</h2>
+    <p>
+      A private tree is any tree growing entirely within your property boundary — front yard, back yard, side yard,
+      or on a commercial or multi-family lot. If the trunk base sits inside your legal property line, it's yours:
+      you own it, you're responsible for its care, and you're the one who decides whether it gets pruned, treated,
+      or removed.
+    </p>
+    <p>
+      This is where responsibility differs sharply from public trees: a private tree owner can generally trim,
+      treat, or remove their own tree without city permission (though some situations, like protected heritage
+      trees or work near utility lines, can still involve outside coordination). A parkway tree owner — the city —
+      retains that same authority over its trees, and private residents don't get to make those calls even though
+      the tree sits right in front of their home.
+    </p>
+
+    <h2 id="ownership-chart">3. Quick Ownership Chart</h2>
+    <p>Here's the short version, for anyone who wants the answer without reading the whole guide:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tree Location</th><th>Who Owns It?</th><th>Who Trims It?</th><th>Who Removes It?</th></tr></thead>
+        <tbody>
+          <tr><td>Parkway</td><td>City of Chicago</td><td>Bureau of Forestry</td><td>Bureau of Forestry</td></tr>
+          <tr><td>Front Yard</td><td>Property Owner</td><td>Property Owner</td><td>Property Owner</td></tr>
+          <tr><td>Back Yard</td><td>Property Owner</td><td>Property Owner</td><td>Property Owner</td></tr>
+          <tr><td>Commercial Property</td><td>Property Owner</td><td>Property Owner</td><td>Property Owner</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      <strong>Exceptions to keep in mind:</strong> a tree that straddles the property line (trunk partially on
+      public land, partially private) can create shared responsibility questions best clarified with the Bureau of
+      Forestry. Trees on easements — such as utility easements — may also involve a utility company's vegetation
+      management rights even on private property. And HOA-governed communities sometimes have their own tree
+      covenants layered on top of city rules for common-area trees.
+    </p>
+
+    <h2 id="bureau-of-forestry">4. Who Is Responsible for Parkway Trees in Chicago?</h2>
+    <p>
+      The <strong>Chicago Bureau of Forestry</strong>, operating under the Department of Streets and Sanitation, is
+      the city department responsible for the public tree canopy. Its responsibilities include:
+    </p>
+    <ul>
+      <li><strong>Tree planting</strong> — selecting and planting new parkway trees, including species diversification efforts</li>
+      <li><strong>Tree inspections</strong> — assessing parkway tree health and structural condition</li>
+      <li><strong>Tree trimming</strong> — routine and zone-based pruning cycles for city trees</li>
+      <li><strong>Tree removals</strong> — taking down dead, diseased, or hazardous parkway trees</li>
+      <li><strong>Urban forest management</strong> — long-term canopy planning across Chicago's neighborhoods</li>
+    </ul>
+    <p>
+      City forestry crews have sole authority over trees on parkways and other public property. Requests for
+      service typically route through <strong>CHI311</strong>, Chicago's non-emergency service request system,
+      which logs and dispatches forestry requests by location and priority.
+    </p>
+
+    <h2 id="homeowner-responsibilities">5. What Responsibilities Do Homeowners Still Have?</h2>
+    <p>
+      This is where a lot of Chicago homeowners get caught off guard — many assume that because the parkway tree
+      belongs to the city, they have zero responsibility toward it. In practice, adjacent property owners are
+      generally expected to handle a few routine, lower-level obligations even though they don't own the tree:
+    </p>
+    <ul>
+      <li><strong>Watering young trees</strong> — newly planted parkway trees often depend on nearby residents for supplemental watering during establishment, especially in dry summer stretches</li>
+      <li><strong>Protecting roots</strong> — avoiding soil compaction, chemical damage, or construction impact within the tree's root zone</li>
+      <li><strong>Avoiding physical damage</strong> — not attaching signs, lights, wires, or hardware directly to a parkway tree, and being careful with mowers and trimmers around the trunk</li>
+      <li><strong>Reporting hazards</strong> — flagging dead limbs, leaning trunks, or visible decay to CHI311 rather than assuming the city will notice on its own</li>
+      <li><strong>Monitoring decline</strong> — keeping an eye on canopy thinning or dieback, which can be an early sign of pest or disease pressure like Emerald Ash Borer</li>
+    </ul>
+    <p>
+      In short: the city owns the tree and has final authority over trimming and removal, but the person closest to
+      it — you — is often the first line of defense in catching problems early.
+    </p>
+
+    <div class="callout callout-warning">
+      <h4>⚠️ Can You Remove a Parkway Tree Yourself?</h4>
+      <p>
+        <strong>No.</strong> Once a tree is planted in the parkway, it's considered city property and is protected
+        under municipal rules — regardless of how long it's been there, how much it interferes with your driveway,
+        or how confident you are that it's dying. Unauthorized removal can result in penalties, and it also removes
+        a public asset without the city's urban forestry planning being factored in. If a parkway tree needs to
+        come down, the right move is a CHI311 request or a conversation with the Bureau of Forestry — not a
+        chainsaw.
+      </p>
+    </div>
+
+    <h2 id="planting">6. Can You Plant Your Own Tree in the Parkway?</h2>
+    <p>
+      This is a common misconception: because the parkway strip looks like part of your yard, many residents assume
+      they're free to plant whatever they like there. In reality, species selection in the parkway is managed by
+      the Bureau of Forestry, not the adjacent homeowner.
+    </p>
+    <p>
+      Chicago manages parkway species selection deliberately, aiming to improve canopy diversity and reduce
+      citywide vulnerability to pests and diseases such as Emerald Ash Borer and Dutch Elm Disease — both of which
+      caused massive losses in the past specifically because too many blocks were planted with a single vulnerable
+      species. If you'd like a parkway tree planted or replaced in front of your home, the correct path is
+      requesting it through <strong>CHI311</strong> or the city's tree planting programs, rather than planting one
+      independently.
+    </p>
+
+    <h2 id="when-to-call-311">7. When Should You Call 311?</h2>
+    <p>CHI311 is the right first call for anything involving a tree in the public right-of-way:</p>
+    <div class="decision-grid">
+      <div class="decision-card city">
+        <h4>📞 Call 311 When...</h4>
+        <ul>
+          <li>A parkway tree appears dead or severely declining</li>
+          <li>A city tree has a broken or hanging branch</li>
+          <li>A parkway location is missing a tree entirely</li>
+          <li>You want a parkway tree inspection</li>
+          <li>There's a hazard in the public right-of-way (leaning trunk, exposed roots, storm damage)</li>
+        </ul>
+      </div>
+      <div class="decision-card private">
+        <h4>🌳 Call a Private Arborist When...</h4>
+        <ul>
+          <li>The tree is on your private property</li>
+          <li>You want a second opinion on a city assessment</li>
+          <li>You need documentation for insurance</li>
+          <li>You're planning construction near root zones</li>
+          <li>You have a property-line tree dispute with a neighbor</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      Chicago generally works through a <strong>zone-based trimming approach</strong> for routine parkway
+      maintenance, meaning neighborhoods are cycled through on a rotating schedule rather than trimmed on-demand.
+      Hazardous conditions reported through 311 are typically prioritized ahead of the routine cycle, but response
+      times can still vary based on current request volume.
+    </p>
+
+    <h2 id="when-to-call-arborist">8. When Should You Call a Private Arborist?</h2>
+    <p>
+      For anything on your own property — or anything where you want independent expertise — an ISA-certified
+      arborist fills a role the city simply doesn't provide:
+    </p>
+    <ul>
+      <li><strong>Tree risk assessments</strong> — a formal, documented evaluation of a tree's structural condition and failure risk</li>
+      <li><strong>Second opinions</strong> — an independent read on a tree the city has assessed differently than you expected</li>
+      <li><strong>Documentation for insurance</strong> — written reports that support a claim after storm damage or a tree-related incident</li>
+      <li><strong>Construction root protection</strong> — planning root-zone protection before a renovation, addition, or driveway replacement</li>
+      <li><strong>Emergency hazard evaluations</strong> — fast, private assessment when you need an answer faster than the city queue allows</li>
+      <li><strong>Property-line disputes</strong> — clarifying ownership and responsibility when a tree sits near or on a boundary line</li>
+    </ul>
+    <p>
+      An ISA-certified arborist can help you understand risk <em>before</em> a major limb failure or full tree
+      failure happens — rather than reacting after the fact. That's the core value a private arborist adds on top
+      of whatever the city provides for public trees.
+    </p>
+
+    <div class="link-row">
+      <a class="pill-link" href="/services/tree-health-inspection-treatment/">Tree Health Inspection →</a>
+      <a class="pill-link" href="/services/tree-trimming-pruning/">Tree Trimming &amp; Pruning →</a>
+      <a class="pill-link" href="/services/tree-removal/">Tree Removal →</a>
+      <a class="pill-link" href="/services/emergency-tree-removal/">Emergency Tree Service →</a>
+      <a class="pill-link" href="/services/storm-prep-tree-support-systems/">Storm Prep &amp; Support Systems →</a>
+    </div>
+
+    <h2 id="who-pays">9. Who Pays If a Parkway Tree Damages Your Property?</h2>
+    <p>
+      This is one of the most-searched tree questions in Chicago, and unfortunately there's no single blanket
+      answer — it depends on the type of damage, the specific circumstances, and sometimes your own insurance
+      policy. Here's how the major categories generally break down conceptually (this is general information, not
+      legal advice — for anything involving a real claim or dispute, consult your insurer or an attorney):
+    </p>
+    <ul>
+      <li><strong>Sidewalk damage:</strong> Roots from a parkway tree lifting a public sidewalk is generally treated as a city infrastructure issue, reportable through 311.</li>
+      <li><strong>Fence damage:</strong> Often involves your own homeowner's insurance, regardless of whether the tree was public or private, though documentation of the tree's ownership and condition matters.</li>
+      <li><strong>Roof damage:</strong> Typically handled through homeowner's insurance; a prior inspection record showing the tree's condition (or lack of one) can become relevant.</li>
+      <li><strong>Vehicle damage:</strong> Usually a matter for auto insurance, again with documentation of the tree and incident helping the claims process.</li>
+      <li><strong>Sewer concerns:</strong> Root intrusion into sewer lines is a common older-neighborhood issue and may involve the city's water management department in addition to a plumber.</li>
+      <li><strong>Root conflicts:</strong> Ongoing root damage to hardscaping is best documented over time with photos and, where useful, a formal arborist inspection.</li>
+    </ul>
+    <p>
+      Across all of these scenarios, the practical steps are consistent: <strong>document the tree and the
+      damage</strong> (photos, dates, prior complaints if any), <strong>report public-tree hazards through
+      311</strong> so there's an official record, <strong>keep any inspection reports</strong> from the city or a
+      private arborist, and <strong>loop in your insurance provider early</strong> if there's property damage
+      involved.
+    </p>
+
+    <h2 id="regional-problems">10. Parkway Tree Problems Common in Chicago</h2>
+    <p>
+      Chicago's parkway trees face a specific set of regional pressures. Understanding them helps explain why the
+      city manages species and timing so deliberately.
+    </p>
+    <h3>Emerald Ash Borer</h3>
+    <p>This invasive beetle devastated Chicago's ash-heavy parkway plantings over the past decade, which is a
+    major reason the Bureau of Forestry now prioritizes species diversity in replanting programs. Learn more in our
+    <a href="/emerald-ash-borer-chicago/">Emerald Ash Borer Chicago guide</a>.</p>
+    <h3>Dutch Elm Disease</h3>
+    <p>Historic elm-lined parkways in older neighborhoods remain vulnerable to this fungal disease, spread by bark
+    beetles and root grafts between neighboring trees. Read our <a href="/dutch-elm-disease-chicago/">Dutch Elm
+    Disease Chicago guide</a> for more detail.</p>
+    <h3>Silver Maple Failures</h3>
+    <p>Fast-growing but structurally weak, silver maples planted decades ago along many Chicago parkways are now a
+    common source of limb failure during storms.</p>
+    <h3>Storm Damage</h3>
+    <p>Derecho-strength straight-line winds and heavy snow loading regularly cause parkway tree limb failures across
+    the city, particularly along more exposed corridors.</p>
+    <h3>Salt Stress</h3>
+    <p>Winter road salt application near parkway strips can stress root systems and soil chemistry over time,
+    especially for trees planted close to heavily salted streets and sidewalks.</p>
+    <h3>Compacted Urban Soils</h3>
+    <p>Parkway strips are narrow and heavily trafficked by foot and vehicle traffic, leading to soil compaction that
+    restricts root growth and water infiltration — part of why Chicago's overall urban forest requires more
+    deliberate management than a typical suburban canopy.</p>
+
+    <h2 id="construction">11. Parkway Trees During Construction Projects</h2>
+    <p>
+      Renovations, driveway replacements, utility work, and home additions are a frequent source of unintentional
+      parkway tree damage — and a frequent source of city fines when root zones aren't protected.
+    </p>
+    <ul>
+      <li><strong>Renovations and additions:</strong> Heavy equipment staged near a parkway tree's root zone can cause soil compaction that harms the tree for years, even without visible impact.</li>
+      <li><strong>Driveway replacements:</strong> Cutting or paving near root zones can sever structural roots, destabilizing a mature tree.</li>
+      <li><strong>Utility work:</strong> Trenching near parkway trees requires care to avoid severing major roots — coordination with utility vegetation management practices helps reduce this risk.</li>
+      <li><strong>Root-zone protection:</strong> Fencing off the critical root zone before construction begins is one of the most effective ways to protect a parkway tree during a project.</li>
+    </ul>
+    <p>
+      Chicago's landscape and parkway tree requirements generally expect property owners undertaking construction
+      near a parkway tree to take reasonable precautions to protect it — and permit applications for certain
+      projects may require sign-off confirming nearby trees won't be harmed. If you're planning a project near a
+      parkway tree, it's worth having a private arborist assess root-zone protection needs before work begins.
+    </p>
+
+    <h2 id="misconceptions">12. Chicago Tree Law: Common Misunderstandings</h2>
+    <div class="myth">
+      <p class="claim">"It's in front of my house, so it's mine."</p>
+      <p class="fact">Location relative to your home doesn't determine ownership — the property line does. A tree
+      in the parkway is city property regardless of how close it is to your front door.</p>
+    </div>
+    <div class="myth">
+      <p class="claim">"I can trim it however I want."</p>
+      <p class="fact">Parkway trees are maintained by the Bureau of Forestry. Unauthorized trimming — including
+      topping or over-pruning — can damage the tree and isn't within a resident's authority, even for branches that
+      overhang your yard.</p>
+    </div>
+    <div class="myth">
+      <p class="claim">"The city must pay for everything."</p>
+      <p class="fact">Responsibility depends on the specific type of damage and circumstances. Some situations
+      involve city infrastructure programs; others involve your own homeowner's insurance. It's rarely an automatic
+      blanket payout.</p>
+    </div>
+    <div class="myth">
+      <p class="claim">"I can remove roots whenever I want."</p>
+      <p class="fact">Cutting roots from a parkway tree — even roots extending into your own yard — can destabilize
+      or kill the tree and may fall outside your authority, since the tree itself remains city property.</p>
+    </div>
+
+    <h2 id="scenarios">13. Parkway Trees vs Private Trees: Real Chicago Scenarios</h2>
+    <div class="scenario-grid">
+      <div class="scenario-card">
+        <h4>Lincoln Square Parkway Oak</h4>
+        <p>A mature oak on a Lincoln Square parkway begins dropping large dead limbs onto the sidewalk. The correct
+        step is a CHI311 hazard report — not private removal — since the tree remains city property despite sitting
+        right at the resident's front walk.</p>
+      </div>
+      <div class="scenario-card">
+        <h4>Hyde Park Boulevard Tree</h4>
+        <p>A homeowner near a Hyde Park boulevard wants a second opinion after the city recommends removal for a
+        boulevard tree. A private ISA-certified arborist inspection can help clarify the tree's true condition,
+        even though the city retains final authority over the parkway tree itself.</p>
+      </div>
+      <div class="scenario-card">
+        <h4>Mount Greenwood Storm Damage</h4>
+        <p>After a high-wind event, a Mount Greenwood resident finds a large limb down from a parkway tree in their
+        yard. The debris in the public right-of-way is reported to 311, while any resulting damage to a private
+        fence goes through the resident's homeowner's insurance.</p>
+      </div>
+      <div class="scenario-card">
+        <h4>Evanston Property-Line Example</h4>
+        <p>A tree trunk sits directly on the boundary between two Evanston properties. Both neighbors share
+        practical interest in the tree's condition, and a private arborist assessment can help clarify structural
+        risk and inform a conversation between the property owners.</p>
+      </div>
+      <div class="scenario-card">
+        <h4>Dunning Sidewalk Root Conflict</h4>
+        <p>Roots from a parkway tree in Dunning have visibly lifted a public sidewalk slab, creating a trip hazard.
+        Since the sidewalk and the tree are both in the public right-of-way, this is reported through 311 rather
+        than handled by the adjacent homeowner.</p>
+      </div>
+    </div>
+
+    <h2 id="faq">14. Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item" open><summary>Who owns parkway trees in Chicago?</summary><div class="a">The City of Chicago owns parkway trees because they grow in the public right-of-way between the sidewalk and the street. The Bureau of Forestry manages planting, trimming, and removal of these trees, even though they sit directly in front of a private home.</div></details>
+      <details class="faq-item"><summary>Can I cut down a parkway tree?</summary><div class="a">No. Parkway trees are city property, and removing or cutting one down without authorization from the Bureau of Forestry can result in penalties. If a parkway tree is dead, damaged, or hazardous, report it through CHI311 instead of removing it yourself.</div></details>
+      <details class="faq-item"><summary>Can I request tree trimming from the city?</summary><div class="a">Yes. Chicago residents can request parkway tree trimming or inspection through CHI311. The city generally works through a zone-based trimming schedule, though hazardous conditions can often be prioritized.</div></details>
+      <details class="faq-item"><summary>Does Chicago replace removed parkway trees?</summary><div class="a">The city often replants parkway locations where a tree was removed, factoring in species diversity to reduce vulnerability to pests like Emerald Ash Borer, though timing and availability can vary by location and program funding.</div></details>
+      <details class="faq-item"><summary>Who pays for sidewalk damage caused by tree roots?</summary><div class="a">Responsibility depends on whether the tree is a parkway tree or a private tree and on the specific circumstances. For parkway trees, the city generally handles public sidewalk repair as part of its infrastructure programs; for private trees, the property owner is typically responsible. Documentation and inspection records help clarify these situations.</div></details>
+      <details class="faq-item"><summary>Can I plant a different species in the parkway?</summary><div class="a">Generally, no without approval. The Bureau of Forestry manages parkway species selection to maintain canopy diversity and reduce pest and disease vulnerability, so residents typically need to request a specific planting through CHI311 rather than planting independently.</div></details>
+      <details class="faq-item"><summary>What if a city tree looks dangerous?</summary><div class="a">Report it to CHI311 as a hazard in the public right-of-way. Avoid attempting to trim or remove the tree yourself, since it remains city property even if it appears to pose an immediate risk.</div></details>
+      <details class="faq-item"><summary>How long does city tree service take?</summary><div class="a">Timing varies based on the city's zone-based trimming schedule and current request volume. Hazardous conditions are typically prioritized over routine trimming requests, but exact timelines depend on the Bureau of Forestry's current workload.</div></details>
+      <details class="faq-item"><summary>What is the Bureau of Forestry?</summary><div class="a">The Bureau of Forestry is the City of Chicago department responsible for managing the city's public tree canopy, including parkway tree planting, inspection, trimming, and removal, typically coordinated through the Department of Streets and Sanitation.</div></details>
+      <details class="faq-item"><summary>Can a private arborist inspect a city tree?</summary><div class="a">Yes. An ISA-certified arborist can perform an independent tree risk assessment on a parkway tree for documentation, insurance, or second-opinion purposes, though authority to trim or remove the tree still rests with the Bureau of Forestry.</div></details>
+    </div>
+
+    <div class="callout callout-tip" style="margin-top:36px;">
+      <h4>💡 Related Reading</h4>
+      <p>
+        Explore more Chicago tree regulation guides: <a href="/do-i-need-a-permit-to-remove-a-tree-chicago/">Do I Need a Permit to Remove a Tree in Chicago?</a>,
+        <a href="/tree-law-chicago-neighbor-disputes/">Chicago Tree Law &amp; Neighbor Disputes</a>,
+        <a href="/emerald-ash-borer-chicago/">Emerald Ash Borer Chicago</a>, and
+        <a href="/dutch-elm-disease-chicago/">Dutch Elm Disease Chicago</a>.
+      </p>
+    </div>
+
+    <div class="author-box">
+      <div class="avatar">PT</div>
+      <div>
+        <h4>About Prime Tree Care</h4>
+        <p>
+          Prime Tree Care is a team of ISA-certified arborists serving Chicago and the surrounding suburbs,
+          including <a href="/service-areas/hyde-park/">Hyde Park</a>, <a href="/service-areas/">Lincoln Square</a>,
+          <a href="/service-areas/evanston/">Evanston</a>, and <a href="/service-areas/oak-park/">Oak Park</a>. Our
+          arborists regularly perform tree risk assessments on both private and parkway-adjacent trees across
+          Chicago's diverse urban canopy, and this guide reflects that hands-on, block-by-block experience.
+        </p>
+      </div>
+    </div>
+
+  </article>
+
+  <!-- ============ TOC SIDEBAR ============ -->
+  <aside class="toc-sidebar">
+    <h4>On This Page</h4>
+    <ol>
+      <li><a href="#what-is-parkway">What Is a Parkway Tree?</a></li>
+      <li><a href="#what-is-private">What Is a Private Tree?</a></li>
+      <li><a href="#ownership-chart">Quick Ownership Chart</a></li>
+      <li><a href="#bureau-of-forestry">Who's Responsible: Bureau of Forestry</a></li>
+      <li><a href="#homeowner-responsibilities">Homeowner Responsibilities</a></li>
+      <li><a href="#planting">Can You Plant a Parkway Tree?</a></li>
+      <li><a href="#when-to-call-311">When to Call 311</a></li>
+      <li><a href="#when-to-call-arborist">When to Call an Arborist</a></li>
+      <li><a href="#who-pays">Who Pays for Damage?</a></li>
+      <li><a href="#regional-problems">Common Chicago Tree Problems</a></li>
+      <li><a href="#construction">Trees During Construction</a></li>
+      <li><a href="#misconceptions">Common Misunderstandings</a></li>
+      <li><a href="#scenarios">Real Chicago Scenarios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+    <div class="toc-cta">
+      <p>Need a tree risk assessment or second opinion in Chicago?</p>
+      <a href="#estimate" class="btn btn-primary btn-sm" style="width:100%;">Request an Estimate</a>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section section-alt" id="estimate">
+  <div class="wrap">
+    <div class="cta-final">
+      <div>
+        <span class="eyebrow" style="color:#8fd6a4;">Need a Second Opinion?</span>
+        <h2 style="margin-top:12px;">Have a Question About a Tree on Your Property?</h2>
+        <p style="margin-top:14px;font-size:1.02rem;">
+          Whether it's a private tree that needs attention or you want an independent risk assessment on a tree
+          near your property line, our ISA-certified arborists serve Chicago and the surrounding suburbs. Free
+          estimates, 24/7 emergency dispatch.
+        </p>
+      </div>
+      <div class="stack">
+        <a href="tel:+17733028351" class="btn btn-primary">📞 Call Now: (773) 302-8351</a>
+        <a href="/services/" class="btn btn-white">Browse Our Services</a>
+        <a href="/service-areas/" class="btn btn-ghost-light">View Service Areas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <strong style="color:#fff;">Prime Tree Care</strong>
+        </div>
+        <p style="font-size:.87rem;color:#a9bfa8;max-width:280px;">ISA-certified arborists providing tree health,
+        pruning, removal, and storm response across Chicago and surrounding suburbs.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Inspection</a></li>
+          <li><a href="/services/tree-trimming-pruning/">Trimming &amp; Pruning</a></li>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+          <li><a href="/services/storm-prep-tree-support-systems/">Storm Prep &amp; Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/do-i-need-a-permit-to-remove-a-tree-chicago/">Tree Removal Permits</a></li>
+          <li><a href="/tree-law-chicago-neighbor-disputes/">Neighbor Tree Disputes</a></li>
+          <li><a href="/emerald-ash-borer-chicago/">Emerald Ash Borer</a></li>
+          <li><a href="/dutch-elm-disease-chicago/">Dutch Elm Disease</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17733028351">📞 (773) 302-8351</a></li>
+          <li><a href="https://maps.app.goo.gl/XtF7wAiftwWsLE6r6" target="_blank" rel="noopener">8811 W 87th St, Hickory Hills, IL 60457</a></li>
+          <li>Mon–Sun · 7:00 AM–7:00 PM</li>
+          <li>24/7 Emergency Storm Response</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care. All rights reserved.</span>
+      <span>Chicago, IL &amp; Surrounding Suburbs</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
