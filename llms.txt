@@ -1,0 +1,68 @@
+# Prime Tree Care
+
+> Prime Tree Care is an ISA-certified tree care company serving Chicago, IL and the surrounding suburbs (Cook, DuPage, and Kane counties). Services include tree removal, tree trimming and pruning, tree health inspection and disease treatment, Emerald Ash Borer (EAB) evaluation, stump grinding, storm prep and tree support systems, tree and shrub fertilization, tree planting and transplanting, and 24/7 emergency tree service. The company is based at 8811 W 87th St, Hickory Hills, IL 60457 and is led by founder and lead arborist David Kowalski.
+
+## Company
+
+- [Home](https://primetreecare.pages.dev/): Overview of Prime Tree Care's services, service area, and why homeowners choose ISA-certified arborists.
+- [About](https://primetreecare.pages.dev/about): Company background, credentials, and team information including founder David Kowalski.
+- [Contact](https://primetreecare.pages.dev/contact): Request a free estimate or schedule a tree health inspection.
+- [Privacy Policy](https://primetreecare.pages.dev/privacy-policy): Site privacy practices.
+- [Terms of Service](https://primetreecare.pages.dev/terms-of-service): Terms governing use of the website and services.
+
+## Services
+
+- [All Services](https://primetreecare.pages.dev/services/): Full list of tree care services offered across Chicagoland.
+- [Tree Removal](https://primetreecare.pages.dev/services/tree-removal): Safe removal of hazardous, dead, diseased, and difficult-access trees.
+- [Tree Trimming & Pruning](https://primetreecare.pages.dev/services/tree-trimming-pruning): Structural pruning, deadwood removal, canopy balancing, and dormant-season pruning.
+- [Tree Health Inspection & Treatment](https://primetreecare.pages.dev/services/tree-health-inspection-treatment): ISA-certified inspections diagnosing Emerald Ash Borer, disease, and canopy decline, with treatment planning.
+- [Emergency Tree Removal](https://primetreecare.pages.dev/services/emergency-tree-removal): 24/7 emergency response for storm damage, fallen limbs, and leaning trees.
+- [Stump Grinding](https://primetreecare.pages.dev/services/stump-grinding): Below-grade stump removal for landscape restoration and replanting.
+- [Storm Prep & Tree Support Systems](https://primetreecare.pages.dev/services/storm-prep-tree-support-systems): Cabling, bracing, and structural reinforcement ahead of severe weather.
+- [Tree & Shrub Fertilization](https://primetreecare.pages.dev/services/tree-shrub-fertilization): Soil-specific fertilization programs for Chicago's clay-heavy soil conditions.
+- [Tree Planting & Transplanting](https://primetreecare.pages.dev/services/tree-planting-transplanting): Species selection, planting, and transplanting services.
+
+## Service Areas
+
+- [All Service Areas](https://primetreecare.pages.dev/service-areas/): Full list of Chicago-area communities served.
+- [Chicago, IL](https://primetreecare.pages.dev/service-areas/tree-service-chicago-il)
+- [South Side Chicago](https://primetreecare.pages.dev/service-areas/tree-service-south-side)
+- [North Side Chicago](https://primetreecare.pages.dev/service-areas/tree-service-north-side)
+- [Hyde Park, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-hyde-park)
+- [Lincoln Square, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-lincoln-square)
+- [Mount Greenwood, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-mount-greenwood)
+- [Cottage Grove / Jackson Park, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-cottage-grove)
+- [Brighton Park, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-brighton-park)
+- [Dunning, Chicago](https://primetreecare.pages.dev/service-areas/tree-service-dunning)
+- [Oak Park, IL](https://primetreecare.pages.dev/service-areas/tree-service-oak-park)
+- [Elmhurst, IL](https://primetreecare.pages.dev/service-areas/tree-service-elmhurst)
+- [Evanston, IL](https://primetreecare.pages.dev/service-areas/tree-service-evanston)
+- [Westmont, IL](https://primetreecare.pages.dev/service-areas/tree-service-westmont)
+- [Villa Park, IL](https://primetreecare.pages.dev/service-areas/tree-service-villa-park)
+- [West Chicago, IL](https://primetreecare.pages.dev/service-areas/tree-service-west-chicago)
+- [Schaumburg, IL](https://primetreecare.pages.dev/service-areas/tree-service-schaumburg)
+- [Aurora, IL](https://primetreecare.pages.dev/service-areas/tree-service-aurora)
+- [Chicago Heights, IL](https://primetreecare.pages.dev/service-areas/tree-service-chicago-heights)
+- [McHenry, IL](https://primetreecare.pages.dev/service-areas/tree-service-mchenry)
+- [Alsip, IL](https://primetreecare.pages.dev/service-areas/tree-service-alsip)
+
+## Blog
+
+- [All Blog Posts](https://primetreecare.pages.dev/blog/): Educational articles on tree health, local regulations, and seasonal tree care for Chicagoland homeowners.
+- [Emerald Ash Borer in Chicago](https://primetreecare.pages.dev/blog/emerald-ash-borer-chicago): Signs of EAB infestation and treat-vs-remove guidance for ash trees.
+- [Dutch Elm Disease in Chicago](https://primetreecare.pages.dev/blog/dutch-elm-disease-chicago): Symptoms, monitoring, and management of Dutch Elm Disease.
+- [Dutch Elm Disease vs. Emerald Ash Borer](https://primetreecare.pages.dev/blog/oak-wilt-dutch-elm-dormant-pruning-season): How oak wilt and Dutch Elm Disease risk relate to dormant-season pruning timing.
+- [Chicago Derecho & Storm Damage to Trees](https://primetreecare.pages.dev/blog/chicago-derecho-storm-damage-trees): How straight-line wind events damage trees and how to prepare.
+- [City of Chicago Tree Trimming Grid System](https://primetreecare.pages.dev/blog/city-of-chicago-tree-trimming-grid-system): How the city's parkway tree trimming schedule works.
+- [Do I Need a Permit to Remove a Tree in Chicago?](https://primetreecare.pages.dev/blog/do-i-need-a-permit-to-remove-a-tree-in-chicago): Permit requirements for private and parkway tree removal in Chicago.
+- [Hazardous City Trees: What to Do](https://primetreecare.pages.dev/blog/hazardous-city-tree-chicago-what-to-do): Steps to take when a parkway or city-owned tree becomes a hazard.
+- [Parkway Trees vs. Private Trees in Chicago](https://primetreecare.pages.dev/blog/parkway-trees-vs-private-trees-chicago): Ownership and maintenance responsibility differences.
+- [Silver Maple Problems in Chicago](https://primetreecare.pages.dev/blog/silver-maple-problems-chicago): Structural weaknesses and storm risk common to silver maples.
+- [Stump Grinding Cost in Chicago](https://primetreecare.pages.dev/blog/stump-grinding-cost-chicago): Factors that affect stump grinding pricing.
+- [Tree Law & Neighbor Disputes in Chicago](https://primetreecare.pages.dev/blog/tree-law-chicago-neighbor-disputes): Legal basics for tree disputes between neighboring properties.
+- [What to Plant Instead of Ash in Chicago](https://primetreecare.pages.dev/blog/what-to-plant-instead-of-ash-chicago): Replacement species recommendations after EAB losses.
+- [Why the Cheapest Tree Quote Is Risky](https://primetreecare.pages.dev/blog/why-the-cheapest-tree-quote-is-risky): What low-ball tree service quotes often leave out.
+
+## Optional
+
+- [Sitemap](https://primetreecare.pages.dev/sitemap.xml): Full XML sitemap of the site.
