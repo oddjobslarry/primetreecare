@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Law in Chicago: Neighbor Disputes, Liability & Insurance Claims | Prime Tree Care</title>
+<meta name="description" content="Who owns a property-line tree in Chicago? Who pays when a tree falls on a neighbor's property? A complete guide to Chicago tree law, liability, documentation, and insurance claims.">
+<link rel="canonical" href="https://primetreecare.pages.dev/blog/tree-law-chicago-neighbor-disputes">
+<link rel="icon" href="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#4F5D2F; --forest:#263A24; --olive-light:#7A8750;
+    --cream:#F5F2E8; --beige:#D8CDB5; --charcoal:#252823;
+    --gold:#C58A32; --white:#FFFFFF; --radius:14px;
+    --shadow: 0 12px 30px -14px rgba(38,58,36,0.35);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{ font-family:'Open Sans', sans-serif; color:var(--charcoal); background:var(--white); line-height:1.7; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,h4{ font-family:'Montserrat', sans-serif; color:var(--forest); line-height:1.2; letter-spacing:-0.01em; }
+  a{ text-decoration:none; color:var(--olive); } a:hover{ color:var(--forest); }
+  img{ max-width:100%; display:block; }
+  .container{ max-width:1200px; margin:0 auto; padding:0 24px; }
+  .eyebrow{ font-family:'Montserrat', sans-serif; font-weight:700; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--olive); }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:'Montserrat', sans-serif; font-weight:600; font-size:15px; padding:15px 30px; border-radius:8px; border:2px solid transparent; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease; white-space:nowrap; text-decoration:none !important; }
+  .btn-primary{ background:var(--olive); color:var(--white); } .btn-primary:hover{ background:var(--forest); color:var(--white); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .btn-gold{ background:var(--gold); color:var(--forest); } .btn-gold:hover{ background:#b57b28; transform:translateY(-2px); }
+  .btn-outline{ border-color:var(--cream); color:var(--cream); background:transparent; } .btn-outline:hover{ background:rgba(245,242,232,0.12); }
+
+  .topbar{ background:var(--forest); color:var(--beige); font-size:13px; }
+  .topbar .container{ display:flex; justify-content:space-between; align-items:center; padding-top:8px; padding-bottom:8px; }
+  .topbar-left{ display:flex; gap:22px; align-items:center; flex-wrap:wrap; }
+  .topbar a{ color:var(--beige); } .topbar a:hover{ color:var(--gold); }
+
+  header{ background:var(--white); border-bottom:1px solid var(--beige); position:sticky; top:0; z-index:100; }
+  .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo img{ height:52px; width:auto; }
+  .logo-text{ font-family:'Montserrat', sans-serif; }
+  .logo-text .name{ font-weight:800; font-size:19px; color:var(--forest); display:block; }
+  .logo-text .tag{ font-weight:600; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--olive); display:block; margin-top:1px; }
+  nav.primary-nav{ display:flex; gap:34px; }
+  nav.primary-nav a{ font-family:'Montserrat', sans-serif; font-weight:600; font-size:14.5px; color:var(--charcoal); padding:6px 0; }
+  nav.primary-nav a:hover{ color:var(--olive); }
+  .header-actions{ display:flex; align-items:center; gap:22px; }
+  .header-phone{ display:flex; align-items:center; gap:10px; }
+  .header-phone .ph-icon{ width:38px; height:38px; border-radius:50%; background:var(--cream); display:flex; align-items:center; justify-content:center; color:var(--olive); flex-shrink:0; }
+  .header-phone .ph-text{ font-family:'Montserrat',sans-serif; line-height:1.2; }
+  .header-phone .ph-label{ font-size:11px; color:var(--olive-light); font-weight:600; text-transform:uppercase; letter-spacing:.06em; }
+  .header-phone .ph-num{ font-size:16px; font-weight:700; color:var(--forest); }
+  .mobile-toggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* Article hero */
+  .article-hero{ background:var(--forest); color:var(--white); padding:52px 0 0; }
+  .breadcrumb{ font-size:13px; color:var(--beige); opacity:.85; margin-bottom:18px; }
+  .breadcrumb a{ color:var(--beige); } .breadcrumb a:hover{ color:var(--gold); }
+  .article-hero .eyebrow{ color:#A9B583; }
+  .article-hero h1{ color:var(--white); font-size:38px; font-weight:800; margin-top:14px; max-width:880px; }
+  .article-meta{ display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-top:22px; padding-bottom:36px; font-size:13.5px; color:var(--beige); }
+  .article-meta .author{ display:flex; align-items:center; gap:10px; }
+  .author-avatar{ width:36px; height:36px; border-radius:50%; background:var(--olive); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; font-weight:700; font-size:13px; }
+  .feature-image{ margin-top:0; }
+  .feature-image img{ width:100%; height:420px; object-fit:cover; }
+
+  /* Direct answer */
+  .direct-answer-block{
+    background:var(--cream); border-left:4px solid var(--olive); border-radius:0 var(--radius) var(--radius) 0;
+    padding:26px 30px; margin:36px 0; font-size:16px; color:var(--charcoal);
+  }
+  .direct-answer-block .tag{ font-family:'Montserrat',sans-serif; font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--olive); display:block; margin-bottom:8px; }
+
+  /* Layout */
+  .article-wrap{ display:grid; grid-template-columns:270px 1fr; gap:56px; padding:56px 0 96px; align-items:start; }
+  .toc{ position:sticky; top:100px; background:var(--cream); border:1px solid var(--beige); border-radius:var(--radius); padding:26px 24px; max-height:calc(100vh - 130px); overflow-y:auto; }
+  .toc h4{ font-family:'Montserrat',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--olive); margin-bottom:14px; }
+  .toc ol{ list-style:none; counter-reset:toc; display:flex; flex-direction:column; gap:9px; }
+  .toc ol li{ counter-increment:toc; }
+  .toc ol li a{ display:flex; gap:8px; font-size:13px; color:var(--charcoal); line-height:1.35; }
+  .toc ol li a::before{ content: counter(toc) "."; color:var(--olive); font-weight:700; flex-shrink:0; }
+  .toc ol li a:hover{ color:var(--olive); }
+  .toc-cta{ margin-top:20px; padding-top:18px; border-top:1px solid var(--beige); }
+  .toc-cta p{ font-size:12.5px; color:#5b5f52; margin-bottom:10px; }
+
+  .article-body h2{ font-size:26px; margin-top:52px; margin-bottom:16px; scroll-margin-top:110px; }
+  .article-body h2:first-of-type{ margin-top:0; }
+  .article-body h3{ font-size:18.5px; margin-top:28px; margin-bottom:12px; }
+  .article-body p{ font-size:16px; color:#3d4139; margin-bottom:16px; }
+  .article-body ul, .article-body ol{ margin:0 0 16px 24px; }
+  .article-body ul li, .article-body ol li{ font-size:16px; color:#3d4139; margin-bottom:8px; }
+  .article-body strong{ color:var(--forest); }
+  .article-body a{ text-decoration:underline; text-decoration-color:var(--beige); }
+
+  /* Callouts */
+  .callout{ border-radius:var(--radius); padding:22px 26px; margin:24px 0; font-size:15px; }
+  .callout-hazard{ background:#fbeaea; border:1px solid #e0a3a3; }
+  .callout-hazard h4{ color:#7a2323; font-size:15px; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+  .callout-safe{ background:#eef3e6; border:1px solid var(--olive-light); }
+  .callout-safe h4{ color:var(--forest); font-size:15px; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+  .callout-info{ background:var(--cream); border:1px solid var(--beige); }
+  .callout-info h4{ color:var(--olive); font-size:15px; margin-bottom:8px; }
+  .callout p{ margin-bottom:0; color:#3d4139; }
+  .callout ul{ margin-bottom:0; }
+
+  /* Tables */
+  .table-wrap{ overflow-x:auto; margin:24px 0; border-radius:var(--radius); border:1px solid var(--beige); }
+  table{ width:100%; border-collapse:collapse; font-size:14.5px; }
+  table th{ background:var(--forest); color:var(--white); font-family:'Montserrat',sans-serif; font-weight:600; font-size:13px; text-align:left; padding:14px 18px; }
+  table td{ padding:14px 18px; border-top:1px solid var(--beige); color:#3d4139; }
+  table tr:nth-child(even) td{ background:var(--cream); }
+  .priority-emergency{ color:#b3261e; font-weight:700; }
+  .priority-high{ color:var(--gold); font-weight:700; }
+  .priority-standard{ color:var(--olive); font-weight:700; }
+  .priority-low{ color:#7a7d70; font-weight:700; }
+
+  /* Org diagram */
+  .org-diagram{ display:flex; flex-direction:column; align-items:center; gap:0; margin:32px 0; }
+  .org-box{ background:var(--white); border:2px solid var(--olive); border-radius:10px; padding:14px 22px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; color:var(--forest); text-align:center; }
+  .org-box.top{ background:var(--forest); color:var(--white); border-color:var(--forest); }
+  .org-connector{ width:2px; height:26px; background:var(--beige); }
+  .org-row{ display:flex; gap:20px; margin-top:0; }
+  .org-row .org-box{ font-size:12.5px; padding:12px 16px; }
+
+  /* Process flow */
+  .flow-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:14px; margin:28px 0; }
+  .flow-step{ background:var(--white); border:1px solid var(--beige); border-radius:10px; padding:16px 14px; text-align:center; }
+  .flow-step .n{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--olive); font-size:20px; margin-bottom:6px; }
+  .flow-step p{ font-size:12px; color:#5b5f52; margin:0; }
+
+  /* Scenario cards */
+  .scenario-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin:28px 0; }
+  .scenario-card{ background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:24px; }
+  .scenario-card h4{ font-size:15.5px; margin-bottom:8px; color:var(--olive); font-family:'Montserrat',sans-serif; text-transform:uppercase; letter-spacing:.03em; }
+  .scenario-card p{ font-size:14.5px; color:#3d4139; margin:0; }
+
+  /* FAQ */
+  .faq-item{ background:var(--cream); border:1px solid var(--beige); border-radius:var(--radius); padding:22px 24px; margin-bottom:14px; }
+  .faq-item h3{ font-size:16px; margin:0 0 8px; }
+  .faq-item p{ font-size:14.5px; color:#5b5f52; margin:0; }
+
+  /* Author box (EEAT) */
+  .author-box{ background:var(--forest); color:var(--cream); border-radius:var(--radius); padding:32px 34px; margin-top:52px; display:flex; gap:22px; align-items:flex-start; }
+  .author-box .avatar-lg{ width:64px; height:64px; border-radius:50%; background:var(--gold); color:var(--forest); display:flex; align-items:center; justify-content:center; font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; flex-shrink:0; }
+  .author-box h4{ color:var(--white); font-size:17px; margin-bottom:4px; }
+  .author-box .role{ font-family:'Montserrat',sans-serif; font-weight:600; font-size:12.5px; color:var(--gold); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px; }
+  .author-box p{ color:var(--beige); font-size:14.5px; margin:0; }
+
+  /* internal links */
+  .link-cols{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; margin-top:24px; }
+  .link-cols h4{ font-family:'Montserrat',sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--olive); margin-bottom:12px; }
+  .link-cols ul{ list-style:none; display:flex; flex-direction:column; gap:9px; margin:0; }
+  .link-cols ul a{ font-size:14px; color:var(--charcoal); text-decoration:none; }
+  .link-cols ul a:hover{ color:var(--olive); text-decoration:underline; }
+
+  section.plain{ padding:0; }
+  .bg-cream{ background:var(--cream); padding:80px 0; }
+
+  .cta-band{ background: linear-gradient(120deg, var(--forest), #1b2a19); color:var(--white); border-radius:20px; padding:56px 50px; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; margin:56px 0 0; }
+  .cta-band h3{ color:var(--white); font-size:26px; max-width:480px; }
+  .cta-band p{ color:var(--beige); margin-top:8px; max-width:480px; }
+  .cta-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  footer{ background:var(--forest); color:var(--beige); padding-top:72px; }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:48px; padding-bottom:56px; border-bottom:1px solid rgba(245,242,232,0.14); }
+  .footer-logo{ display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+  .footer-logo img{ height:46px; }
+  .footer-logo .name{ font-family:'Montserrat',sans-serif; font-weight:800; color:var(--white); font-size:18px; }
+  footer p{ font-size:14px; line-height:1.8; color:var(--beige); }
+  footer h5{ font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:var(--white); text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px; }
+  footer ul{ list-style:none; display:flex; flex-direction:column; gap:11px; margin:0; }
+  footer ul a{ font-size:14px; color:var(--beige); } footer ul a:hover{ color:var(--gold); }
+  .footer-bottom{ display:flex; justify-content:space-between; padding:24px 0; font-size:13px; color:#9aa38e; flex-wrap:wrap; gap:12px; }
+  .footer-bottom a{ color:#9aa38e; } .footer-bottom a:hover{ color:var(--gold); }
+  .mobile-call-bar{ display:none; }
+  .container.narrow{ max-width:960px; }
+
+  @media (max-width: 1024px){
+    .article-wrap{ grid-template-columns:1fr; }
+    .toc{ position:static; max-height:none; }
+    .flow-grid{ grid-template-columns:repeat(3,1fr); }
+    .scenario-grid{ grid-template-columns:1fr; }
+    .link-cols{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr 1fr; row-gap:40px; }
+  }
+  @media (max-width: 760px){
+    nav.primary-nav{ display:none; }
+    .header-phone .ph-text{ display:none; }
+    .article-hero h1{ font-size:26px; }
+    .feature-image img{ height:220px; }
+    .flow-grid{ grid-template-columns:repeat(2,1fr); }
+    .author-box{ flex-direction:column; text-align:center; align-items:center; }
+    .cta-band{ flex-direction:column; text-align:center; padding:40px 26px; }
+    .cta-band h3{ margin:0 auto; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .mobile-call-bar{ display:flex; position:fixed; bottom:0; left:0; right:0; z-index:200; background:var(--forest); padding:12px 16px; gap:12px; box-shadow:0 -8px 24px rgba(0,0,0,0.2); }
+    .mobile-call-bar .btn{ flex:1; }
+    body{ padding-bottom:70px; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://primetreecare.pages.dev/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://primetreecare.pages.dev/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "Tree Law in Chicago: Neighbor Disputes", "item": "https://primetreecare.pages.dev/blog/tree-law-chicago-neighbor-disputes/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Tree Law in Chicago: Neighbor Disputes, Liability, Property-Line Trees & Insurance Claims",
+      "description": "Who owns a property-line tree in Chicago? Who pays when a tree falls on a neighbor's property? A complete guide to Chicago tree law, liability, documentation, and insurance claims.",
+      "image": "https://primetreecare.pages.dev/images/tree-law-chicago-neighbor-disputes.webp",
+      "author": { "@type": "Person", "name": "David Kowalski", "jobTitle": "ISA Certified Arborist", "worksFor": { "@id": "https://primetreecare.pages.dev/#business" } },
+      "publisher": { "@id": "https://primetreecare.pages.dev/#business" },
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "mainEntityOfPage": "https://primetreecare.pages.dev/blog/tree-law-chicago-neighbor-disputes/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Who owns a property-line tree in Chicago?", "acceptedAnswer": { "@type": "Answer", "text": "When a tree's trunk sits directly on or straddles a boundary line, both property owners can hold a shared ownership interest under general tree-law principles. This typically means decisions about removal require mutual agreement rather than one owner acting alone, though specific facts and any documentation matter." } },
+        { "@type": "Question", "name": "Can I cut branches hanging over my property?", "acceptedAnswer": { "@type": "Answer", "text": "Generally, a property owner may trim branches and roots that cross onto their own property up to the boundary line, but should avoid cutting so aggressively that it damages the tree's health or structural stability, since that can create new liability. Professional pruning is recommended over DIY cutting on anything beyond small branches." } },
+        { "@type": "Question", "name": "Who pays if my neighbor's tree falls on my house?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the circumstances. If a healthy tree fails during a severe storm, the affected property owner's own homeowners insurance typically covers the damage. If the tree was already known to be hazardous and the owner failed to address it, that owner may face greater liability exposure." } },
+        { "@type": "Question", "name": "What makes a tree legally hazardous?", "acceptedAnswer": { "@type": "Answer", "text": "Indicators arborists look for include a dead or significantly declining canopy, severe lean, visible root failure or uprooting, large dead limbs, trunk cavities or decay, prior storm damage, split leaders, and conflicts with structures or utility lines. A formal tree risk assessment from a certified arborist is the most reliable way to document hazard level." } },
+        { "@type": "Question", "name": "Can I force a neighbor to remove a dangerous tree?", "acceptedAnswer": { "@type": "Answer", "text": "There is no simple universal mechanism to compel a neighbor to remove a tree. Practical first steps include documenting the hazard, communicating your concerns in writing, and obtaining an independent arborist assessment. If a neighbor refuses to act on a documented, genuine hazard, legal guidance may be appropriate." } },
+        { "@type": "Question", "name": "What if roots damage my foundation?", "acceptedAnswer": { "@type": "Answer", "text": "Document the damage with photos and, ideally, a professional assessment connecting the root activity to the specific damage. Whether responsibility falls on the tree's owner often depends on the specific facts, the extent of foreseeability, and applicable local rules, which is why professional documentation matters before any claim or dispute." } },
+        { "@type": "Question", "name": "What should I document before filing an insurance claim?", "acceptedAnswer": { "@type": "Answer", "text": "Photograph the damage and the tree from multiple angles as soon as safely possible, note the date and any weather conditions involved, obtain a written arborist assessment if available, and keep records of any prior communication about the tree's condition. This documentation package strengthens any insurance claim." } },
+        { "@type": "Question", "name": "Do parkway trees follow different rules?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Parkway trees are owned by the City of Chicago and maintained by the Bureau of Forestry, so disputes or damage involving a parkway tree typically involve a 311 report to the city rather than a direct neighbor-to-neighbor resolution." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>8811 W 87th St, Hickory Hills, IL 60457</span>
+      <span>Mon–Sat: 7:00 AM – 7:00 PM</span>
+      <span>24/7 Emergency Storm Response</span>
+    </div>
+    <div class="topbar-left"><a href="tel:+17733028351">(773) 302-8351</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="/" class="logo">
+      <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+      <span class="logo-text"><span class="name">Prime Tree Care</span><span class="tag">Chicago Arborists</span></span>
+    </a>
+    <nav class="primary-nav">
+      <a href="/about">About</a>
+      <a href="/services/">Services</a>
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+17733028351" class="header-phone" aria-label="Call Prime Tree Care at (773) 302-8351">
+        <span class="ph-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="ph-text"><span class="ph-label">Call Us Now</span><span class="ph-num">(773) 302-8351</span></span>
+      </a>
+      <a href="/contact" class="btn btn-primary">Get a Free Estimate</a>
+      <button class="mobile-toggle" aria-label="Menu"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#263A24" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / Tree Law & Neighbor Disputes</div>
+    <span class="eyebrow">Chicago Tree Care Guide</span>
+    <h1>Tree Law in Chicago: Neighbor Disputes, Liability, Property-Line Trees & Insurance Claims</h1>
+    <div class="article-meta">
+      <div class="author">
+        <div class="author-avatar">DK</div>
+        <div>By David Kowalski, ISA Certified Arborist</div>
+      </div>
+      <span>·</span>
+      <span>Updated August 13, 2026</span>
+      <span>·</span>
+      <span>19 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="feature-image">
+  <img src="https://primetreecare.pages.dev/images/tree-law-chicago-neighbor-disputes.webp" alt="Chicago neighbors and an arborist discussing a property-line tree dispute and liability">
+</div>
+
+<!-- ARTICLE BODY -->
+<section class="plain">
+  <div class="container article-wrap">
+
+    <!-- TOC -->
+    <aside class="toc">
+      <h4>In This Guide</h4>
+      <ol>
+        <li><a href="#quick-answer">Quick Reference Table</a></li>
+        <li><a href="#who-owns">Who Owns the Tree?</a></li>
+        <li><a href="#property-line-tree">What Is a Property-Line Tree?</a></li>
+        <li><a href="#trim-branches">Trimming Branches Over Your Property</a></li>
+        <li><a href="#roots">Tree Roots Crossing Property Lines</a></li>
+        <li><a href="#falls-on-neighbor">Who Pays When a Tree Falls?</a></li>
+        <li><a href="#hazardous">What Makes a Tree "Hazardous"?</a></li>
+        <li><a href="#documentation">Why Arborist Documentation Matters</a></li>
+        <li><a href="#warned-neighbor">If You Warned Your Neighbor</a></li>
+        <li><a href="#insurance">Insurance Claims After Tree Damage</a></li>
+        <li><a href="#common-disputes">Common Chicago Neighbor Disputes</a></li>
+        <li><a href="#parkway-legal">Parkway Trees & Legal Questions</a></li>
+        <li><a href="#action-plan">Before a Dispute Escalates</a></li>
+        <li><a href="#scenarios">Real Chicago Scenarios</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ol>
+      <div class="toc-cta">
+        <p>Need documentation before a dispute escalates?</p>
+        <a href="/contact" class="btn btn-primary" style="width:100%; padding:12px 20px; font-size:13.5px;">Get a Free Estimate</a>
+      </div>
+    </aside>
+
+    <!-- BODY -->
+    <div class="article-body">
+
+      <div class="callout callout-info" style="margin-bottom:24px;">
+        <p><strong>Not Legal Advice:</strong> This guide explains common situations, general principles, and practical steps homeowners can take. It is not a substitute for advice from a licensed attorney. For a significant dispute, damage claim, or dispute that hasn't resolved through documentation and communication, consult a lawyer familiar with Illinois property law.</p>
+      </div>
+
+      <div class="direct-answer-block">
+        <span class="tag">Direct Answer</span>
+        In Chicago, responsibility for tree-related damage often depends on tree ownership, location, maintenance history, and whether the tree's owner knew — or reasonably should have known — that the tree posed a hazard. Property-line trees, fallen-tree claims, overhanging branches, and root disputes can involve both insurance considerations and arborist documentation, and most situations are resolved through communication and evidence rather than litigation.
+      </div>
+
+      <p>Few things strain a good neighbor relationship faster than a dispute over a tree — especially in a city like Chicago, where mature urban canopy, older housing stock, dense residential lots, and narrow alley access mean trees and property lines are often closely intertwined. If you're dealing with a fallen limb, a disagreement about a shared tree, or genuine concern about a neighbor's declining tree, this guide walks through how these situations typically play out, what actually matters for liability and insurance, and what practical steps protect you either way.</p>
+
+      <h2 id="quick-answer">Chicago Tree Law Quick Reference</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Situation</th><th>Typical Responsibility</th></tr></thead>
+          <tbody>
+            <tr><td>Tree entirely on your property</td><td>Property owner</td></tr>
+            <tr><td>Property-line tree</td><td>Often shared responsibility</td></tr>
+            <tr><td>Healthy tree falls during storm</td><td>Usually affected owner's insurance</td></tr>
+            <tr><td>Known hazardous tree fails</td><td>Potential liability for tree owner</td></tr>
+            <tr><td>Overhanging branches</td><td>Neighbor may trim within property line (subject to limitations)</td></tr>
+            <tr><td>Root damage dispute</td><td>Depends on circumstances and evidence</td></tr>
+            <tr><td>Parkway tree issue</td><td>City involvement may apply</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="who-owns">The Most Important Question First: Who Owns the Tree?</h2>
+      <p>Before liability, insurance, or removal rights ever come into play, the foundational question is simple: whose tree is it? This determines who's generally responsible for maintenance, who bears greater liability exposure if something goes wrong, and who has the right to make removal decisions.</p>
+
+      <h3>Tree Fully on One Property</h3>
+      <p>If a tree's trunk is entirely within one owner's property boundary, that owner generally holds full responsibility for its maintenance and any liability tied to its condition, even if branches or roots extend onto a neighboring lot.</p>
+
+      <h3>Property-Line Trees</h3>
+      <p>When a trunk sits directly on or straddles the boundary between two properties, ownership can become shared under general tree-law principles — meaning decisions about the tree, including removal, often require mutual agreement rather than one owner acting unilaterally.</p>
+
+      <h3>Shared Ownership Situations</h3>
+      <p>Shared ownership can also apply in less obvious situations — for example, a tree planted decades ago near an old, informal boundary marker that no longer precisely matches a modern survey. This is more common in Chicago's older neighborhoods than newer subdivisions with more standardized lot lines.</p>
+
+      <h3>Why Ownership Matters</h3>
+      <p>Ownership determines:</p>
+      <ul>
+        <li><strong>Maintenance responsibility</strong> — who is expected to prune, monitor, and manage the tree's condition over time</li>
+        <li><strong>Liability exposure</strong> — who bears greater risk if the tree causes damage, particularly if a hazard was foreseeable</li>
+        <li><strong>Removal decisions</strong> — who has unilateral authority, and where mutual agreement is legally expected instead</li>
+        <li><strong>Dispute prevention</strong> — clear ownership understanding upfront avoids many disagreements before they start</li>
+      </ul>
+
+      <p><strong>Example:</strong> A large silver maple stands just behind a shared fence line in a Portage Park backyard. The homeowner assumes it's entirely theirs since it's on their side of the fence — but an old plat survey shows the actual property line runs several feet further back, meaning the tree trunk sits almost exactly on the boundary, creating a shared-ownership situation neither neighbor realized existed.</p>
+
+      <h2 id="property-line-tree">What Is a Property-Line Tree?</h2>
+      <p>A property-line tree is one whose trunk crosses or sits directly on the legal boundary between two adjoining properties. This is distinct from a tree that simply grows near a boundary but has its full trunk base on one side.</p>
+
+      <div class="callout callout-info">
+        <h4>Visualizing a Property-Line Tree</h4>
+        <p style="font-family:monospace; font-size:14px; text-align:center; letter-spacing:1px;">Property A &nbsp;|&nbsp; <strong>Tree Trunk</strong> &nbsp;|&nbsp; Property B</p>
+        <p style="margin-top:10px;">When the trunk itself straddles the line — not just branches or roots — both property owners typically hold a legal interest in the tree.</p>
+      </div>
+
+      <p><strong>Ownership implications:</strong> Because both owners may hold an interest, one owner generally cannot unilaterally remove a healthy property-line tree without the other's consent. <strong>Shared decision-making</strong> is the expected norm — removal, major pruning, or treatment decisions ideally involve agreement from both sides. <strong>Removal complications</strong> arise when one neighbor wants a tree gone (for sunlight, root concerns, or simple preference) and the other wants it preserved; this is one of the more common and genuinely difficult categories of neighbor tree dispute in Chicago's older, densely built neighborhoods.</p>
+
+      <h2 id="trim-branches">Can You Trim Branches Hanging Over Your Property?</h2>
+      <div class="direct-answer-block">
+        <span class="tag">Direct Answer</span>
+        Generally, yes — a property owner may trim branches and roots that cross onto their own property up to the boundary line. However, cutting should stop at the property line, and aggressive or improper cutting that damages the tree's health or structural stability can create new problems and potential liability of its own.
+      </div>
+
+      <h3>General Rights</h3>
+      <p>Most jurisdictions, including general Illinois property-law principles, allow a property owner to trim vegetation encroaching from a neighbor's tree up to their own boundary line, without needing the neighbor's permission for reasonable maintenance trimming.</p>
+
+      <h3>Property-Line Limits</h3>
+      <p>The key limitation: you can generally only cut back to your own property line. Cutting further — reaching onto the neighbor's side, or removing so much of the canopy that it affects the tree overall — moves beyond ordinary self-help trimming and into territory that could itself create liability if it damages or kills the tree.</p>
+
+      <h3>Practical Considerations & Why Professional Pruning Matters</h3>
+      <p>Cutting too aggressively on one side of a mature tree can genuinely destabilize its structure, creating a lopsided canopy or compromised root support that becomes a new hazard down the line — sometimes worse than the original overhang. This is especially relevant for large, older trees common throughout Chicago's historic residential blocks. A professional, ISA-certified pruning approach protects the tree's long-term health and avoids inadvertently creating exactly the hazard you were trying to prevent.</p>
+
+      <h2 id="roots">What About Tree Roots Crossing Property Lines?</h2>
+      <p>Root disputes are among the most heavily searched tree-law questions, and for good reason — root damage is often slow, hard to definitively trace to a single tree, and expensive to fix.</p>
+      <ul>
+        <li><strong>Sidewalk damage:</strong> Root heaving can crack or lift concrete sidewalk panels, creating both a property issue and, on public sidewalks, a potential trip-hazard liability question.</li>
+        <li><strong>Foundation concerns:</strong> Root intrusion near an older home's foundation is a common concern in Chicago's older housing stock, though definitively linking foundation issues to a specific tree's roots typically requires professional assessment.</li>
+        <li><strong>Sewer line issues:</strong> Root infiltration into aging sewer lines is a frequent problem in older Chicago neighborhoods with clay or older sewer pipe materials, and can be costly to resolve.</li>
+        <li><strong>Driveway damage:</strong> Similar to sidewalks, root growth beneath a driveway can cause cracking or heaving over time.</li>
+        <li><strong>Retaining wall problems:</strong> Root pressure against retaining walls can contribute to shifting or cracking, particularly on the sloped lots found in some Chicago-area neighborhoods.</li>
+      </ul>
+      <p><strong>Why documentation is critical:</strong> Root damage disputes are inherently harder to prove than a fallen-tree scenario, since the damage accumulates gradually and multiple factors (soil conditions, existing structural issues, age of the pipe or pavement) can contribute. Photographic documentation over time, and ideally a professional assessment connecting the specific root system to the specific damage, significantly strengthens any claim or conversation with a neighbor.</p>
+
+      <h2 id="falls-on-neighbor">Who Pays When a Tree Falls On a Neighbor's Property?</h2>
+      <div class="direct-answer-block">
+        <span class="tag">Direct Answer</span>
+        In most cases, if a healthy tree falls during a genuine storm event, the affected property owner's own homeowners insurance covers the resulting damage, regardless of whose tree it was. Liability shifts toward the tree's owner primarily when the tree was already known — or reasonably should have been known — to be hazardous before it failed.
+      </div>
+
+      <h3>Common Scenarios</h3>
+      <ul>
+        <li><strong>Healthy tree + severe storm:</strong> Generally treated as an "act of nature" — the affected owner's insurance typically handles the claim.</li>
+        <li><strong>Hidden internal decay:</strong> If decay wasn't visible or reasonably detectable beforehand, this often still falls closer to the "unforeseeable" category, though facts vary case by case.</li>
+        <li><strong>Known hazard ignored:</strong> If the tree's owner was previously aware of a visible hazard (documented lean, large dead limbs, prior arborist warning) and took no action, liability exposure for that owner increases substantially.</li>
+        <li><strong>Previously documented defects:</strong> A written arborist report noting a specific defect, if it later contributes to a failure, can become significant evidence in a liability discussion.</li>
+        <li><strong>Dead tree failure:</strong> A dead tree is generally considered a foreseeable hazard, which tends to shift more responsibility toward the owner who allowed it to remain standing.</li>
+        <li><strong>Leaning tree collapse:</strong> Similar to a dead tree, an existing, visible lean is generally considered a known or reasonably knowable condition.</li>
+      </ul>
+
+      <h3>Tree Damage Liability Examples</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Scenario</th><th>Potential Responsibility</th></tr></thead>
+          <tbody>
+            <tr><td>Healthy tree falls during storm</td><td>Often affected property owner's insurance</td></tr>
+            <tr><td>Dead tree ignored for years</td><td>Possible liability concerns for the tree's owner</td></tr>
+            <tr><td>Known hazard documented previously</td><td>Increased owner exposure</td></tr>
+            <tr><td>Sudden, severe weather event</td><td>Often treated differently (less foreseeable)</td></tr>
+            <tr><td>City-owned tree involvement</td><td>Special circumstances — city process applies</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="hazardous">What Makes a Tree "Hazardous"?</h2>
+      <p>Arborists evaluate several concrete indicators when assessing whether a tree poses a genuine hazard, rather than relying on general appearance alone:</p>
+      <div class="callout callout-hazard">
+        <h4>⚠ Hazard Indicators Checklist</h4>
+        <ul>
+          <li>Dead or significantly declining canopy</li>
+          <li>Severe or worsening lean</li>
+          <li>Visible root failure or uprooting at the base</li>
+          <li>Large dead limbs (deadwood) in the canopy</li>
+          <li>Trunk cavities or visible decay</li>
+          <li>Prior storm damage that hasn't been addressed</li>
+          <li>Split leaders or codominant stem cracking</li>
+          <li>Direct conflict with utility lines or structures</li>
+        </ul>
+      </div>
+      <p>A tree can appear generally healthy from a distance and still carry one or more of these defects — which is exactly why a formal, professional evaluation matters more than a visual assessment from the sidewalk.</p>
+
+      <h2 id="documentation">Why Arborist Documentation Matters</h2>
+      <p>If a dispute or insurance claim ever arises, a professional paper trail is often the single most valuable asset you can have. This includes:</p>
+      <ul>
+        <li><strong>Tree risk assessment:</strong> A formal, structured evaluation of a tree's condition and hazard level, performed by an ISA-certified arborist</li>
+        <li><strong>Written reports:</strong> A dated, professional document describing specific findings, not just a verbal opinion</li>
+        <li><strong>Photographic documentation:</strong> Timestamped images showing the tree's condition at a specific point in time</li>
+        <li><strong>Hazard ratings:</strong> A standardized risk classification that gives objective weight to a subjective-seeming concern</li>
+        <li><strong>Condition monitoring:</strong> Repeat assessments over time that show whether a concern is worsening</li>
+        <li><strong>Insurance support:</strong> Documentation that substantiates a claim, rather than relying on a homeowner's own account alone</li>
+        <li><strong>Liability protection:</strong> For a tree owner, proactive documentation showing reasonable maintenance can help demonstrate the tree wasn't a known, ignored hazard</li>
+      </ul>
+      <p>This kind of documentation matters for both sides of a potential dispute — it protects a concerned neighbor building a case for action, and it protects a tree owner who has been proactively maintaining their tree from being unfairly blamed after an unforeseeable weather event.</p>
+
+      <h2 id="warned-neighbor">What Happens If You Warned Your Neighbor?</h2>
+      <p>If you've previously raised a concern with a neighbor about a tree you believe is hazardous, documentation of that warning can matter significantly if the tree later causes damage.</p>
+      <ul>
+        <li><strong>Written documentation:</strong> A dated note, letter, or text message describing your concern is far stronger evidence than a verbal conversation alone.</li>
+        <li><strong>Email records:</strong> If you've communicated by email, keep those records — they establish a clear timestamp and content of what was communicated.</li>
+        <li><strong>Inspection reports:</strong> If you obtained an independent arborist assessment and shared its findings with your neighbor, that combination is particularly strong documentation.</li>
+        <li><strong>Certified arborist assessments:</strong> A professional, third-party opinion carries more weight than a neighbor's personal assessment of "that tree looks bad."</li>
+        <li><strong>Follow-up communication:</strong> If the concern persisted without action, a follow-up message reinforcing the original warning further establishes an ongoing, documented concern.</li>
+      </ul>
+      <p>This documentation can help establish that a hazard was reasonably known before it caused damage — a key factor in how responsibility tends to shift toward a tree's owner in these situations.</p>
+
+      <h2 id="insurance">Insurance Claims After Tree Damage</h2>
+      <p>If a tree — yours, a neighbor's, or a shared one — has already caused damage, here's a realistic, practical walkthrough of the insurance process:</p>
+      <ol>
+        <li><strong>Ensure safety first.</strong> Confirm there's no ongoing hazard (downed power lines, unstable remaining limbs) before approaching the area.</li>
+        <li><strong>Document immediately.</strong> Photograph the damage, the fallen tree, and surrounding conditions from multiple angles as soon as it's safe to do so.</li>
+        <li><strong>Contact your homeowners insurance.</strong> Report the incident promptly; most policies have windows for timely reporting.</li>
+        <li><strong>Understand your deductible.</strong> Your out-of-pocket responsibility depends on your specific policy terms.</li>
+        <li><strong>Arrange emergency mitigation.</strong> Insurers typically expect reasonable steps to prevent further damage (tarping a roof, for example) and often cover these costs as part of the claim.</li>
+        <li><strong>Arrange temporary protection.</strong> Board up openings or tarp exposed areas to prevent weather intrusion while repairs are pending.</li>
+        <li><strong>Get tree removal cost estimates.</strong> Your insurer may need this as part of the claim; a licensed, insured tree service can provide a written estimate.</li>
+        <li><strong>Cooperate with the claim investigation.</strong> Your insurer may send an adjuster to assess the damage directly.</li>
+        <li><strong>Work with the adjuster.</strong> Provide your documentation (photos, any prior arborist reports) to support a fair and complete claim assessment.</li>
+      </ol>
+
+      <h2 id="common-disputes">Common Chicago Neighbor Tree Disputes</h2>
+      <div class="two-col" style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:24px 0;">
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Overhanging Branches</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Trim to your property line; communicate with your neighbor first when possible to avoid unnecessary friction.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Blocking Sunlight</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Generally not treated as a legal hazard issue; this is more often a conversation about aesthetic preference or garden impact than liability.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Leaf Cleanup Complaints</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Typically considered a normal, shared cost of living near mature trees rather than a liability matter.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Root Encroachment</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Document damage over time; professional assessment helps establish a clear connection before any claim.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Fence Damage</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Photograph the damage and the responsible tree; fence repair costs are often negotiated directly between neighbors or through insurance.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Property-Line Tree Removal</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Requires mutual agreement in most cases; an independent arborist opinion can help both sides reach a fair decision.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Storm Damage Arguments</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Insurance typically resolves the immediate damage regardless of blame; liability conversations matter more for repeat or foreseeable hazards.</p>
+        </div>
+        <div class="scenario-card" style="background:var(--white); border:1px solid var(--beige); border-radius:var(--radius); padding:22px;">
+          <h4 style="font-size:15px; color:var(--olive); margin-bottom:8px;">Tree Replacement Disputes</h4>
+          <p style="font-size:14px; color:#3d4139; margin:0;">Disagreements over whether and what to replant after a removal are common on shared or property-line trees; written agreement upfront helps avoid future conflict.</p>
+        </div>
+      </div>
+
+      <h2 id="parkway-legal">Parkway Trees Create Unique Legal Questions</h2>
+      <p>Parkway trees add a distinct legal wrinkle to neighbor disputes, since a third party — the City of Chicago — owns the tree in question.</p>
+      <ul>
+        <li><strong>What is a parkway tree?</strong> A tree planted in the public right-of-way strip between the sidewalk and the street.</li>
+        <li><strong>City ownership:</strong> These trees belong to the City of Chicago, not the adjacent homeowner.</li>
+        <li><strong>Bureau of Forestry:</strong> This division manages planting, pruning, and removal of parkway trees.</li>
+        <li><strong>Who handles maintenance?</strong> The city, not the adjacent property owner, though the city works on its own rotational schedule rather than individual demand.</li>
+        <li><strong>Who to contact:</strong> CHI311 is the correct channel for reporting concerns about a parkway tree, including hazard conditions or disputes about its condition.</li>
+      </ul>
+      <p>For a full breakdown of parkway versus private tree rules, see our dedicated guide: <a href="/blog/parkway-trees-vs-private-trees-chicago/">Parkway Trees vs. Private Trees in Chicago</a>.</p>
+
+      <h2 id="action-plan">What To Do Before A Dispute Escalates</h2>
+      <ol>
+        <li><strong>Document the tree's current condition</strong> with dated photos from multiple angles.</li>
+        <li><strong>Photograph specific concerns</strong> — cracks, lean, deadwood, root issues — clearly and up close.</li>
+        <li><strong>Speak with your neighbor directly</strong> in a calm, non-confrontational way before escalating further.</li>
+        <li><strong>Obtain an independent arborist assessment</strong> to bring objective, professional evidence into the conversation.</li>
+        <li><strong>Keep written records</strong> of every communication, whether by text, email, or letter.</li>
+        <li><strong>Contact your insurance company</strong> if damage has already occurred or seems imminent.</li>
+        <li><strong>Seek legal guidance</strong> if the dispute involves significant damage, a refusal to act on a documented hazard, or simply doesn't resolve through the steps above.</li>
+      </ol>
+
+      <h2 id="scenarios">Real Chicago Scenarios (Direct Answers)</h2>
+
+      <div class="direct-answer-block"><span class="tag">My neighbor's tree fell on my garage. Who pays?</span>If it was a healthy tree that fell during a genuine storm, your own homeowners insurance most likely covers the damage. If the tree was previously known to be hazardous and neglected, your neighbor's liability exposure increases, and their insurance may become involved as well.</div>
+      <div class="direct-answer-block"><span class="tag">Can I cut branches hanging over my fence?</span>Generally yes, up to your property line, without needing your neighbor's permission for reasonable trimming — but avoid cutting so much that it damages the tree's overall health or stability.</div>
+      <div class="direct-answer-block"><span class="tag">What if roots are damaging my driveway?</span>Document the damage with photos over time and consider a professional assessment connecting the specific roots to the specific damage before raising it with your neighbor or filing any claim.</div>
+      <div class="direct-answer-block"><span class="tag">Can my neighbor remove a shared tree?</span>Generally not unilaterally. A property-line tree with shared ownership typically requires mutual agreement before removal.</div>
+      <div class="direct-answer-block"><span class="tag">What if a tree falls during a storm?</span>In most cases, this is treated as an "act of nature," and the affected property owner's own insurance handles the resulting damage regardless of whose tree it was.</div>
+      <div class="direct-answer-block"><span class="tag">What if I warned my neighbor about a dangerous tree?</span>Documented warnings — written messages, emails, or a shared arborist report — can help establish that a hazard was reasonably known beforehand, which matters if the tree later causes damage.</div>
+      <div class="direct-answer-block"><span class="tag">Who pays for a fallen tree on a property line?</span>This depends heavily on the specific facts — whether the tree was healthy or previously hazardous, and how ownership was established. Professional documentation and, where needed, legal guidance help clarify a fair resolution.</div>
+
+      <h2 id="why-inspection">Why Homeowners Request Arborist Inspections Before Legal Action</h2>
+      <p>Before escalating a tree dispute toward legal action, many Chicago homeowners start with an independent arborist inspection, since it offers several practical advantages:</p>
+      <ul>
+        <li><strong>Lower-cost first step</strong> compared to legal consultation, while still producing real, usable documentation</li>
+        <li><strong>Objective documentation</strong> from a neutral, credentialed professional rather than either party's personal opinion</li>
+        <li><strong>Risk assessment</strong> that clarifies whether a genuine hazard exists, rather than a subjective aesthetic disagreement</li>
+        <li><strong>Ownership clarification</strong> — an arborist visit is also a natural opportunity to confirm exactly where a tree's trunk sits relative to the property line</li>
+        <li><strong>Treatment recommendations</strong> that may resolve the underlying concern (pruning, cabling, monitoring) without removal or conflict at all</li>
+        <li><strong>Dispute resolution support</strong> — a shared, professional opinion often helps both neighbors reach agreement faster than continued back-and-forth alone</li>
+      </ul>
+
+      <div class="callout callout-safe">
+        <h4>Why Homeowners Call Prime Tree Care First</h4>
+        <p>We're not attorneys, and we won't pretend to be — for a genuine legal dispute, we'll always recommend speaking with one. What we can do is provide an ISA-certified tree risk assessment, a written, dated report on a tree's condition, and straightforward documentation you can use in a conversation with your neighbor, your insurance company, or your attorney if it comes to that.</p>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-item"><h3>Who owns a property-line tree in Chicago?</h3><p>When a tree's trunk sits directly on or straddles a boundary line, both property owners can hold a shared ownership interest under general tree-law principles. This typically means decisions about removal require mutual agreement rather than one owner acting alone, though specific facts and any documentation matter.</p></div>
+      <div class="faq-item"><h3>Can I cut branches hanging over my property?</h3><p>Generally, a property owner may trim branches and roots that cross onto their own property up to the boundary line, but should avoid cutting so aggressively that it damages the tree's health or structural stability, since that can create new liability.</p></div>
+      <div class="faq-item"><h3>Who pays if my neighbor's tree falls on my house?</h3><p>It depends on the circumstances. If a healthy tree fails during a severe storm, the affected property owner's own homeowners insurance typically covers the damage. If the tree was already known to be hazardous and the owner failed to address it, that owner may face greater liability exposure.</p></div>
+      <div class="faq-item"><h3>What makes a tree legally hazardous?</h3><p>Indicators include a dead or significantly declining canopy, severe lean, visible root failure, large dead limbs, trunk cavities or decay, prior storm damage, split leaders, and conflicts with structures or utility lines. A formal tree risk assessment from a certified arborist documents hazard level most reliably.</p></div>
+      <div class="faq-item"><h3>Can I force a neighbor to remove a dangerous tree?</h3><p>There's no simple universal mechanism to compel removal. Practical first steps include documenting the hazard, communicating concerns in writing, and obtaining an independent arborist assessment. If a neighbor refuses to act on a documented, genuine hazard, legal guidance may be appropriate.</p></div>
+      <div class="faq-item"><h3>What if roots damage my foundation?</h3><p>Document the damage with photos and, ideally, a professional assessment connecting the root activity to the specific damage. Responsibility often depends on the specific facts and foreseeability, which is why professional documentation matters before any claim or dispute.</p></div>
+      <div class="faq-item"><h3>What should I document before filing an insurance claim?</h3><p>Photograph the damage and the tree from multiple angles as soon as safely possible, note the date and weather conditions, obtain a written arborist assessment if available, and keep records of any prior communication about the tree's condition.</p></div>
+      <div class="faq-item"><h3>Do parkway trees follow different rules?</h3><p>Yes. Parkway trees are owned by the City of Chicago and maintained by the Bureau of Forestry, so disputes or damage involving a parkway tree typically involve a 311 report to the city rather than a direct neighbor-to-neighbor resolution.</p></div>
+
+      <div class="author-box">
+        <div class="avatar-lg">DK</div>
+        <div>
+          <h4>About the Author — David Kowalski, ISA Certified Arborist</h4>
+          <div class="role">Founder & Lead Arborist, Prime Tree Care</div>
+          <p>David has conducted tree risk assessments across Chicago's Northwest Side for 15+ years, frequently providing independent documentation for homeowners navigating neighbor disputes, insurance claims, and property-line tree disagreements. This guide reflects that direct, on-the-ground experience — not just general policy information.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- INTERNAL LINKS -->
+<section class="bg-cream">
+  <div class="container narrow">
+    <div style="text-align:center; margin-bottom:8px;">
+      <span class="eyebrow">Explore Further</span>
+      <h2 style="margin-top:10px; font-size:26px;">Related Services & Guides</h2>
+    </div>
+    <div class="link-cols">
+      <div>
+        <h4>Related Services</h4>
+        <ul>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Inspection & Treatment</a></li>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Related Guides</h4>
+        <ul>
+          <li><a href="/blog/parkway-trees-vs-private-trees-chicago/">Parkway Trees vs. Private Trees</a></li>
+          <li><a href="/blog/do-i-need-a-permit-to-remove-a-tree-in-chicago/">Do I Need a Permit to Remove a Tree?</a></li>
+          <li><a href="/blog/hazardous-city-tree-chicago-what-to-do/">Hazardous City Tree: What to Do</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/service-areas/chicago-il/">Chicago, IL</a></li>
+          <li><a href="/service-areas/lincoln-square/">Lincoln Square</a></li>
+          <li><a href="/service-areas/hyde-park/">Hyde Park</a></li>
+          <li><a href="/service-areas/mount-greenwood/">Mount Greenwood</a></li>
+          <li><a href="/service-areas/dunning/">Dunning</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <div>
+        <h3>Need Documentation for a Tree Dispute or Insurance Claim?</h3>
+        <p>Get an ISA-certified risk assessment and written report — objective documentation that helps resolve disputes and supports insurance claims.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:+17733028351" class="btn btn-gold">Call (773) 302-8351</a>
+        <a href="/contact" class="btn btn-outline">Request an Assessment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://primetreecare.pages.dev/images/prime-tree-care-chicago-il-logo.webp" alt="Prime Tree Care logo">
+          <span class="name">Prime Tree Care</span>
+        </div>
+        <p>Professional, certified tree care serving Chicago and the surrounding suburbs — removal, trimming, health treatment, and emergency storm response.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/tree-removal/">Tree Removal</a></li>
+          <li><a href="/services/tree-trimming-pruning/">Tree Trimming & Pruning</a></li>
+          <li><a href="/services/stump-grinding/">Stump Grinding</a></li>
+          <li><a href="/services/emergency-tree-removal/">Emergency Tree Service</a></li>
+          <li><a href="/services/tree-health-inspection-treatment/">Tree Health Treatment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/#process">Our Process</a></li>
+          <li><a href="/service-areas/">Service Areas</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>8811 W 87th St<br>Hickory Hills, IL 60457</p>
+        <p style="margin-top:10px;"><a href="tel:+17733028351" style="color:var(--gold); font-weight:700;">(773) 302-8351</a></p>
+        <p style="margin-top:10px;">Mon–Sat: 7:00 AM – 7:00 PM<br>24/7 Emergency Response</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prime Tree Care Service. All rights reserved.</span>
+      <span><a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a href="tel:+17733028351" class="btn btn-gold">Call Now</a>
+  <a href="/contact" class="btn btn-outline" style="border-color:var(--cream); color:var(--cream);">Free Estimate</a>
+</div>
+
+</body>
+</html>
